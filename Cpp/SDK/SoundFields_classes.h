@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -25,7 +25,7 @@ class UAmbisonicsEncodingSettings : public USoundfieldEncodingSettingsBase
 {
 public:
 	int                                                AmbisonicsOrder;                                           // 0x0028(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	unsigned char                                      UnknownData_WW3B[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Z3NJ[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

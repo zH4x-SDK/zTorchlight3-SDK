@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -36,6 +36,33 @@ enum class ChaosSolverEngine_EClusterConnectionTypeEnum : uint8_t
 // Script Structs
 //---------------------------------------------------------------------------
 
+// ScriptStruct ChaosSolverEngine.ChaosHandlerSet
+// 0x0058
+struct FChaosHandlerSet
+{
+	unsigned char                                      UnknownData_85B6[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      ChaosHandlers[0x50];                                       // 0x0000(0x0050) UNKNOWN PROPERTY: SetProperty
+
+};
+
+// ScriptStruct ChaosSolverEngine.BreakEventCallbackWrapper
+// 0x0040
+struct FBreakEventCallbackWrapper
+{
+	unsigned char                                      UnknownData_PW95[0x40];                                    // 0x0000(0x0040) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct ChaosSolverEngine.ChaosDebugSubstepControl
+// 0x0003
+struct FChaosDebugSubstepControl
+{
+	bool                                               bPause;                                                    // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bSubstep;                                                  // 0x0001(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bStep;                                                     // 0x0002(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+};
+
 // ScriptStruct ChaosSolverEngine.ChaosPhysicsCollisionInfo
 // 0x0070
 struct FChaosPhysicsCollisionInfo
@@ -51,7 +78,7 @@ struct FChaosPhysicsCollisionInfo
 	struct FVector                                     OtherAngularVelocity;                                      // 0x0058(0x000C) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              Mass;                                                      // 0x0064(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              OtherMass;                                                 // 0x0068(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_BU9P[0x4];                                     // 0x006C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_FE2I[0x4];                                     // 0x006C(0x0004) MISSED OFFSET (PADDING)
 
 };
 
@@ -64,33 +91,6 @@ struct FChaosBreakEvent
 	struct FVector                                     Velocity;                                                  // 0x0014(0x000C) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                     AngularVelocity;                                           // 0x0020(0x000C) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              Mass;                                                      // 0x002C(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct ChaosSolverEngine.BreakEventCallbackWrapper
-// 0x0040
-struct FBreakEventCallbackWrapper
-{
-	unsigned char                                      UnknownData_299X[0x40];                                    // 0x0000(0x0040) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct ChaosSolverEngine.ChaosDebugSubstepControl
-// 0x0003
-struct FChaosDebugSubstepControl
-{
-	bool                                               bPause;                                                    // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bSubstep;                                                  // 0x0001(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bStep;                                                     // 0x0002(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct ChaosSolverEngine.ChaosHandlerSet
-// 0x0058
-struct FChaosHandlerSet
-{
-	unsigned char                                      UnknownData_SA9K[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	unsigned char                                      ChaosHandlers[0x50];                                       // 0x0000(0x0050) UNKNOWN PROPERTY: SetProperty
 
 };
 

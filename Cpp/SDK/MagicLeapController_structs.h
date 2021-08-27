@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -18,6 +18,59 @@ namespace CG
 //---------------------------------------------------------------------------
 // Enums
 //---------------------------------------------------------------------------
+
+// Enum MagicLeapController.EMagicLeapTouchpadGestureDirection
+enum class MagicLeapController_EMagicLeapTouchpadGestureDirection : uint8_t
+{
+	EMagicLeapTouchpadGestureDirection__None = 0,
+	EMagicLeapTouchpadGestureDirection__Up = 1,
+	EMagicLeapTouchpadGestureDirection__Down = 2,
+	EMagicLeapTouchpadGestureDirection__Left = 3,
+	EMagicLeapTouchpadGestureDirection__Right = 4,
+	EMagicLeapTouchpadGestureDirection__In = 5,
+	EMagicLeapTouchpadGestureDirection__Out = 6,
+	EMagicLeapTouchpadGestureDirection__Clockwise = 7,
+	EMagicLeapTouchpadGestureDirection__CounterClockwise = 8,
+	EMagicLeapTouchpadGestureDirection__EMagicLeapTouchpadGestureDirection_MAX = 9,
+
+};
+
+// Enum MagicLeapController.EMagicLeapTouchpadGestureType
+enum class MagicLeapController_EMagicLeapTouchpadGestureType : uint8_t
+{
+	EMagicLeapTouchpadGestureType__None = 0,
+	EMagicLeapTouchpadGestureType__Tap = 1,
+	EMagicLeapTouchpadGestureType__ForceTapDown = 2,
+	EMagicLeapTouchpadGestureType__ForceTapUp = 3,
+	EMagicLeapTouchpadGestureType__ForceDwell = 4,
+	EMagicLeapTouchpadGestureType__SecondForceDown = 5,
+	EMagicLeapTouchpadGestureType__LongHold = 6,
+	EMagicLeapTouchpadGestureType__RadialScroll = 7,
+	EMagicLeapTouchpadGestureType__Swipe = 8,
+	EMagicLeapTouchpadGestureType__Scroll = 9,
+	EMagicLeapTouchpadGestureType__Pinch = 10,
+	EMagicLeapTouchpadGestureType__EMagicLeapTouchpadGestureType_MAX = 11,
+
+};
+
+// Enum MagicLeapController.EMagicLeapControllerTrackingMode
+enum class MagicLeapController_EMagicLeapControllerTrackingMode : uint8_t
+{
+	EMagicLeapControllerTrackingMode__InputService = 0,
+	EMagicLeapControllerTrackingMode__CoordinateFrameUID = 1,
+	EMagicLeapControllerTrackingMode__EMagicLeapControllerTrackingMode_MAX = 2,
+
+};
+
+// Enum MagicLeapController.EMagicLeapControllerHapticIntensity
+enum class MagicLeapController_EMagicLeapControllerHapticIntensity : uint8_t
+{
+	EMagicLeapControllerHapticIntensity__Low = 0,
+	EMagicLeapControllerHapticIntensity__Medium = 1,
+	EMagicLeapControllerHapticIntensity__High = 2,
+	EMagicLeapControllerHapticIntensity__EMagicLeapControllerHapticIntensity_MAX = 3,
+
+};
 
 // Enum MagicLeapController.EMagicLeapControllerHapticPattern
 enum class MagicLeapController_EMagicLeapControllerHapticPattern : uint8_t
@@ -118,59 +171,6 @@ enum class MagicLeapController_EMagicLeapControllerType : uint8_t
 
 };
 
-// Enum MagicLeapController.EMagicLeapTouchpadGestureDirection
-enum class MagicLeapController_EMagicLeapTouchpadGestureDirection : uint8_t
-{
-	EMagicLeapTouchpadGestureDirection__None = 0,
-	EMagicLeapTouchpadGestureDirection__Up = 1,
-	EMagicLeapTouchpadGestureDirection__Down = 2,
-	EMagicLeapTouchpadGestureDirection__Left = 3,
-	EMagicLeapTouchpadGestureDirection__Right = 4,
-	EMagicLeapTouchpadGestureDirection__In = 5,
-	EMagicLeapTouchpadGestureDirection__Out = 6,
-	EMagicLeapTouchpadGestureDirection__Clockwise = 7,
-	EMagicLeapTouchpadGestureDirection__CounterClockwise = 8,
-	EMagicLeapTouchpadGestureDirection__EMagicLeapTouchpadGestureDirection_MAX = 9,
-
-};
-
-// Enum MagicLeapController.EMagicLeapTouchpadGestureType
-enum class MagicLeapController_EMagicLeapTouchpadGestureType : uint8_t
-{
-	EMagicLeapTouchpadGestureType__None = 0,
-	EMagicLeapTouchpadGestureType__Tap = 1,
-	EMagicLeapTouchpadGestureType__ForceTapDown = 2,
-	EMagicLeapTouchpadGestureType__ForceTapUp = 3,
-	EMagicLeapTouchpadGestureType__ForceDwell = 4,
-	EMagicLeapTouchpadGestureType__SecondForceDown = 5,
-	EMagicLeapTouchpadGestureType__LongHold = 6,
-	EMagicLeapTouchpadGestureType__RadialScroll = 7,
-	EMagicLeapTouchpadGestureType__Swipe = 8,
-	EMagicLeapTouchpadGestureType__Scroll = 9,
-	EMagicLeapTouchpadGestureType__Pinch = 10,
-	EMagicLeapTouchpadGestureType__EMagicLeapTouchpadGestureType_MAX = 11,
-
-};
-
-// Enum MagicLeapController.EMagicLeapControllerTrackingMode
-enum class MagicLeapController_EMagicLeapControllerTrackingMode : uint8_t
-{
-	EMagicLeapControllerTrackingMode__InputService = 0,
-	EMagicLeapControllerTrackingMode__CoordinateFrameUID = 1,
-	EMagicLeapControllerTrackingMode__EMagicLeapControllerTrackingMode_MAX = 2,
-
-};
-
-// Enum MagicLeapController.EMagicLeapControllerHapticIntensity
-enum class MagicLeapController_EMagicLeapControllerHapticIntensity : uint8_t
-{
-	EMagicLeapControllerHapticIntensity__Low = 0,
-	EMagicLeapControllerHapticIntensity__Medium = 1,
-	EMagicLeapControllerHapticIntensity__High = 2,
-	EMagicLeapControllerHapticIntensity__EMagicLeapControllerHapticIntensity_MAX = 3,
-
-};
-
 //---------------------------------------------------------------------------
 // Script Structs
 //---------------------------------------------------------------------------
@@ -180,11 +180,11 @@ enum class MagicLeapController_EMagicLeapControllerHapticIntensity : uint8_t
 struct FMagicLeapTouchpadGesture
 {
 	InputCore_EControllerHand                          Hand;                                                      // 0x0000(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_GTWV[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_D5C8[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FName                                       MotionSource;                                              // 0x0004(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	MagicLeapController_EMagicLeapTouchpadGestureType  Type;                                                      // 0x000C(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	MagicLeapController_EMagicLeapTouchpadGestureDirection Direction;                                                 // 0x000D(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_XE3L[0x2];                                     // 0x000E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_ZLOJ[0x2];                                     // 0x000E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FVector                                     PositionAndForce;                                          // 0x0010(0x000C) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              Speed;                                                     // 0x001C(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              Distance;                                                  // 0x0020(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -151,12 +151,67 @@ enum class DatasmithContent_EDatasmithImportSearchPackagePolicy : uint8_t
 // Script Structs
 //---------------------------------------------------------------------------
 
+// ScriptStruct DatasmithContent.DatasmithCameraLookatTrackingSettingsTemplate
+// 0x0030
+struct FDatasmithCameraLookatTrackingSettingsTemplate
+{
+	unsigned char                                      bEnableLookAtTracking : 1;                                 // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      bAllowRoll : 1;                                            // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_D6EE[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      ActorToTrack[0x28];                                        // 0x0001(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+
+};
+
 // ScriptStruct DatasmithContent.DatasmithCameraFilmbackSettingsTemplate
 // 0x0008
 struct FDatasmithCameraFilmbackSettingsTemplate
 {
 	float                                              SensorWidth;                                               // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              SensorHeight;                                              // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+};
+
+// ScriptStruct DatasmithContent.DatasmithCameraLensSettingsTemplate
+// 0x0004
+struct FDatasmithCameraLensSettingsTemplate
+{
+	float                                              MaxFStop;                                                  // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+};
+
+// ScriptStruct DatasmithContent.DatasmithCameraFocusSettingsTemplate
+// 0x0008
+struct FDatasmithCameraFocusSettingsTemplate
+{
+	CinematicCamera_ECameraFocusMethod                 FocusMethod;                                               // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_RVCA[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	float                                              ManualFocusDistance;                                       // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+};
+
+// ScriptStruct DatasmithContent.DatasmithPostProcessSettingsTemplate
+// 0x0040
+struct FDatasmithPostProcessSettingsTemplate
+{
+	unsigned char                                      bOverride_WhiteTemp : 1;                                   // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      bOverride_ColorSaturation : 1;                             // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      bOverride_VignetteIntensity : 1;                           // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      bOverride_FilmWhitePoint : 1;                              // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      bOverride_AutoExposureMethod : 1;                          // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      bOverride_CameraISO : 1;                                   // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      bOverride_CameraShutterSpeed : 1;                          // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_DORR[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      bOverride_DepthOfFieldFstop : 1;                           // 0x0004(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_6XNX[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	float                                              WhiteTemp;                                                 // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              VignetteIntensity;                                         // 0x000C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                                FilmWhitePoint;                                            // 0x0010(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector4                                    ColorSaturation;                                           // 0x0020(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TEnumAsByte<Engine_EAutoExposureMethod>            AutoExposureMethod;                                        // 0x0030(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_D2NT[0x3];                                     // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	float                                              CameraISO;                                                 // 0x0034(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              CameraShutterSpeed;                                        // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              DepthOfFieldFstop;                                         // 0x003C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 };
 
@@ -168,16 +223,7 @@ struct FDatasmithTessellationOptions
 	float                                              MaxEdgeLength;                                             // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              NormalTolerance;                                           // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	DatasmithContent_EDatasmithCADStitchingTechnique   StitchingTechnique;                                        // 0x000C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_AD19[0x3];                                     // 0x000D(0x0003) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct DatasmithContent.DatasmithRetessellationOptions
-// 0x0004 (0x0014 - 0x0010)
-struct FDatasmithRetessellationOptions : public FDatasmithTessellationOptions
-{
-	DatasmithContent_EDatasmithCADRetessellationRule   RetessellationRule;                                        // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_BKP3[0x3];                                     // 0x0011(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_J4L6[0x3];                                     // 0x000D(0x0003) MISSED OFFSET (PADDING)
 
 };
 
@@ -200,6 +246,15 @@ struct FDatasmithStaticMeshImportOptions
 
 };
 
+// ScriptStruct DatasmithContent.DatasmithReimportOptions
+// 0x0002
+struct FDatasmithReimportOptions
+{
+	bool                                               bUpdateActors;                                             // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bRespawnDeletedActors;                                     // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+};
+
 // ScriptStruct DatasmithContent.DatasmithImportBaseOptions
 // 0x0014
 struct FDatasmithImportBaseOptions
@@ -210,18 +265,9 @@ struct FDatasmithImportBaseOptions
 	bool                                               bIncludeLight;                                             // 0x0003(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               bIncludeCamera;                                            // 0x0004(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               bIncludeAnimation;                                         // 0x0005(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_SM9A[0x2];                                     // 0x0006(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_TVWO[0x2];                                     // 0x0006(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FDatasmithAssetImportOptions                AssetOptions;                                              // 0x0008(0x0008) (BlueprintVisible, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	struct FDatasmithStaticMeshImportOptions           StaticMeshOptions;                                         // 0x0010(0x0004) (Edit, BlueprintVisible, Config, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct DatasmithContent.DatasmithReimportOptions
-// 0x0002
-struct FDatasmithReimportOptions
-{
-	bool                                               bUpdateActors;                                             // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bRespawnDeletedActors;                                     // 0x0001(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 };
 
@@ -241,23 +287,6 @@ struct FDatasmithMeshSectionInfoTemplate
 
 };
 
-// ScriptStruct DatasmithContent.DatasmithMeshSectionInfoMapTemplate
-// 0x0050
-struct FDatasmithMeshSectionInfoMapTemplate
-{
-	TMap<uint32_t, struct FDatasmithMeshSectionInfoTemplate> Map;                                                       // 0x0000(0x0050) (NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct DatasmithContent.DatasmithStaticMaterialTemplate
-// 0x0010
-struct FDatasmithStaticMaterialTemplate
-{
-	struct FName                                       MaterialSlotName;                                          // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                          MaterialInterface;                                         // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-};
-
 // ScriptStruct DatasmithContent.DatasmithMeshBuildSettingsTemplate
 // 0x0010
 struct FDatasmithMeshBuildSettingsTemplate
@@ -270,65 +299,36 @@ struct FDatasmithMeshBuildSettingsTemplate
 	unsigned char                                      bUseHighPrecisionTangentBasis : 1;                         // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	unsigned char                                      bUseFullPrecisionUVs : 1;                                  // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	unsigned char                                      bGenerateLightmapUVs : 1;                                  // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_T21C[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_H68W[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	int                                                MinLightmapResolution;                                     // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int                                                SrcLightmapIndex;                                          // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int                                                DstLightmapIndex;                                          // 0x000C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 };
 
-// ScriptStruct DatasmithContent.DatasmithCameraLookatTrackingSettingsTemplate
-// 0x0030
-struct FDatasmithCameraLookatTrackingSettingsTemplate
+// ScriptStruct DatasmithContent.DatasmithStaticMaterialTemplate
+// 0x0010
+struct FDatasmithStaticMaterialTemplate
 {
-	unsigned char                                      bEnableLookAtTracking : 1;                                 // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      bAllowRoll : 1;                                            // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_SCF3[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	unsigned char                                      ActorToTrack[0x28];                                        // 0x0001(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+	struct FName                                       MaterialSlotName;                                          // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                          MaterialInterface;                                         // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 };
 
-// ScriptStruct DatasmithContent.DatasmithCameraLensSettingsTemplate
-// 0x0004
-struct FDatasmithCameraLensSettingsTemplate
+// ScriptStruct DatasmithContent.DatasmithRetessellationOptions
+// 0x0004 (0x0014 - 0x0010)
+struct FDatasmithRetessellationOptions : public FDatasmithTessellationOptions
 {
-	float                                              MaxFStop;                                                  // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	DatasmithContent_EDatasmithCADRetessellationRule   RetessellationRule;                                        // 0x0010(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_FA2Y[0x3];                                     // 0x0011(0x0003) MISSED OFFSET (PADDING)
 
 };
 
-// ScriptStruct DatasmithContent.DatasmithCameraFocusSettingsTemplate
-// 0x0008
-struct FDatasmithCameraFocusSettingsTemplate
+// ScriptStruct DatasmithContent.DatasmithMeshSectionInfoMapTemplate
+// 0x0050
+struct FDatasmithMeshSectionInfoMapTemplate
 {
-	CinematicCamera_ECameraFocusMethod                 FocusMethod;                                               // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_DYF7[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	float                                              ManualFocusDistance;                                       // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct DatasmithContent.DatasmithPostProcessSettingsTemplate
-// 0x0040
-struct FDatasmithPostProcessSettingsTemplate
-{
-	unsigned char                                      bOverride_WhiteTemp : 1;                                   // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      bOverride_ColorSaturation : 1;                             // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      bOverride_VignetteIntensity : 1;                           // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      bOverride_FilmWhitePoint : 1;                              // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      bOverride_AutoExposureMethod : 1;                          // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      bOverride_CameraISO : 1;                                   // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      bOverride_CameraShutterSpeed : 1;                          // 0x0000(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_CRKZ[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	unsigned char                                      bOverride_DepthOfFieldFstop : 1;                           // 0x0004(0x0001) BIT_FIELD (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_LGIH[0x3];                                     // 0x0005(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	float                                              WhiteTemp;                                                 // 0x0008(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              VignetteIntensity;                                         // 0x000C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                                FilmWhitePoint;                                            // 0x0010(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector4                                    ColorSaturation;                                           // 0x0020(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TEnumAsByte<Engine_EAutoExposureMethod>            AutoExposureMethod;                                        // 0x0030(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_FMO7[0x3];                                     // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	float                                              CameraISO;                                                 // 0x0034(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              CameraShutterSpeed;                                        // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              DepthOfFieldFstop;                                         // 0x003C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<uint32_t, struct FDatasmithMeshSectionInfoTemplate> Map;                                                       // 0x0000(0x0050) (NativeAccessSpecifierPublic)
 
 };
 

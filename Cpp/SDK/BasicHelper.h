@@ -1,7 +1,7 @@
 ﻿#pragma once
 #pragma warning(disable: 4267)
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 #include <vector>
 #include <locale>
@@ -134,7 +134,7 @@ public:
 	int Flags;
 	int32_t ClusterIndex;
 	int32_t SerialNumber;
-	unsigned char pad_9ADMYWFUZM[0x04];
+	unsigned char pad_N0543V18NE[0x04];
 	enum class ObjectFlags : int32_t
 	{
 		None = 0,
@@ -852,7 +852,7 @@ struct FStructBaseChain
 {
 	class FStructBaseChain** StructBaseChainArray;
 	int32_t NumStructBasesInChainMinusOne;
-	unsigned char pad_8UCT7SFVKO[0x04];
+	unsigned char pad_T1MJUZLPB5[0x04];
 };
 
 template<typename Key, typename Value>

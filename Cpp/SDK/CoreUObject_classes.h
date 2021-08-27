@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -156,214 +156,6 @@ public:
 	void ExecuteUbergraph(int EntryPoint);
 };
 
-// Class CoreUObject.Field
-// 0x0008 (FullSize[0x0030] - InheritedSize[0x0028])
-class UField : public UObject
-{
-public:
-	class UField*                                      Next;                                                      // 0x0028(0x0008) NOT AUTO-GENERATED PROPERTY
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CoreUObject.Field");
-		return ptr;
-	}
-
-
-
-};
-
-// Class CoreUObject.Property
-// 0x0040 (FullSize[0x0070] - InheritedSize[0x0030])
-class UProperty : public UField
-{
-public:
-	unsigned char                                      UnknownData_GWF7[0x40];                                    // 0x0030(0x0040) MISSED OFFSET (PADDING)
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CoreUObject.Property");
-		return ptr;
-	}
-
-
-
-};
-
-// Class CoreUObject.NumericProperty
-// 0x0000 (FullSize[0x0070] - InheritedSize[0x0070])
-class UNumericProperty : public UProperty
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CoreUObject.NumericProperty");
-		return ptr;
-	}
-
-
-
-};
-
-// Class CoreUObject.UInt16Property
-// 0x0000 (FullSize[0x0070] - InheritedSize[0x0070])
-class UUInt16Property : public UNumericProperty
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CoreUObject.UInt16Property");
-		return ptr;
-	}
-
-
-
-};
-
-// Class CoreUObject.UInt32Property
-// 0x0000 (FullSize[0x0070] - InheritedSize[0x0070])
-class UUInt32Property : public UNumericProperty
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CoreUObject.UInt32Property");
-		return ptr;
-	}
-
-
-
-};
-
-// Class CoreUObject.UInt64Property
-// 0x0000 (FullSize[0x0070] - InheritedSize[0x0070])
-class UUInt64Property : public UNumericProperty
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CoreUObject.UInt64Property");
-		return ptr;
-	}
-
-
-
-};
-
-// Class CoreUObject.ObjectPropertyBase
-// 0x0008 (FullSize[0x0078] - InheritedSize[0x0070])
-class UObjectPropertyBase : public UProperty
-{
-public:
-	unsigned char                                      UnknownData_V1RO[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CoreUObject.ObjectPropertyBase");
-		return ptr;
-	}
-
-
-
-};
-
-// Class CoreUObject.WeakObjectProperty
-// 0x0000 (FullSize[0x0078] - InheritedSize[0x0078])
-class UWeakObjectProperty : public UObjectPropertyBase
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CoreUObject.WeakObjectProperty");
-		return ptr;
-	}
-
-
-
-};
-
-// Class CoreUObject.TextProperty
-// 0x0000 (FullSize[0x0070] - InheritedSize[0x0070])
-class UTextProperty : public UProperty
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CoreUObject.TextProperty");
-		return ptr;
-	}
-
-
-
-};
-
-// Class CoreUObject.PropertyWrapper
-// 0x0008 (FullSize[0x0030] - InheritedSize[0x0028])
-class UPropertyWrapper : public UObject
-{
-public:
-	unsigned char                                      UnknownData_MSPO[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CoreUObject.PropertyWrapper");
-		return ptr;
-	}
-
-
-
-};
-
-// Class CoreUObject.MulticastDelegatePropertyWrapper
-// 0x0000 (FullSize[0x0030] - InheritedSize[0x0030])
-class UMulticastDelegatePropertyWrapper : public UPropertyWrapper
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CoreUObject.MulticastDelegatePropertyWrapper");
-		return ptr;
-	}
-
-
-
-};
-
-// Class CoreUObject.MulticastInlineDelegatePropertyWrapper
-// 0x0000 (FullSize[0x0030] - InheritedSize[0x0030])
-class UMulticastInlineDelegatePropertyWrapper : public UMulticastDelegatePropertyWrapper
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CoreUObject.MulticastInlineDelegatePropertyWrapper");
-		return ptr;
-	}
-
-
-
-};
-
 // Class CoreUObject.Interface
 // 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
 class UInterface : public UObject
@@ -386,7 +178,7 @@ public:
 class UGCObjectReferencer : public UObject
 {
 public:
-	unsigned char                                      UnknownData_WLR7[0x48];                                    // 0x0028(0x0048) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Z1IP[0x48];                                    // 0x0028(0x0048) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -404,12 +196,30 @@ public:
 class UTextBuffer : public UObject
 {
 public:
-	unsigned char                                      UnknownData_CZYY[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_M0A3[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
 	{
 		static auto ptr = UObject::FindClass("Class CoreUObject.TextBuffer");
+		return ptr;
+	}
+
+
+
+};
+
+// Class CoreUObject.Field
+// 0x0008 (FullSize[0x0030] - InheritedSize[0x0028])
+class UField : public UObject
+{
+public:
+	class UField*                                      Next;                                                      // 0x0028(0x0008) NOT AUTO-GENERATED PROPERTY
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class CoreUObject.Field");
 		return ptr;
 	}
 
@@ -452,7 +262,7 @@ public:
 class UScriptStruct : public UStruct
 {
 public:
-	unsigned char                                      UnknownData_TGCH[0x10];                                    // 0x00B0(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_L0C4[0x10];                                    // 0x00B0(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -470,12 +280,42 @@ public:
 class UPackage : public UObject
 {
 public:
-	unsigned char                                      UnknownData_PV37[0x78];                                    // 0x0028(0x0078) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Y6VZ[0x78];                                    // 0x0028(0x0078) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
 	{
 		static auto ptr = UObject::FindClass("Class CoreUObject.Package");
+		return ptr;
+	}
+
+
+
+};
+
+// Class CoreUObject.Class
+// 0x0180 (FullSize[0x0230] - InheritedSize[0x00B0])
+class UClass : public UStruct
+{
+public:
+	unsigned char                                      UnknownData_L50P[0x180];                                   // 0x00B0(0x0180) MISSED OFFSET (PADDING)
+
+
+template<typename T>
+	inline T* CreateDefaultObject()
+	{
+		return static_cast<T*>(CreateDefaultObject());
+	}
+
+	inline UObject* CreateDefaultObject()
+	{
+		// return nullptr;
+		return GetVFunction<UObject*(*)(UClass*)>(this, /*FUNC_INDEX*/)(this);
+	}
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class CoreUObject.Class");
 		return ptr;
 	}
 
@@ -491,15 +331,15 @@ public:
 	int32_t                                            FunctionFlags;                                             // 0x00B0(0x0004) NOT AUTO-GENERATED PROPERTY
 	uint8_t_t                                          NumParms;                                                  // 0x00B4(0x0001) NOT AUTO-GENERATED PROPERTY
 	uint16_t_t                                         ParmsSize;                                                 // 0x00B5(0x0002) NOT AUTO-GENERATED PROPERTY
-	unsigned char                                      pad_BMCWHT1EEO[0x01];                                      // 0x00B7(0x0001) NOT AUTO-GENERATED PROPERTY
+	unsigned char                                      pad_B1EUD0KH9M[0x01];                                      // 0x00B7(0x0001) NOT AUTO-GENERATED PROPERTY
 	uint16_t_t                                         ReturnValueOffset;                                         // 0x00B8(0x0002) NOT AUTO-GENERATED PROPERTY
 	uint16_t_t                                         RPCId;                                                     // 0x00BA(0x0002) NOT AUTO-GENERATED PROPERTY
 	uint16_t_t                                         RPCResponseId;                                             // 0x00BC(0x0002) NOT AUTO-GENERATED PROPERTY
-	unsigned char                                      pad_EU99PX61HZ[0x02];                                      // 0x00BE(0x0002) NOT AUTO-GENERATED PROPERTY
+	unsigned char                                      pad_1HFEYSYKVI[0x02];                                      // 0x00BE(0x0002) NOT AUTO-GENERATED PROPERTY
 	class UProperty*                                   FirstPropertyToInit;                                       // 0x00C0(0x0008) NOT AUTO-GENERATED PROPERTY
 	class UFunction*                                   EventGraphFunction;                                        // 0x00C8(0x0008) NOT AUTO-GENERATED PROPERTY
 	int32_t                                            EventGraphCallOffset;                                      // 0x00D0(0x0004) NOT AUTO-GENERATED PROPERTY
-	unsigned char                                      pad_CI6M7IGXU3[0x04];                                      // 0x00D4(0x0004) NOT AUTO-GENERATED PROPERTY
+	unsigned char                                      pad_90I2G4UB2K[0x04];                                      // 0x00D4(0x0004) NOT AUTO-GENERATED PROPERTY
 	void*                                              Func;                                                      // 0x00D8(0x0008) NOT AUTO-GENERATED PROPERTY
 
 
@@ -535,7 +375,7 @@ public:
 class USparseDelegateFunction : public UDelegateFunction
 {
 public:
-	unsigned char                                      UnknownData_EVJE[0x10];                                    // 0x00E0(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Q6TH[0x10];                                    // 0x00E0(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -548,42 +388,12 @@ public:
 
 };
 
-// Class CoreUObject.Class
-// 0x0180 (FullSize[0x0230] - InheritedSize[0x00B0])
-class UClass : public UStruct
-{
-public:
-	unsigned char                                      UnknownData_GBUC[0x180];                                   // 0x00B0(0x0180) MISSED OFFSET (PADDING)
-
-
-template<typename T>
-	inline T* CreateDefaultObject()
-	{
-		return static_cast<T*>(CreateDefaultObject());
-	}
-
-	inline UObject* CreateDefaultObject()
-	{
-		// return nullptr;
-		GetVFunction<UObject*(*)(UClass*)>(this, /*FUNC_INDEX*/)(this);
-	}
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CoreUObject.Class");
-		return ptr;
-	}
-
-
-
-};
-
 // Class CoreUObject.DynamicClass
 // 0x0080 (FullSize[0x02B0] - InheritedSize[0x0230])
 class UDynamicClass : public UClass
 {
 public:
-	unsigned char                                      UnknownData_KX8T[0x80];                                    // 0x0230(0x0080) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_BVC5[0x80];                                    // 0x0230(0x0080) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -601,7 +411,7 @@ public:
 class UPackageMap : public UObject
 {
 public:
-	unsigned char                                      UnknownData_IN1H[0xB8];                                    // 0x0028(0x00B8) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_KVT3[0xB8];                                    // 0x0028(0x00B8) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -619,7 +429,7 @@ public:
 class UEnum : public UField
 {
 public:
-	unsigned char                                      UnknownData_R2TQ[0x30];                                    // 0x0030(0x0030) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_QBU6[0x30];                                    // 0x0030(0x0030) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -637,7 +447,7 @@ public:
 class ULinkerPlaceholderClass : public UClass
 {
 public:
-	unsigned char                                      UnknownData_SNSE[0x1B8];                                   // 0x0230(0x01B8) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_T6GG[0x1B8];                                   // 0x0230(0x01B8) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -655,7 +465,7 @@ public:
 class ULinkerPlaceholderExportObject : public UObject
 {
 public:
-	unsigned char                                      UnknownData_487O[0xC8];                                    // 0x0028(0x00C8) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_0X9W[0xC8];                                    // 0x0028(0x00C8) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -673,7 +483,7 @@ public:
 class ULinkerPlaceholderFunction : public UFunction
 {
 public:
-	unsigned char                                      UnknownData_RFE6[0x1B8];                                   // 0x00E0(0x01B8) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_LO73[0x1B8];                                   // 0x00E0(0x01B8) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -691,7 +501,7 @@ public:
 class UMetaData : public UObject
 {
 public:
-	unsigned char                                      UnknownData_OH0B[0xA0];                                    // 0x0028(0x00A0) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ZSBP[0xA0];                                    // 0x0028(0x00A0) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -709,7 +519,7 @@ public:
 class UObjectRedirector : public UObject
 {
 public:
-	unsigned char                                      UnknownData_0FHK[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_7N8W[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -722,12 +532,30 @@ public:
 
 };
 
+// Class CoreUObject.Property
+// 0x0040 (FullSize[0x0070] - InheritedSize[0x0030])
+class UProperty : public UField
+{
+public:
+	unsigned char                                      UnknownData_9JL2[0x40];                                    // 0x0030(0x0040) MISSED OFFSET (PADDING)
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class CoreUObject.Property");
+		return ptr;
+	}
+
+
+
+};
+
 // Class CoreUObject.EnumProperty
 // 0x0010 (FullSize[0x0080] - InheritedSize[0x0070])
 class UEnumProperty : public UProperty
 {
 public:
-	unsigned char                                      UnknownData_L9MZ[0x10];                                    // 0x0070(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_67IP[0x10];                                    // 0x0070(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -745,7 +573,7 @@ public:
 class UArrayProperty : public UProperty
 {
 public:
-	unsigned char                                      UnknownData_T6XZ[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_WMXK[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -758,12 +586,30 @@ public:
 
 };
 
+// Class CoreUObject.ObjectPropertyBase
+// 0x0008 (FullSize[0x0078] - InheritedSize[0x0070])
+class UObjectPropertyBase : public UProperty
+{
+public:
+	unsigned char                                      UnknownData_2JHR[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class CoreUObject.ObjectPropertyBase");
+		return ptr;
+	}
+
+
+
+};
+
 // Class CoreUObject.BoolProperty
 // 0x0008 (FullSize[0x0078] - InheritedSize[0x0070])
 class UBoolProperty : public UProperty
 {
 public:
-	unsigned char                                      UnknownData_VHZ0[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_96LU[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -776,12 +622,29 @@ public:
 
 };
 
+// Class CoreUObject.NumericProperty
+// 0x0000 (FullSize[0x0070] - InheritedSize[0x0070])
+class UNumericProperty : public UProperty
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class CoreUObject.NumericProperty");
+		return ptr;
+	}
+
+
+
+};
+
 // Class CoreUObject.ByteProperty
 // 0x0008 (FullSize[0x0078] - InheritedSize[0x0070])
 class UByteProperty : public UNumericProperty
 {
 public:
-	unsigned char                                      UnknownData_CEJL[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_B85M[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -816,7 +679,7 @@ public:
 class UClassProperty : public UObjectProperty
 {
 public:
-	unsigned char                                      UnknownData_ZUCC[0x8];                                     // 0x0078(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ZG6Q[0x8];                                     // 0x0078(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -834,7 +697,7 @@ public:
 class UDelegateProperty : public UProperty
 {
 public:
-	unsigned char                                      UnknownData_I5NM[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_US25[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -954,7 +817,7 @@ public:
 class UInterfaceProperty : public UProperty
 {
 public:
-	unsigned char                                      UnknownData_DFCQ[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_XJ1Y[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -989,7 +852,7 @@ public:
 class UMapProperty : public UProperty
 {
 public:
-	unsigned char                                      UnknownData_RMU4[0x28];                                    // 0x0070(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_0XBP[0x28];                                    // 0x0070(0x0028) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -1007,7 +870,7 @@ public:
 class UMulticastDelegateProperty : public UProperty
 {
 public:
-	unsigned char                                      UnknownData_KOZR[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_LTQA[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -1076,7 +939,7 @@ public:
 class USetProperty : public UProperty
 {
 public:
-	unsigned char                                      UnknownData_T0WN[0x20];                                    // 0x0070(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_BOVB[0x20];                                    // 0x0070(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -1111,7 +974,7 @@ public:
 class USoftClassProperty : public USoftObjectProperty
 {
 public:
-	unsigned char                                      UnknownData_A988[0x8];                                     // 0x0078(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_O8C0[0x8];                                     // 0x0078(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -1146,12 +1009,149 @@ public:
 class UStructProperty : public UProperty
 {
 public:
-	unsigned char                                      UnknownData_CTZ7[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_A14E[0x8];                                     // 0x0070(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
 	{
 		static auto ptr = UObject::FindClass("Class CoreUObject.StructProperty");
+		return ptr;
+	}
+
+
+
+};
+
+// Class CoreUObject.UInt16Property
+// 0x0000 (FullSize[0x0070] - InheritedSize[0x0070])
+class UUInt16Property : public UNumericProperty
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class CoreUObject.UInt16Property");
+		return ptr;
+	}
+
+
+
+};
+
+// Class CoreUObject.UInt32Property
+// 0x0000 (FullSize[0x0070] - InheritedSize[0x0070])
+class UUInt32Property : public UNumericProperty
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class CoreUObject.UInt32Property");
+		return ptr;
+	}
+
+
+
+};
+
+// Class CoreUObject.UInt64Property
+// 0x0000 (FullSize[0x0070] - InheritedSize[0x0070])
+class UUInt64Property : public UNumericProperty
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class CoreUObject.UInt64Property");
+		return ptr;
+	}
+
+
+
+};
+
+// Class CoreUObject.WeakObjectProperty
+// 0x0000 (FullSize[0x0078] - InheritedSize[0x0078])
+class UWeakObjectProperty : public UObjectPropertyBase
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class CoreUObject.WeakObjectProperty");
+		return ptr;
+	}
+
+
+
+};
+
+// Class CoreUObject.TextProperty
+// 0x0000 (FullSize[0x0070] - InheritedSize[0x0070])
+class UTextProperty : public UProperty
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class CoreUObject.TextProperty");
+		return ptr;
+	}
+
+
+
+};
+
+// Class CoreUObject.PropertyWrapper
+// 0x0008 (FullSize[0x0030] - InheritedSize[0x0028])
+class UPropertyWrapper : public UObject
+{
+public:
+	unsigned char                                      UnknownData_T2HW[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class CoreUObject.PropertyWrapper");
+		return ptr;
+	}
+
+
+
+};
+
+// Class CoreUObject.MulticastDelegatePropertyWrapper
+// 0x0000 (FullSize[0x0030] - InheritedSize[0x0030])
+class UMulticastDelegatePropertyWrapper : public UPropertyWrapper
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class CoreUObject.MulticastDelegatePropertyWrapper");
+		return ptr;
+	}
+
+
+
+};
+
+// Class CoreUObject.MulticastInlineDelegatePropertyWrapper
+// 0x0000 (FullSize[0x0030] - InheritedSize[0x0030])
+class UMulticastInlineDelegatePropertyWrapper : public UMulticastDelegatePropertyWrapper
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class CoreUObject.MulticastInlineDelegatePropertyWrapper");
 		return ptr;
 	}
 

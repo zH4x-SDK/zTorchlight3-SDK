@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -18,30 +18,6 @@ namespace CG
 //---------------------------------------------------------------------------
 // Classes
 //---------------------------------------------------------------------------
-
-// Class MagicLeapAR.LuminARCandidateImage
-// 0x0008 (FullSize[0x0060] - InheritedSize[0x0058])
-class ULuminARCandidateImage : public UARCandidateImage
-{
-public:
-	bool                                               bUseUnreliablePose;                                        // 0x0058(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                               bImageIsStationary;                                        // 0x0059(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	MagicLeapImageTracker_EMagicLeapImageTargetOrientation AxisOrientation;                                           // 0x005A(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	unsigned char                                      UnknownData_EHDF[0x5];                                     // 0x005B(0x0005) MISSED OFFSET (PADDING)
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class MagicLeapAR.LuminARCandidateImage");
-		return ptr;
-	}
-
-
-
-	bool GetUseUnreliablePose();
-	bool GetImageIsStationary();
-	MagicLeapImageTracker_EMagicLeapImageTargetOrientation GetAxisOrientation();
-};
 
 // Class MagicLeapAR.LuminARSessionFunctionLibrary
 // 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
@@ -107,7 +83,7 @@ public:
 	class UMRMeshComponent*                            MRMeshComponent;                                           // 0x0220(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UMaterialInterface*                          PlaneSurfaceMaterial;                                      // 0x0228(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UMaterialInterface*                          WireframeMaterial;                                         // 0x0230(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	unsigned char                                      UnknownData_I5IX[0xA8];                                    // 0x0238(0x00A8) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_U8YO[0xA8];                                    // 0x0238(0x00A8) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -129,12 +105,12 @@ public:
 	int                                                MaxPlaneQueryResults;                                      // 0x0170(0x0004) (ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int                                                MinPlaneArea;                                              // 0x0174(0x0004) (ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               bArbitraryOrientationPlaneDetection;                       // 0x0178(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_ZBC1[0x3];                                     // 0x0179(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_PW93[0x3];                                     // 0x0179(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FVector                                     PlaneSearchExtents;                                        // 0x017C(0x000C) (ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<MagicLeapPlanes_EMagicLeapPlaneQueryFlags>  PlaneQueryFlags;                                           // 0x0188(0x0010) (ZeroConstructor, Deprecated, NativeAccessSpecifierPublic)
 	bool                                               bDiscardZeroExtentPlanes;                                  // 0x0198(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               bDefaultUseUnreliablePose;                                 // 0x0199(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_TYXC[0x6];                                     // 0x019A(0x0006) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_J6F7[0x6];                                     // 0x019A(0x0006) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -164,6 +140,30 @@ public:
 
 
 	TArray<float> GetAmbientIntensityNits();
+};
+
+// Class MagicLeapAR.LuminARCandidateImage
+// 0x0008 (FullSize[0x0060] - InheritedSize[0x0058])
+class ULuminARCandidateImage : public UARCandidateImage
+{
+public:
+	bool                                               bUseUnreliablePose;                                        // 0x0058(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                               bImageIsStationary;                                        // 0x0059(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	MagicLeapImageTracker_EMagicLeapImageTargetOrientation AxisOrientation;                                           // 0x005A(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	unsigned char                                      UnknownData_AG14[0x5];                                     // 0x005B(0x0005) MISSED OFFSET (PADDING)
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class MagicLeapAR.LuminARCandidateImage");
+		return ptr;
+	}
+
+
+
+	bool GetUseUnreliablePose();
+	bool GetImageIsStationary();
+	MagicLeapImageTracker_EMagicLeapImageTargetOrientation GetAxisOrientation();
 };
 
 }

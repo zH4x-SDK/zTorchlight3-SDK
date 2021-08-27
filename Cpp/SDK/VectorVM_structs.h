@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -18,27 +18,6 @@ namespace CG
 //---------------------------------------------------------------------------
 // Enums
 //---------------------------------------------------------------------------
-
-// Enum VectorVM.EVectorVMBaseTypes
-enum class VectorVM_EVectorVMBaseTypes : uint8_t
-{
-	EVectorVMBaseTypes__Float      = 0,
-	EVectorVMBaseTypes__Int        = 1,
-	EVectorVMBaseTypes__Bool       = 2,
-	EVectorVMBaseTypes__Num        = 3,
-	EVectorVMBaseTypes__EVectorVMBaseTypes_MAX = 4,
-
-};
-
-// Enum VectorVM.EVectorVMOperandLocation
-enum class VectorVM_EVectorVMOperandLocation : uint8_t
-{
-	EVectorVMOperandLocation__Register = 0,
-	EVectorVMOperandLocation__Constant = 1,
-	EVectorVMOperandLocation__Num  = 2,
-	EVectorVMOperandLocation__EVectorVMOperandLocation_MAX = 3,
-
-};
 
 // Enum VectorVM.EVectorVMOp
 enum class VectorVM_EVectorVMOp : uint8_t
@@ -139,6 +118,27 @@ enum class VectorVM_EVectorVMOp : uint8_t
 	EVectorVMOp__update_id         = 93,
 	EVectorVMOp__acquire_id        = 94,
 	EVectorVMOp__NumOpcodes        = 95,
+
+};
+
+// Enum VectorVM.EVectorVMOperandLocation
+enum class VectorVM_EVectorVMOperandLocation : uint8_t
+{
+	EVectorVMOperandLocation__Register = 0,
+	EVectorVMOperandLocation__Constant = 1,
+	EVectorVMOperandLocation__Num  = 2,
+	EVectorVMOperandLocation__EVectorVMOperandLocation_MAX = 3,
+
+};
+
+// Enum VectorVM.EVectorVMBaseTypes
+enum class VectorVM_EVectorVMBaseTypes : uint8_t
+{
+	EVectorVMBaseTypes__Float      = 0,
+	EVectorVMBaseTypes__Int        = 1,
+	EVectorVMBaseTypes__Bool       = 2,
+	EVectorVMBaseTypes__Num        = 3,
+	EVectorVMBaseTypes__EVectorVMBaseTypes_MAX = 4,
 
 };
 

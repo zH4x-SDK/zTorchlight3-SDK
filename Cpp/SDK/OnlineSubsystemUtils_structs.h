@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -131,11 +131,56 @@ enum class OnlineSubsystemUtils_ESpectatorReservationResult : uint8_t
 // Script Structs
 //---------------------------------------------------------------------------
 
+// ScriptStruct OnlineSubsystemUtils.PIELoginSettingsInternal
+// 0x0040
+struct FPIELoginSettingsInternal
+{
+	struct FString                                     ID;                                                        // 0x0000(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     Token;                                                     // 0x0010(0x0010) (Edit, ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     Type;                                                      // 0x0020(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<unsigned char>                              TokenBytes;                                                // 0x0030(0x0010) (ZeroConstructor, NativeAccessSpecifierPublic)
+
+};
+
+// ScriptStruct OnlineSubsystemUtils.PlayerReservation
+// 0x0050
+struct FPlayerReservation
+{
+	struct FUniqueNetIdRepl                            UniqueId;                                                  // 0x0000(0x0028) (Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     ValidationStr;                                             // 0x0028(0x0010) (ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     Platform;                                                  // 0x0038(0x0010) (ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bAllowCrossplay;                                           // 0x0048(0x0001) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_LLI6[0x3];                                     // 0x0049(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	float                                              ElapsedTime;                                               // 0x004C(0x0004) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+};
+
+// ScriptStruct OnlineSubsystemUtils.PartyReservation
+// 0x0050
+struct FPartyReservation
+{
+	int                                                TeamNum;                                                   // 0x0000(0x0004) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_4DH5[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FUniqueNetIdRepl                            PartyLeader;                                               // 0x0008(0x0028) (Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FPlayerReservation>                  PartyMembers;                                              // 0x0030(0x0010) (ZeroConstructor, Transient, NativeAccessSpecifierPublic)
+	TArray<struct FPlayerReservation>                  RemovedPartyMembers;                                       // 0x0040(0x0010) (ZeroConstructor, Transient, NativeAccessSpecifierPublic)
+
+};
+
+// ScriptStruct OnlineSubsystemUtils.SpectatorReservation
+// 0x0078
+struct FSpectatorReservation
+{
+	struct FUniqueNetIdRepl                            SpectatorId;                                               // 0x0000(0x0028) (Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FPlayerReservation                          Spectator;                                                 // 0x0028(0x0050) (Transient, NativeAccessSpecifierPublic)
+
+};
+
 // ScriptStruct OnlineSubsystemUtils.BlueprintSessionResult
 // 0x0108
 struct FBlueprintSessionResult
 {
-	unsigned char                                      UnknownData_CNLZ[0x108];                                   // 0x0000(0x0108) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3ANE[0x108];                                   // 0x0000(0x0108) MISSED OFFSET (PADDING)
 
 };
 
@@ -159,15 +204,15 @@ struct FOnlineProxyStoreOffer
 	struct FText                                       LongDescription;                                           // 0x0040(0x0018) (BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	struct FText                                       RegularPriceText;                                          // 0x0058(0x0018) (BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	int                                                RegularPrice;                                              // 0x0070(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_XY2V[0x4];                                     // 0x0074(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_19P8[0x4];                                     // 0x0074(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FText                                       PriceText;                                                 // 0x0078(0x0018) (BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	int                                                NumericPrice;                                              // 0x0090(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_R6W3[0x4];                                     // 0x0094(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_JQZ6[0x4];                                     // 0x0094(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     CurrencyCode;                                              // 0x0098(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDateTime                                   ReleaseDate;                                               // 0x00A8(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDateTime                                   ExpirationDate;                                            // 0x00B0(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	OnlineSubsystemUtils_EOnlineProxyStoreOfferDiscountType DiscountType;                                              // 0x00B8(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_7V2B[0x7];                                     // 0x00B9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_SKXC[0x7];                                     // 0x00B9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TMap<struct FString, struct FString>               DynamicFields;                                             // 0x00C0(0x0050) (BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
 };
@@ -202,7 +247,7 @@ struct FInAppPurchaseProductInfo2
 	struct FString                                     DisplayDescription;                                        // 0x0030(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FString                                     DisplayPrice;                                              // 0x0040(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              RawPrice;                                                  // 0x0050(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_QJS6[0x4];                                     // 0x0054(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_AX9O[0x4];                                     // 0x0054(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     CurrencyCode;                                              // 0x0058(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FString                                     CurrencySymbol;                                            // 0x0068(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FString                                     DecimalSeparator;                                          // 0x0078(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -218,52 +263,7 @@ struct FInAppPurchaseProductRequest2
 {
 	struct FString                                     ProductIdentifier;                                         // 0x0000(0x0010) (BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               bIsConsumable;                                             // 0x0010(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_87C9[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct OnlineSubsystemUtils.PlayerReservation
-// 0x0050
-struct FPlayerReservation
-{
-	struct FUniqueNetIdRepl                            UniqueId;                                                  // 0x0000(0x0028) (Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     ValidationStr;                                             // 0x0028(0x0010) (ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     Platform;                                                  // 0x0038(0x0010) (ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bAllowCrossplay;                                           // 0x0048(0x0001) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_XPWA[0x3];                                     // 0x0049(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	float                                              ElapsedTime;                                               // 0x004C(0x0004) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct OnlineSubsystemUtils.SpectatorReservation
-// 0x0078
-struct FSpectatorReservation
-{
-	struct FUniqueNetIdRepl                            SpectatorId;                                               // 0x0000(0x0028) (Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPlayerReservation                          Spectator;                                                 // 0x0028(0x0050) (Transient, NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct OnlineSubsystemUtils.PIELoginSettingsInternal
-// 0x0040
-struct FPIELoginSettingsInternal
-{
-	struct FString                                     ID;                                                        // 0x0000(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     Token;                                                     // 0x0010(0x0010) (Edit, ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     Type;                                                      // 0x0020(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<unsigned char>                              TokenBytes;                                                // 0x0030(0x0010) (ZeroConstructor, NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct OnlineSubsystemUtils.PartyReservation
-// 0x0050
-struct FPartyReservation
-{
-	int                                                TeamNum;                                                   // 0x0000(0x0004) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_MV0M[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FUniqueNetIdRepl                            PartyLeader;                                               // 0x0008(0x0028) (Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FPlayerReservation>                  PartyMembers;                                              // 0x0030(0x0010) (ZeroConstructor, Transient, NativeAccessSpecifierPublic)
-	TArray<struct FPlayerReservation>                  RemovedPartyMembers;                                       // 0x0040(0x0010) (ZeroConstructor, Transient, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_936N[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (PADDING)
 
 };
 

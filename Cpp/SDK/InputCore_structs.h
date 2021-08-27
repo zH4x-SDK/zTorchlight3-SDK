@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -18,6 +18,25 @@ namespace CG
 //---------------------------------------------------------------------------
 // Enums
 //---------------------------------------------------------------------------
+
+// Enum InputCore.ETouchIndex
+enum class InputCore_ETouchIndex : uint8_t
+{
+	ETouchIndex__Touch1            = 0,
+	ETouchIndex__Touch2            = 1,
+	ETouchIndex__Touch3            = 2,
+	ETouchIndex__Touch4            = 3,
+	ETouchIndex__Touch5            = 4,
+	ETouchIndex__Touch6            = 5,
+	ETouchIndex__Touch7            = 6,
+	ETouchIndex__Touch8            = 7,
+	ETouchIndex__Touch9            = 8,
+	ETouchIndex__Touch10           = 9,
+	ETouchIndex__CursorPointerIndex = 10,
+	ETouchIndex__MAX_TOUCHES       = 11,
+	ETouchIndex__ETouchIndex_MAX   = 12,
+
+};
 
 // Enum InputCore.EControllerHand
 enum class InputCore_EControllerHand : uint8_t
@@ -68,25 +87,6 @@ enum class InputCore_EConsoleForGamepadLabels : uint8_t
 
 };
 
-// Enum InputCore.ETouchIndex
-enum class InputCore_ETouchIndex : uint8_t
-{
-	ETouchIndex__Touch1            = 0,
-	ETouchIndex__Touch2            = 1,
-	ETouchIndex__Touch3            = 2,
-	ETouchIndex__Touch4            = 3,
-	ETouchIndex__Touch5            = 4,
-	ETouchIndex__Touch6            = 5,
-	ETouchIndex__Touch7            = 6,
-	ETouchIndex__Touch8            = 7,
-	ETouchIndex__Touch9            = 8,
-	ETouchIndex__Touch10           = 9,
-	ETouchIndex__CursorPointerIndex = 10,
-	ETouchIndex__MAX_TOUCHES       = 11,
-	ETouchIndex__ETouchIndex_MAX   = 12,
-
-};
-
 //---------------------------------------------------------------------------
 // Script Structs
 //---------------------------------------------------------------------------
@@ -96,7 +96,7 @@ enum class InputCore_ETouchIndex : uint8_t
 struct FKey
 {
 	struct FName                                       KeyName;                                                   // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	unsigned char                                      UnknownData_75X7[0x10];                                    // 0x0008(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_NTRC[0x10];                                    // 0x0008(0x0010) MISSED OFFSET (PADDING)
 
 };
 

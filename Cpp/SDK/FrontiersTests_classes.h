@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -109,7 +109,7 @@ public:
 class UTestSkill : public USkill
 {
 public:
-	unsigned char                                      UnknownData_GNH1[0xC0];                                    // 0x0540(0x00C0) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_RP4W[0xC0];                                    // 0x0540(0x00C0) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -178,7 +178,7 @@ public:
 class UTestActiveTrait : public UActiveTrait
 {
 public:
-	unsigned char                                      UnknownData_7AQP[0x10];                                    // 0x01B8(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_T4G2[0x10];                                    // 0x01B8(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -232,7 +232,7 @@ public:
 class UTestHandledObject : public UObject
 {
 public:
-	unsigned char                                      UnknownData_B92S[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_TYD9[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -250,7 +250,7 @@ public:
 class UTestConductorHandler : public UConductorHandler
 {
 public:
-	unsigned char                                      UnknownData_XB92[0x8];                                     // 0x00C0(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_LR4N[0x8];                                     // 0x00C0(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -268,7 +268,7 @@ public:
 class ATestHazard : public AHazard
 {
 public:
-	unsigned char                                      UnknownData_BJRB[0x8];                                     // 0x0440(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_X7NV[0x8];                                     // 0x0440(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -303,7 +303,7 @@ public:
 class UTestListSelectableWidget : public UUserWidget
 {
 public:
-	unsigned char                                      UnknownData_H6IH[0x18];                                    // 0x0260(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_FQQU[0x18];                                    // 0x0260(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -321,7 +321,7 @@ public:
 class UTestOperableComponent : public UOperableComponent
 {
 public:
-	unsigned char                                      UnknownData_JBRE[0x8];                                     // 0x00C0(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9BK1[0x8];                                     // 0x00C0(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -574,6 +574,24 @@ public:
 
 };
 
+// Class FrontiersTests.TestStatusEffect
+// 0x0008 (FullSize[0x0288] - InheritedSize[0x0280])
+class UTestStatusEffect : public UStatusEffect
+{
+public:
+	unsigned char                                      UnknownData_FCQI[0x8];                                     // 0x0280(0x0008) MISSED OFFSET (PADDING)
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class FrontiersTests.TestStatusEffect");
+		return ptr;
+	}
+
+
+
+};
+
 // Class FrontiersTests.TestStatusEffect2
 // 0x0000 (FullSize[0x0280] - InheritedSize[0x0280])
 class UTestStatusEffect2 : public UStatusEffect
@@ -601,24 +619,6 @@ public:
 	static UClass* StaticClass()
 	{
 		static auto ptr = UObject::FindClass("Class FrontiersTests.TestStatusEffect3");
-		return ptr;
-	}
-
-
-
-};
-
-// Class FrontiersTests.TestStatusEffect
-// 0x0008 (FullSize[0x0288] - InheritedSize[0x0280])
-class UTestStatusEffect : public UStatusEffect
-{
-public:
-	unsigned char                                      UnknownData_FPZL[0x8];                                     // 0x0280(0x0008) MISSED OFFSET (PADDING)
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FrontiersTests.TestStatusEffect");
 		return ptr;
 	}
 
@@ -700,7 +700,7 @@ public:
 class UTestTrigger : public UObject
 {
 public:
-	unsigned char                                      UnknownData_PWL3[0x20];                                    // 0x0028(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_O5VO[0x20];                                    // 0x0028(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -737,7 +737,7 @@ public:
 class ATestPickupItem : public AActor
 {
 public:
-	unsigned char                                      UnknownData_GZQ4[0x8];                                     // 0x0220(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_OR1X[0x8];                                     // 0x0220(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -755,7 +755,7 @@ public:
 class UTestInventoryContainerItems : public UTLInventoryContainerItems
 {
 public:
-	unsigned char                                      UnknownData_RX1O[0x8];                                     // 0x01F0(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ZZBF[0x8];                                     // 0x01F0(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -858,7 +858,7 @@ public:
 class UMockTravelComponent : public UTLTravelComponent
 {
 public:
-	unsigned char                                      UnknownData_7NUL[0x8];                                     // 0x06F8(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_JBA4[0x8];                                     // 0x06F8(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

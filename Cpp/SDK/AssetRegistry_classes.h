@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class UAssetRegistryImpl : public UObject
 {
 public:
-	unsigned char                                      UnknownData_7IFG[0x790];                                   // 0x0028(0x0790) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_X1PH[0x790];                                   // 0x0028(0x0790) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

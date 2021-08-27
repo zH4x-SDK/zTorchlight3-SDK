@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -19,43 +19,6 @@ namespace CG
 // Classes
 //---------------------------------------------------------------------------
 
-// Class AudioSynesthesia.AudioSynesthesiaNRT
-// 0x0000 (FullSize[0x0078] - InheritedSize[0x0078])
-class UAudioSynesthesiaNRT : public UAudioAnalyzerNRT
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class AudioSynesthesia.AudioSynesthesiaNRT");
-		return ptr;
-	}
-
-
-
-};
-
-// Class AudioSynesthesia.OnsetNRT
-// 0x0008 (FullSize[0x0080] - InheritedSize[0x0078])
-class UOnsetNRT : public UAudioSynesthesiaNRT
-{
-public:
-	class UOnsetNRTSettings*                           Settings;                                                  // 0x0078(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class AudioSynesthesia.OnsetNRT");
-		return ptr;
-	}
-
-
-
-	void GetNormalizedChannelOnsetsBetweenTimes(float InStartSeconds, float InEndSeconds, int InChannel, TArray<float>* OutOnsetTimestamps, TArray<float>* OutOnsetStrengths);
-	void GetChannelOnsetsBetweenTimes(float InStartSeconds, float InEndSeconds, int InChannel, TArray<float>* OutOnsetTimestamps, TArray<float>* OutOnsetStrengths);
-};
-
 // Class AudioSynesthesia.AudioSynesthesiaNRTSettings
 // 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
 class UAudioSynesthesiaNRTSettings : public UAudioAnalyzerNRTSettings
@@ -66,6 +29,23 @@ public:
 	static UClass* StaticClass()
 	{
 		static auto ptr = UObject::FindClass("Class AudioSynesthesia.AudioSynesthesiaNRTSettings");
+		return ptr;
+	}
+
+
+
+};
+
+// Class AudioSynesthesia.AudioSynesthesiaNRT
+// 0x0000 (FullSize[0x0078] - InheritedSize[0x0078])
+class UAudioSynesthesiaNRT : public UAudioAnalyzerNRT
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class AudioSynesthesia.AudioSynesthesiaNRT");
 		return ptr;
 	}
 
@@ -88,7 +68,7 @@ public:
 	Engine_EAudioSpectrumType                          SpectrumType;                                              // 0x003B(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              BandWidthStretch;                                          // 0x003C(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	AudioSynesthesia_EConstantQNormalizationEnum       CQTNormalization;                                          // 0x0040(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_FCMA[0x3];                                     // 0x0041(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_GGY8[0x3];                                     // 0x0041(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              NoiseFloorDb;                                              // 0x0044(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 
@@ -131,9 +111,9 @@ public:
 	float                                              MinimumFrequency;                                          // 0x002C(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              MaximumFrequency;                                          // 0x0030(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	AudioSynesthesia_ELoudnessNRTCurveTypeEnum         CurveType;                                                 // 0x0034(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_HD9N[0x3];                                     // 0x0035(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_DRKN[0x3];                                     // 0x0035(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              NoiseFloorDb;                                              // 0x0038(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_PHT4[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_AMGH[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -174,12 +154,12 @@ class UOnsetNRTSettings : public UAudioSynesthesiaNRTSettings
 {
 public:
 	bool                                               bDownmixToMono;                                            // 0x0028(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_2Y6M[0x3];                                     // 0x0029(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_46AH[0x3];                                     // 0x0029(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              GranularityInSeconds;                                      // 0x002C(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              Sensitivity;                                               // 0x0030(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              MinimumFrequency;                                          // 0x0034(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              MaximumFrequency;                                          // 0x0038(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_X6EE[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_MLXG[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -190,6 +170,26 @@ public:
 
 
 
+};
+
+// Class AudioSynesthesia.OnsetNRT
+// 0x0008 (FullSize[0x0080] - InheritedSize[0x0078])
+class UOnsetNRT : public UAudioSynesthesiaNRT
+{
+public:
+	class UOnsetNRTSettings*                           Settings;                                                  // 0x0078(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class AudioSynesthesia.OnsetNRT");
+		return ptr;
+	}
+
+
+
+	void GetNormalizedChannelOnsetsBetweenTimes(float InStartSeconds, float InEndSeconds, int InChannel, TArray<float>* OutOnsetTimestamps, TArray<float>* OutOnsetStrengths);
+	void GetChannelOnsetsBetweenTimes(float InStartSeconds, float InEndSeconds, int InChannel, TArray<float>* OutOnsetTimestamps, TArray<float>* OutOnsetStrengths);
 };
 
 }

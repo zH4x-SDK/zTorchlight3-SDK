@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -25,7 +25,7 @@ class UStatusEffect_Invulnerable_Resurrect_C : public UStatusEffect_Invulnerable
 {
 public:
 	struct FPointerToUberGraphFrame                    UberGraphFrame;                                            // 0x0280(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
-	unsigned char                                      UnknownData_17J7[0x8];                                     // 0x0288(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_QSEO[0x8];                                     // 0x0288(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FEffectDefinition                           ParticlesEnd_01;                                           // 0x0290(0x00D0) (Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FEffectDefinition>                   ParticleStart_01;                                          // 0x0360(0x0010) (Edit, BlueprintVisible, DisableEditOnInstance)
 

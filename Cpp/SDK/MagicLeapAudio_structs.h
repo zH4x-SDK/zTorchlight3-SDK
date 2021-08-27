@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -23,7 +23,7 @@ namespace CG
 // 0x0001
 struct FMagicLeapAudioDummyStruct
 {
-	unsigned char                                      UnknownData_XJKR[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_IAR3[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 };
 

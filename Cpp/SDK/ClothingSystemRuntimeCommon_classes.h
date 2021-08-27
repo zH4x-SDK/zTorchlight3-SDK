@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -86,10 +86,10 @@ public:
 	TArray<struct FName>                               UsedBoneNames;                                             // 0x00E8(0x0010) (ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<int>                                        UsedBoneIndices;                                           // 0x00F8(0x0010) (ZeroConstructor, NativeAccessSpecifierPublic)
 	int                                                ReferenceBoneIndex;                                        // 0x0108(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_S28E[0x4];                                     // 0x010C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_5T6A[0x4];                                     // 0x010C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UClothingAssetCustomData*                    CustomData;                                                // 0x0110(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FClothConfig_Legacy                         ClothConfig;                                               // 0x0118(0x00D4) (Deprecated, NoDestructor, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_1KOS[0x4];                                     // 0x01EC(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_4RGK[0x4];                                     // 0x01EC(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -110,7 +110,7 @@ public:
 	class UClothPhysicalMeshDataBase_Legacy*           PhysicalMeshData;                                          // 0x0028(0x0008) (ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FClothPhysicalMeshData                      ClothPhysicalMeshData;                                     // 0x0030(0x00F8) (NativeAccessSpecifierPublic)
 	struct FClothCollisionData                         CollisionData;                                             // 0x0128(0x0040) (NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_J94G[0x20];                                    // 0x0168(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3W4P[0x20];                                    // 0x0168(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

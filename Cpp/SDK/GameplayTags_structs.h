@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -18,19 +18,6 @@ namespace CG
 //---------------------------------------------------------------------------
 // Enums
 //---------------------------------------------------------------------------
-
-// Enum GameplayTags.EGameplayTagSourceType
-enum class GameplayTags_EGameplayTagSourceType : uint8_t
-{
-	EGameplayTagSourceType__Native = 0,
-	EGameplayTagSourceType__DefaultTagList = 1,
-	EGameplayTagSourceType__TagList = 2,
-	EGameplayTagSourceType__RestrictedTagList = 3,
-	EGameplayTagSourceType__DataTable = 4,
-	EGameplayTagSourceType__Invalid = 5,
-	EGameplayTagSourceType__EGameplayTagSourceType_MAX = 6,
-
-};
 
 // Enum GameplayTags.EGameplayTagQueryExprType
 enum class GameplayTags_EGameplayTagQueryExprType : uint8_t
@@ -75,6 +62,19 @@ enum class GameplayTags_EGameplayTagSelectionType : uint8_t
 
 };
 
+// Enum GameplayTags.EGameplayTagSourceType
+enum class GameplayTags_EGameplayTagSourceType : uint8_t
+{
+	EGameplayTagSourceType__Native = 0,
+	EGameplayTagSourceType__DefaultTagList = 1,
+	EGameplayTagSourceType__TagList = 2,
+	EGameplayTagSourceType__RestrictedTagList = 3,
+	EGameplayTagSourceType__DataTable = 4,
+	EGameplayTagSourceType__Invalid = 5,
+	EGameplayTagSourceType__EGameplayTagSourceType_MAX = 6,
+
+};
+
 //---------------------------------------------------------------------------
 // Script Structs
 //---------------------------------------------------------------------------
@@ -87,6 +87,19 @@ struct FGameplayTag
 
 };
 
+// ScriptStruct GameplayTags.GameplayTagQuery
+// 0x0048
+struct FGameplayTagQuery
+{
+	int                                                TokenStreamVersion;                                        // 0x0000(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	unsigned char                                      UnknownData_F4Q1[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	TArray<struct FGameplayTag>                        TagDictionary;                                             // 0x0008(0x0010) (Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
+	TArray<unsigned char>                              QueryTokenStream;                                          // 0x0018(0x0010) (Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
+	struct FString                                     UserDescription;                                           // 0x0028(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FString                                     AutoDescription;                                           // 0x0038(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+};
+
 // ScriptStruct GameplayTags.GameplayTagContainer
 // 0x0020
 struct FGameplayTagContainer
@@ -96,40 +109,15 @@ struct FGameplayTagContainer
 
 };
 
-// ScriptStruct GameplayTags.GameplayTagQuery
-// 0x0048
-struct FGameplayTagQuery
+// ScriptStruct GameplayTags.GameplayTagSource
+// 0x0020
+struct FGameplayTagSource
 {
-	int                                                TokenStreamVersion;                                        // 0x0000(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	unsigned char                                      UnknownData_JYTN[0x4];                                     // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	TArray<struct FGameplayTag>                        TagDictionary;                                             // 0x0008(0x0010) (Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
-	TArray<unsigned char>                              QueryTokenStream;                                          // 0x0018(0x0010) (Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
-	struct FString                                     UserDescription;                                           // 0x0028(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FString                                     AutoDescription;                                           // 0x0038(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-};
-
-// ScriptStruct GameplayTags.GameplayTagCreationWidgetHelper
-// 0x0001
-struct FGameplayTagCreationWidgetHelper
-{
-	unsigned char                                      UnknownData_MON6[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct GameplayTags.GameplayTagReferenceHelper
-// 0x0010
-struct FGameplayTagReferenceHelper
-{
-	unsigned char                                      UnknownData_JOPA[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct GameplayTags.GameplayTagNode
-// 0x0050
-struct FGameplayTagNode
-{
-	unsigned char                                      UnknownData_OA2F[0x50];                                    // 0x0000(0x0050) MISSED OFFSET (PADDING)
+	struct FName                                       SourceName;                                                // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	GameplayTags_EGameplayTagSourceType                SourceType;                                                // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_OKF1[0x7];                                     // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	class UGameplayTagsList*                           SourceTagList;                                             // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class URestrictedGameplayTagsList*                 SourceRestrictedTagList;                                   // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 };
 
@@ -147,16 +135,16 @@ struct FGameplayTagTableRow : public FTableRowBase
 struct FRestrictedGameplayTagTableRow : public FGameplayTagTableRow
 {
 	bool                                               bAllowNonRestrictedChildren;                               // 0x0020(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_N30S[0x7];                                     // 0x0021(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_IZUQ[0x7];                                     // 0x0021(0x0007) MISSED OFFSET (PADDING)
 
 };
 
-// ScriptStruct GameplayTags.RestrictedConfigInfo
+// ScriptStruct GameplayTags.GameplayTagCategoryRemap
 // 0x0020
-struct FRestrictedConfigInfo
+struct FGameplayTagCategoryRemap
 {
-	struct FString                                     RestrictedConfigName;                                      // 0x0000(0x0010) (Edit, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FString>                             Owners;                                                    // 0x0010(0x0010) (Edit, ZeroConstructor, Config, AdvancedDisplay, NativeAccessSpecifierPublic)
+	struct FString                                     BaseCategory;                                              // 0x0000(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FString>                             RemapCategories;                                           // 0x0010(0x0010) (Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 
 };
 
@@ -169,24 +157,36 @@ struct FGameplayTagRedirect
 
 };
 
-// ScriptStruct GameplayTags.GameplayTagSource
+// ScriptStruct GameplayTags.RestrictedConfigInfo
 // 0x0020
-struct FGameplayTagSource
+struct FRestrictedConfigInfo
 {
-	struct FName                                       SourceName;                                                // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	GameplayTags_EGameplayTagSourceType                SourceType;                                                // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_USK7[0x7];                                     // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	class UGameplayTagsList*                           SourceTagList;                                             // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class URestrictedGameplayTagsList*                 SourceRestrictedTagList;                                   // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     RestrictedConfigName;                                      // 0x0000(0x0010) (Edit, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FString>                             Owners;                                                    // 0x0010(0x0010) (Edit, ZeroConstructor, Config, AdvancedDisplay, NativeAccessSpecifierPublic)
 
 };
 
-// ScriptStruct GameplayTags.GameplayTagCategoryRemap
-// 0x0020
-struct FGameplayTagCategoryRemap
+// ScriptStruct GameplayTags.GameplayTagCreationWidgetHelper
+// 0x0001
+struct FGameplayTagCreationWidgetHelper
 {
-	struct FString                                     BaseCategory;                                              // 0x0000(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FString>                             RemapCategories;                                           // 0x0010(0x0010) (Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_87WH[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct GameplayTags.GameplayTagReferenceHelper
+// 0x0010
+struct FGameplayTagReferenceHelper
+{
+	unsigned char                                      UnknownData_0OU6[0x10];                                    // 0x0000(0x0010) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct GameplayTags.GameplayTagNode
+// 0x0050
+struct FGameplayTagNode
+{
+	unsigned char                                      UnknownData_96KR[0x50];                                    // 0x0000(0x0050) MISSED OFFSET (PADDING)
 
 };
 

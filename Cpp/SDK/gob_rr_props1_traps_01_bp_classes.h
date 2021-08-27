@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -20,8 +20,8 @@ namespace CG
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass gob_rr_props1_traps_01_bp.gob_rr_props1_traps_01_bp_C
-// 0x0000 (FullSize[0x0468] - InheritedSize[0x0468])
-class Agob_rr_props1_traps_01_bp_C : public ABaseBreakable_C
+// 0x0000 (FullSize[0x0268] - InheritedSize[0x0268])
+class Agob_rr_props1_traps_01_bp_C : public ABaseStaticObject_C
 {
 public:
 

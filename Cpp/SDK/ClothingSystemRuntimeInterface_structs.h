@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -29,21 +29,23 @@ struct FClothVertBoneData
 
 };
 
-// ScriptStruct ClothingSystemRuntimeInterface.ClothCollisionPrim_Sphere
-// 0x0014
-struct FClothCollisionPrim_Sphere
-{
-	int                                                BoneIndex;                                                 // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Radius;                                                    // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     LocalPosition;                                             // 0x0008(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-};
-
 // ScriptStruct ClothingSystemRuntimeInterface.ClothCollisionPrim_SphereConnection
 // 0x0008
 struct FClothCollisionPrim_SphereConnection
 {
 	int                                                SphereIndices[0x2];                                        // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+};
+
+// ScriptStruct ClothingSystemRuntimeInterface.ClothCollisionPrim_Box
+// 0x0030
+struct FClothCollisionPrim_Box
+{
+	struct FVector                                     LocalPosition;                                             // 0x0000(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_YV7F[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FQuat                                       LocalRotation;                                             // 0x0010(0x0010) (IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector                                     HalfExtents;                                               // 0x0020(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                BoneIndex;                                                 // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 };
 
@@ -54,19 +56,17 @@ struct FClothCollisionPrim_Convex
 	TArray<struct FPlane>                              Planes;                                                    // 0x0000(0x0010) (ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                             SurfacePoints;                                             // 0x0010(0x0010) (ZeroConstructor, NativeAccessSpecifierPublic)
 	int                                                BoneIndex;                                                 // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_PZDP[0x4];                                     // 0x0024(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_PYTY[0x4];                                     // 0x0024(0x0004) MISSED OFFSET (PADDING)
 
 };
 
-// ScriptStruct ClothingSystemRuntimeInterface.ClothCollisionPrim_Box
-// 0x0030
-struct FClothCollisionPrim_Box
+// ScriptStruct ClothingSystemRuntimeInterface.ClothCollisionPrim_Sphere
+// 0x0014
+struct FClothCollisionPrim_Sphere
 {
-	struct FVector                                     LocalPosition;                                             // 0x0000(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_63EY[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FQuat                                       LocalRotation;                                             // 0x0010(0x0010) (IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector                                     HalfExtents;                                               // 0x0020(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                BoneIndex;                                                 // 0x002C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                BoneIndex;                                                 // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Radius;                                                    // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     LocalPosition;                                             // 0x0008(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 };
 

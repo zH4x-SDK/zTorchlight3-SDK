@@ -1,4 +1,4 @@
-﻿// Name: Torchlight3, Version: 1.0.0
+﻿// Name: Torchlight3, Version: 4.26.1
 
 #include "../pch.h"
 
@@ -17,68 +17,6 @@ namespace CG
 //---------------------------------------------------------------------------
 // Functions
 //---------------------------------------------------------------------------
-
-// Function AudioSynesthesia.OnsetNRT.GetNormalizedChannelOnsetsBetweenTimes
-// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// float                          InStartSeconds                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                          InEndSeconds                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int                            InChannel                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<float>                  OutOnsetTimestamps             (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-// TArray<float>                  OutOnsetStrengths              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-void UOnsetNRT::GetNormalizedChannelOnsetsBetweenTimes(float InStartSeconds, float InEndSeconds, int InChannel, TArray<float>* OutOnsetTimestamps, TArray<float>* OutOnsetStrengths)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function AudioSynesthesia.OnsetNRT.GetNormalizedChannelOnsetsBetweenTimes");
-
-	UOnsetNRT_GetNormalizedChannelOnsetsBetweenTimes_Params params;
-	params.InStartSeconds = InStartSeconds;
-	params.InEndSeconds = InEndSeconds;
-	params.InChannel = InChannel;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-	if (OutOnsetTimestamps != nullptr)
-		*OutOnsetTimestamps = params.OutOnsetTimestamps;
-	if (OutOnsetStrengths != nullptr)
-		*OutOnsetStrengths = params.OutOnsetStrengths;
-
-}
-
-
-// Function AudioSynesthesia.OnsetNRT.GetChannelOnsetsBetweenTimes
-// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// float                          InStartSeconds                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                          InEndSeconds                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int                            InChannel                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<float>                  OutOnsetTimestamps             (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-// TArray<float>                  OutOnsetStrengths              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-void UOnsetNRT::GetChannelOnsetsBetweenTimes(float InStartSeconds, float InEndSeconds, int InChannel, TArray<float>* OutOnsetTimestamps, TArray<float>* OutOnsetStrengths)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function AudioSynesthesia.OnsetNRT.GetChannelOnsetsBetweenTimes");
-
-	UOnsetNRT_GetChannelOnsetsBetweenTimes_Params params;
-	params.InStartSeconds = InStartSeconds;
-	params.InEndSeconds = InEndSeconds;
-	params.InChannel = InChannel;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-	if (OutOnsetTimestamps != nullptr)
-		*OutOnsetTimestamps = params.OutOnsetTimestamps;
-	if (OutOnsetStrengths != nullptr)
-		*OutOnsetStrengths = params.OutOnsetStrengths;
-
-}
-
 
 // Function AudioSynesthesia.ConstantQNRT.GetNormalizedChannelConstantQAtTime
 // (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
@@ -228,6 +166,68 @@ void ULoudnessNRT::GetChannelLoudnessAtTime(float InSeconds, int InChannel, floa
 
 	if (OutLoudness != nullptr)
 		*OutLoudness = params.OutLoudness;
+
+}
+
+
+// Function AudioSynesthesia.OnsetNRT.GetNormalizedChannelOnsetsBetweenTimes
+// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                          InStartSeconds                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                          InEndSeconds                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int                            InChannel                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<float>                  OutOnsetTimestamps             (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// TArray<float>                  OutOnsetStrengths              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+void UOnsetNRT::GetNormalizedChannelOnsetsBetweenTimes(float InStartSeconds, float InEndSeconds, int InChannel, TArray<float>* OutOnsetTimestamps, TArray<float>* OutOnsetStrengths)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AudioSynesthesia.OnsetNRT.GetNormalizedChannelOnsetsBetweenTimes");
+
+	UOnsetNRT_GetNormalizedChannelOnsetsBetweenTimes_Params params;
+	params.InStartSeconds = InStartSeconds;
+	params.InEndSeconds = InEndSeconds;
+	params.InChannel = InChannel;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+	if (OutOnsetTimestamps != nullptr)
+		*OutOnsetTimestamps = params.OutOnsetTimestamps;
+	if (OutOnsetStrengths != nullptr)
+		*OutOnsetStrengths = params.OutOnsetStrengths;
+
+}
+
+
+// Function AudioSynesthesia.OnsetNRT.GetChannelOnsetsBetweenTimes
+// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                          InStartSeconds                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                          InEndSeconds                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int                            InChannel                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<float>                  OutOnsetTimestamps             (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// TArray<float>                  OutOnsetStrengths              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+void UOnsetNRT::GetChannelOnsetsBetweenTimes(float InStartSeconds, float InEndSeconds, int InChannel, TArray<float>* OutOnsetTimestamps, TArray<float>* OutOnsetStrengths)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AudioSynesthesia.OnsetNRT.GetChannelOnsetsBetweenTimes");
+
+	UOnsetNRT_GetChannelOnsetsBetweenTimes_Params params;
+	params.InStartSeconds = InStartSeconds;
+	params.InEndSeconds = InEndSeconds;
+	params.InChannel = InChannel;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+	if (OutOnsetTimestamps != nullptr)
+		*OutOnsetTimestamps = params.OutOnsetTimestamps;
+	if (OutOnsetStrengths != nullptr)
+		*OutOnsetStrengths = params.OutOnsetStrengths;
 
 }
 

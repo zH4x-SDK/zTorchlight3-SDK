@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -24,8 +24,8 @@ namespace CG
 class UCustomMeshComponent : public UMeshComponent
 {
 public:
-	unsigned char                                      UnknownData_FKGE[0x8];                                     // 0x0468(0x0008) Fix Super Size
-	unsigned char                                      UnknownData_YV4F[0x10];                                    // 0x0470(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_6CH9[0x8];                                     // 0x0468(0x0008) Fix Super Size
+	unsigned char                                      UnknownData_5LX8[0x10];                                    // 0x0470(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

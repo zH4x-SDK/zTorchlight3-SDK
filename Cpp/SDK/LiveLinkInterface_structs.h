@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -42,11 +42,56 @@ enum class LiveLinkInterface_ELiveLinkSourceMode : uint8_t
 // Script Structs
 //---------------------------------------------------------------------------
 
+// ScriptStruct LiveLinkInterface.LiveLinkSourceBufferManagementSettings
+// 0x0058
+struct FLiveLinkSourceBufferManagementSettings
+{
+	bool                                               bValidEngineTimeEnabled;                                   // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_8HQS[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	float                                              ValidEngineTime;                                           // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              EngineTimeOffset;                                          // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_GOO9[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	double                                             EngineTimeClockOffset;                                     // 0x0010(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bGenerateSubFrame;                                         // 0x0018(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_IYWK[0x3];                                     // 0x0019(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FFrameRate                                  DetectedFrameRate;                                         // 0x001C(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bUseTimecodeSmoothLatest;                                  // 0x0024(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_Q5P7[0x3];                                     // 0x0025(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FFrameRate                                  SourceTimecodeFrameRate;                                   // 0x0028(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bValidTimecodeFrameEnabled;                                // 0x0030(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_P7EO[0x3];                                     // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	int                                                ValidTimecodeFrame;                                        // 0x0034(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              TimecodeFrameOffset;                                       // 0x0038(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_N1ML[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	double                                             TimecodeClockOffset;                                       // 0x0040(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                LatestOffset;                                              // 0x0048(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                MaxNumberOfFrameToBuffered;                                // 0x004C(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bKeepAtLeastOneFrame;                                      // 0x0050(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_6C81[0x7];                                     // 0x0051(0x0007) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct LiveLinkInterface.LiveLinkCurveConversionSettings
+// 0x0050
+struct FLiveLinkCurveConversionSettings
+{
+	TMap<struct FString, struct FSoftObjectPath>       CurveConversionAssetMap;                                   // 0x0000(0x0050) (Edit, NativeAccessSpecifierPublic)
+
+};
+
+// ScriptStruct LiveLinkInterface.LiveLinkSubjectName
+// 0x0008
+struct FLiveLinkSubjectName
+{
+	struct FName                                       Name;                                                      // 0x0000(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+};
+
 // ScriptStruct LiveLinkInterface.LiveLinkSourceHandle
 // 0x0018
 struct FLiveLinkSourceHandle
 {
-	unsigned char                                      UnknownData_II5L[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_C42B[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
 
 };
 
@@ -54,7 +99,7 @@ struct FLiveLinkSourceHandle
 // 0x0008
 struct FLiveLinkBaseBlueprintData
 {
-	unsigned char                                      UnknownData_CKCY[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_383B[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (PADDING)
 
 };
 
@@ -62,7 +107,7 @@ struct FLiveLinkBaseBlueprintData
 // 0x0010 (0x0018 - 0x0008)
 struct FSubjectFrameHandle : public FLiveLinkBaseBlueprintData
 {
-	unsigned char                                      UnknownData_ORUJ[0x10];                                    // 0x0008(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9UG4[0x10];                                    // 0x0008(0x0010) MISSED OFFSET (PADDING)
 
 };
 
@@ -70,7 +115,7 @@ struct FSubjectFrameHandle : public FLiveLinkBaseBlueprintData
 // 0x0020
 struct FLiveLinkTransform
 {
-	unsigned char                                      UnknownData_JQLE[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_5AOW[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
 
 };
 
@@ -78,7 +123,7 @@ struct FLiveLinkTransform
 // 0x0160
 struct FCachedSubjectFrame
 {
-	unsigned char                                      UnknownData_7H5A[0x160];                                   // 0x0000(0x0160) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Y5NH[0x160];                                   // 0x0000(0x0160) MISSED OFFSET (PADDING)
 
 };
 
@@ -89,7 +134,7 @@ struct FSubjectMetadata
 	TMap<struct FName, struct FString>                 StringMetadata;                                            // 0x0000(0x0050) (Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FTimecode                                   SceneTimecode;                                             // 0x0050(0x0014) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameRate                                  SceneFramerate;                                            // 0x0064(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_5YTE[0x4];                                     // 0x006C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_DK03[0x4];                                     // 0x006C(0x0004) MISSED OFFSET (PADDING)
 
 };
 
@@ -118,7 +163,7 @@ struct FLiveLinkBaseFrameData
 	struct FLiveLinkWorldTime                          WorldTime;                                                 // 0x0000(0x0010) (Edit, EditConst, NoDestructor, NativeAccessSpecifierPublic)
 	struct FLiveLinkMetaData                           MetaData;                                                  // 0x0010(0x0060) (Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TArray<float>                                      PropertyValues;                                            // 0x0070(0x0010) (Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_WZ6H[0x20];                                    // 0x0080(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_FO3Z[0x20];                                    // 0x0080(0x0020) MISSED OFFSET (PADDING)
 
 };
 
@@ -175,7 +220,7 @@ struct FLiveLinkCameraStaticData : public FLiveLinkTransformStaticData
 	float                                              FilmBackHeight;                                            // 0x0018(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               bIsApertureSupported;                                      // 0x001C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               bIsFocusDistanceSupported;                                 // 0x001D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_7FKK[0x2];                                     // 0x001E(0x0002) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_HFMG[0x2];                                     // 0x001E(0x0002) MISSED OFFSET (PADDING)
 
 };
 
@@ -197,7 +242,7 @@ struct FLiveLinkCameraFrameData : public FLiveLinkTransformFrameData
 	float                                              Aperture;                                                  // 0x00DC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              FocusDistance;                                             // 0x00E0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	LiveLinkInterface_ELiveLinkCameraProjectionMode    ProjectionMode;                                            // 0x00E4(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_PCGH[0xB];                                     // 0x00E5(0x000B) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_G9LQ[0xB];                                     // 0x00E5(0x000B) MISSED OFFSET (PADDING)
 
 };
 
@@ -206,49 +251,8 @@ struct FLiveLinkCameraFrameData : public FLiveLinkTransformFrameData
 struct FLiveLinkCameraBlueprintData : public FLiveLinkBaseBlueprintData
 {
 	struct FLiveLinkCameraStaticData                   StaticData;                                                // 0x0008(0x0020) (Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_4DS4[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_HSD6[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FLiveLinkCameraFrameData                    FrameData;                                                 // 0x0030(0x00F0) (Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct LiveLinkInterface.LiveLinkFrameRate
-// 0x0000 (0x0008 - 0x0008)
-struct FLiveLinkFrameRate : public FFrameRate
-{
-
-};
-
-// ScriptStruct LiveLinkInterface.LiveLinkTimeCode_Base_DEPRECATED
-// 0x0010
-struct FLiveLinkTimeCode_Base_DEPRECATED
-{
-	int                                                Seconds;                                                   // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                Frames;                                                    // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLiveLinkFrameRate                          FrameRate;                                                 // 0x0008(0x0008) (NoDestructor, NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct LiveLinkInterface.LiveLinkTimeCode
-// 0x0000 (0x0010 - 0x0010)
-struct FLiveLinkTimeCode : public FLiveLinkTimeCode_Base_DEPRECATED
-{
-
-};
-
-// ScriptStruct LiveLinkInterface.LiveLinkTime
-// 0x0018
-struct FLiveLinkTime
-{
-	double                                             WorldTime;                                                 // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FQualifiedFrameTime                         SceneTime;                                                 // 0x0008(0x0010) (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct LiveLinkInterface.LiveLinkCurveConversionSettings
-// 0x0050
-struct FLiveLinkCurveConversionSettings
-{
-	TMap<struct FString, struct FSoftObjectPath>       CurveConversionAssetMap;                                   // 0x0000(0x0050) (Edit, NativeAccessSpecifierPublic)
 
 };
 
@@ -265,7 +269,7 @@ struct FLiveLinkLightStaticData : public FLiveLinkTransformStaticData
 	bool                                               bIsSourceLenghtSupported;                                  // 0x0016(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               bIsSourceRadiusSupported;                                  // 0x0017(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               bIsSoftSourceRadiusSupported;                              // 0x0018(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_CMQL[0x7];                                     // 0x0019(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_O75S[0x7];                                     // 0x0019(0x0007) MISSED OFFSET (PADDING)
 
 };
 
@@ -282,7 +286,7 @@ struct FLiveLinkLightFrameData : public FLiveLinkTransformFrameData
 	float                                              SourceRadius;                                              // 0x00E8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              SoftSourceRadius;                                          // 0x00EC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              SourceLength;                                              // 0x00F0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_ZZGQ[0xC];                                     // 0x00F4(0x000C) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SKIK[0xC];                                     // 0x00F4(0x000C) MISSED OFFSET (PADDING)
 
 };
 
@@ -291,16 +295,8 @@ struct FLiveLinkLightFrameData : public FLiveLinkTransformFrameData
 struct FLiveLinkLightBlueprintData : public FLiveLinkBaseBlueprintData
 {
 	struct FLiveLinkLightStaticData                    StaticData;                                                // 0x0008(0x0020) (Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_LG5C[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_47BS[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FLiveLinkLightFrameData                     FrameData;                                                 // 0x0030(0x0100) (Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct LiveLinkInterface.LiveLinkSubjectName
-// 0x0008
-struct FLiveLinkSubjectName
-{
-	struct FName                                       Name;                                                      // 0x0000(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 };
 
@@ -322,7 +318,7 @@ struct FLiveLinkSubjectPreset
 	class ULiveLinkSubjectSettings*                    Settings;                                                  // 0x0020(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ULiveLinkVirtualSubject*                     VirtualSubject;                                            // 0x0028(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               bEnabled;                                                  // 0x0030(0x0001) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_20WP[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_QR7V[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
 
 };
 
@@ -359,7 +355,7 @@ struct FLiveLinkSubjectRepresentation
 struct FLiveLinkInterpolationSettings
 {
 	bool                                               bUseInterpolation;                                         // 0x0000(0x0001) (ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_QRPT[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_7H5I[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              InterpolationOffset;                                       // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 };
@@ -388,7 +384,7 @@ struct FLiveLinkSourceDebugInfo
 struct FLiveLinkTransformBlueprintData : public FLiveLinkBaseBlueprintData
 {
 	struct FLiveLinkTransformStaticData                StaticData;                                                // 0x0008(0x0010) (Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_KPYR[0x8];                                     // 0x0018(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_JUMN[0x8];                                     // 0x0018(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FLiveLinkTransformFrameData                 FrameData;                                                 // 0x0020(0x00D0) (Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 };
@@ -413,32 +409,36 @@ struct FLiveLinkFrameData
 
 };
 
-// ScriptStruct LiveLinkInterface.LiveLinkSourceBufferManagementSettings
-// 0x0058
-struct FLiveLinkSourceBufferManagementSettings
+// ScriptStruct LiveLinkInterface.LiveLinkFrameRate
+// 0x0000 (0x0008 - 0x0008)
+struct FLiveLinkFrameRate : public FFrameRate
 {
-	bool                                               bValidEngineTimeEnabled;                                   // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_KIAF[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	float                                              ValidEngineTime;                                           // 0x0004(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              EngineTimeOffset;                                          // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_N9L7[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	double                                             EngineTimeClockOffset;                                     // 0x0010(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bGenerateSubFrame;                                         // 0x0018(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_67JW[0x3];                                     // 0x0019(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FFrameRate                                  DetectedFrameRate;                                         // 0x001C(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bUseTimecodeSmoothLatest;                                  // 0x0024(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_1MYB[0x3];                                     // 0x0025(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FFrameRate                                  SourceTimecodeFrameRate;                                   // 0x0028(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bValidTimecodeFrameEnabled;                                // 0x0030(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_60DO[0x3];                                     // 0x0031(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	int                                                ValidTimecodeFrame;                                        // 0x0034(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              TimecodeFrameOffset;                                       // 0x0038(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_HLL3[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	double                                             TimecodeClockOffset;                                       // 0x0040(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                LatestOffset;                                              // 0x0048(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                MaxNumberOfFrameToBuffered;                                // 0x004C(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bKeepAtLeastOneFrame;                                      // 0x0050(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_KMDX[0x7];                                     // 0x0051(0x0007) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct LiveLinkInterface.LiveLinkTimeCode_Base_DEPRECATED
+// 0x0010
+struct FLiveLinkTimeCode_Base_DEPRECATED
+{
+	int                                                Seconds;                                                   // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                Frames;                                                    // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLiveLinkFrameRate                          FrameRate;                                                 // 0x0008(0x0008) (NoDestructor, NativeAccessSpecifierPublic)
+
+};
+
+// ScriptStruct LiveLinkInterface.LiveLinkTimeCode
+// 0x0000 (0x0010 - 0x0010)
+struct FLiveLinkTimeCode : public FLiveLinkTimeCode_Base_DEPRECATED
+{
+
+};
+
+// ScriptStruct LiveLinkInterface.LiveLinkTime
+// 0x0018
+struct FLiveLinkTime
+{
+	double                                             WorldTime;                                                 // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FQualifiedFrameTime                         SceneTime;                                                 // 0x0008(0x0010) (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 };
 

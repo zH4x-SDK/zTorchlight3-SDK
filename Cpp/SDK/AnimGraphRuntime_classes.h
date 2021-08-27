@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -60,7 +60,7 @@ public:
 class UAnimSequencerInstance : public UAnimInstance
 {
 public:
-	unsigned char                                      UnknownData_BYCE[0x8];                                     // 0x02B8(0x0008) Fix Super Size
+	unsigned char                                      UnknownData_WO5P[0x8];                                     // 0x02B8(0x0008) Fix Super Size
 
 
 	static UClass* StaticClass()
@@ -110,7 +110,7 @@ public:
 	struct FScriptMulticastDelegate                    OnInterrupted;                                             // 0x0048(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	struct FScriptMulticastDelegate                    OnNotifyBegin;                                             // 0x0058(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	struct FScriptMulticastDelegate                    OnNotifyEnd;                                               // 0x0068(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_EDKJ[0x30];                                    // 0x0078(0x0030) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_B8JH[0x30];                                    // 0x0078(0x0030) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

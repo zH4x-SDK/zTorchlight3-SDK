@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -42,7 +42,7 @@ class USteamNetConnection : public UIpConnection
 {
 public:
 	bool                                               bIsPassthrough;                                            // 0x1B90(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_N4S0[0x7];                                     // 0x1B91(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_4DGV[0x7];                                     // 0x1B91(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -60,7 +60,7 @@ public:
 class USteamNetDriver : public UIpNetDriver
 {
 public:
-	unsigned char                                      UnknownData_HUEY[0x8];                                     // 0x07B8(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_JLUC[0x8];                                     // 0x07B8(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -252,7 +252,7 @@ struct FInputChord
 	unsigned char                                      bCtrl : 1;                                                 // 0x0018(0x0001) BIT_FIELD (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	unsigned char                                      bAlt : 1;                                                  // 0x0018(0x0001) BIT_FIELD (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	unsigned char                                      bCmd : 1;                                                  // 0x0018(0x0001) BIT_FIELD (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_RETS[0x7];                                     // 0x0019(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_952X[0x7];                                     // 0x0019(0x0007) MISSED OFFSET (PADDING)
 
 };
 
@@ -270,7 +270,7 @@ struct FAnchors
 struct FCustomizedToolMenuEntry
 {
 	Slate_ECustomizedToolMenuVisibility                Visibility;                                                // 0x0000(0x0001) ELEMENT_SIZE_MISMATCH (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_8SPD[0x3];                                     // 0x0000(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_5IJF[0x3];                                     // 0x0000(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 
 };
 
@@ -279,7 +279,7 @@ struct FCustomizedToolMenuEntry
 struct FCustomizedToolMenuSection
 {
 	Slate_ECustomizedToolMenuVisibility                Visibility;                                                // 0x0000(0x0001) ELEMENT_SIZE_MISMATCH (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_GFBW[0x3];                                     // 0x0000(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
+	unsigned char                                      UnknownData_Z3RY[0x3];                                     // 0x0000(0x0003) FIX WRONG TYPE SIZE OF PREVIOUS PROPERTY
 
 };
 
@@ -300,7 +300,7 @@ struct FCustomizedToolMenu
 	TMap<struct FName, struct FCustomizedToolMenuSection> Sections;                                                  // 0x0058(0x0050) (NativeAccessSpecifierPublic)
 	TMap<struct FName, struct FCustomizedToolMenuNameArray> EntryOrder;                                                // 0x00A8(0x0050) (NativeAccessSpecifierPublic)
 	TArray<struct FName>                               SectionOrder;                                              // 0x00F8(0x0010) (ZeroConstructor, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_7GVD[0xE0];                                    // 0x0108(0x00E0) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_IRZQ[0xE0];                                    // 0x0108(0x00E0) MISSED OFFSET (PADDING)
 
 };
 

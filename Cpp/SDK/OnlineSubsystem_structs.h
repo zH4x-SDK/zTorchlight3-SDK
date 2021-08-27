@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -19,6 +19,21 @@ namespace CG
 // Enums
 //---------------------------------------------------------------------------
 
+// Enum OnlineSubsystem.EInAppPurchaseState
+enum class OnlineSubsystem_EInAppPurchaseState : uint8_t
+{
+	EInAppPurchaseState__Unknown   = 0,
+	EInAppPurchaseState__Success   = 1,
+	EInAppPurchaseState__Failed    = 2,
+	EInAppPurchaseState__Cancelled = 3,
+	EInAppPurchaseState__Invalid   = 4,
+	EInAppPurchaseState__NotAllowed = 5,
+	EInAppPurchaseState__Restored  = 6,
+	EInAppPurchaseState__AlreadyOwned = 7,
+	EInAppPurchaseState__EInAppPurchaseState_MAX = 8,
+
+};
+
 // Enum OnlineSubsystem.EMPMatchOutcome
 enum class OnlineSubsystem_EMPMatchOutcome : uint8_t
 {
@@ -36,21 +51,6 @@ enum class OnlineSubsystem_EMPMatchOutcome : uint8_t
 
 };
 
-// Enum OnlineSubsystem.EInAppPurchaseState
-enum class OnlineSubsystem_EInAppPurchaseState : uint8_t
-{
-	EInAppPurchaseState__Unknown   = 0,
-	EInAppPurchaseState__Success   = 1,
-	EInAppPurchaseState__Failed    = 2,
-	EInAppPurchaseState__Cancelled = 3,
-	EInAppPurchaseState__Invalid   = 4,
-	EInAppPurchaseState__NotAllowed = 5,
-	EInAppPurchaseState__Restored  = 6,
-	EInAppPurchaseState__AlreadyOwned = 7,
-	EInAppPurchaseState__EInAppPurchaseState_MAX = 8,
-
-};
-
 //---------------------------------------------------------------------------
 // Script Structs
 //---------------------------------------------------------------------------
@@ -61,16 +61,6 @@ struct FNamedInterface
 {
 	struct FName                                       InterfaceName;                                             // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UObject*                                     InterfaceObject;                                           // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct OnlineSubsystem.InAppPurchaseProductRequest
-// 0x0018
-struct FInAppPurchaseProductRequest
-{
-	struct FString                                     ProductIdentifier;                                         // 0x0000(0x0010) (BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsConsumable;                                             // 0x0010(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_AZC2[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (PADDING)
 
 };
 
@@ -93,7 +83,7 @@ struct FInAppPurchaseProductInfo
 	struct FString                                     DisplayDescription;                                        // 0x0030(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FString                                     DisplayPrice;                                              // 0x0040(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              RawPrice;                                                  // 0x0050(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_0LTB[0x4];                                     // 0x0054(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_5V3G[0x4];                                     // 0x0054(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     CurrencyCode;                                              // 0x0058(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FString                                     CurrencySymbol;                                            // 0x0068(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FString                                     DecimalSeparator;                                          // 0x0078(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -109,6 +99,16 @@ struct FInAppPurchaseRestoreInfo
 	struct FString                                     Identifier;                                                // 0x0000(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FString                                     ReceiptData;                                               // 0x0010(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FString                                     TransactionIdentifier;                                     // 0x0020(0x0010) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+};
+
+// ScriptStruct OnlineSubsystem.InAppPurchaseProductRequest
+// 0x0018
+struct FInAppPurchaseProductRequest
+{
+	struct FString                                     ProductIdentifier;                                         // 0x0000(0x0010) (BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsConsumable;                                             // 0x0010(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_QE2L[0x7];                                     // 0x0011(0x0007) MISSED OFFSET (PADDING)
 
 };
 

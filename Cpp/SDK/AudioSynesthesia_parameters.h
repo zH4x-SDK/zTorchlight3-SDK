@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -18,26 +18,6 @@ namespace CG
 //---------------------------------------------------------------------------
 // Parameters
 //---------------------------------------------------------------------------
-
-// Function AudioSynesthesia.OnsetNRT.GetNormalizedChannelOnsetsBetweenTimes
-struct UOnsetNRT_GetNormalizedChannelOnsetsBetweenTimes_Params
-{
-	float                                              InStartSeconds;                                            // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              InEndSeconds;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                InChannel;                                                 // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<float>                                      OutOnsetTimestamps;                                        // (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<float>                                      OutOnsetStrengths;                                         // (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-
-// Function AudioSynesthesia.OnsetNRT.GetChannelOnsetsBetweenTimes
-struct UOnsetNRT_GetChannelOnsetsBetweenTimes_Params
-{
-	float                                              InStartSeconds;                                            // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              InEndSeconds;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                InChannel;                                                 // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<float>                                      OutOnsetTimestamps;                                        // (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<float>                                      OutOnsetStrengths;                                         // (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-};
 
 // Function AudioSynesthesia.ConstantQNRT.GetNormalizedChannelConstantQAtTime
 struct UConstantQNRT_GetNormalizedChannelConstantQAtTime_Params
@@ -83,6 +63,26 @@ struct ULoudnessNRT_GetChannelLoudnessAtTime_Params
 	float                                              InSeconds;                                                 // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int                                                InChannel;                                                 // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              OutLoudness;                                               // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AudioSynesthesia.OnsetNRT.GetNormalizedChannelOnsetsBetweenTimes
+struct UOnsetNRT_GetNormalizedChannelOnsetsBetweenTimes_Params
+{
+	float                                              InStartSeconds;                                            // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              InEndSeconds;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                InChannel;                                                 // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<float>                                      OutOnsetTimestamps;                                        // (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<float>                                      OutOnsetStrengths;                                         // (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+
+// Function AudioSynesthesia.OnsetNRT.GetChannelOnsetsBetweenTimes
+struct UOnsetNRT_GetChannelOnsetsBetweenTimes_Params
+{
+	float                                              InStartSeconds;                                            // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              InEndSeconds;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                InChannel;                                                 // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<float>                                      OutOnsetTimestamps;                                        // (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<float>                                      OutOnsetStrengths;                                         // (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 
 }

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -43,15 +43,15 @@ class UMotoSynthSource : public UObject
 {
 public:
 	bool                                               bConvertTo8Bit;                                            // 0x0028(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_RVGD[0x3];                                     // 0x0029(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_NHNR[0x3];                                     // 0x0029(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              DownSampleFactor;                                          // 0x002C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRuntimeFloatCurve                          RPMCurve;                                                  // 0x0030(0x0088) (Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TArray<float>                                      SourceData;                                                // 0x00B8(0x0010) (ZeroConstructor, Deprecated, Protected, NativeAccessSpecifierProtected)
 	TArray<int16_t>                                    SourceDataPCM;                                             // 0x00C8(0x0010) (ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	int                                                SourceSampleRate;                                          // 0x00D8(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	unsigned char                                      UnknownData_4Y5H[0x4];                                     // 0x00DC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_5R9K[0x4];                                     // 0x00DC(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FGrainTableEntry>                    GrainTable;                                                // 0x00E0(0x0010) (ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	unsigned char                                      UnknownData_ZGHO[0x8];                                     // 0x00F0(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_TC5U[0x8];                                     // 0x00F0(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -71,7 +71,7 @@ class USynthComponentMoto : public USynthComponent
 public:
 	class UMotoSynthPreset*                            MotoSynthPreset;                                           // 0x06C0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              RPM;                                                       // 0x06C8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_DBAY[0xB4];                                    // 0x06CC(0x00B4) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9EZ4[0xB4];                                    // 0x06CC(0x00B4) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

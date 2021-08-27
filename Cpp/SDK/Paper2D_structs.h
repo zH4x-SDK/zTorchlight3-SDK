@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -102,115 +102,13 @@ enum class Paper2D_ESpriteCollisionMode : uint8_t
 // Script Structs
 //---------------------------------------------------------------------------
 
-// ScriptStruct Paper2D.PaperTerrainMaterialRule
-// 0x0038
-struct FPaperTerrainMaterialRule
-{
-	class UPaperSprite*                                StartCap;                                                  // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UPaperSprite*>                        Body;                                                      // 0x0008(0x0010) (Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	class UPaperSprite*                                EndCap;                                                    // 0x0018(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              MinimumAngle;                                              // 0x0020(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              MaximumAngle;                                              // 0x0024(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bEnableCollision;                                          // 0x0028(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_40BZ[0x3];                                     // 0x0029(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	float                                              CollisionOffset;                                           // 0x002C(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                DrawOrder;                                                 // 0x0030(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_QH5B[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct Paper2D.PaperTileInfo
-// 0x0010
-struct FPaperTileInfo
-{
-	class UPaperTileSet*                               TileSet;                                                   // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                PackedTileIndex;                                           // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_21SM[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct Paper2D.PaperTileSetTerrain
-// 0x0018
-struct FPaperTileSetTerrain
-{
-	struct FString                                     TerrainName;                                               // 0x0000(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                CenterTileIndex;                                           // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_Y66P[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct Paper2D.SpriteGeometryShape
-// 0x0030
-struct FSpriteGeometryShape
-{
-	Paper2D_ESpriteShapeType                           ShapeType;                                                 // 0x0000(0x0001) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_YWHN[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	TArray<struct FVector2D>                           Vertices;                                                  // 0x0008(0x0010) (Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FVector2D                                   BoxSize;                                                   // 0x0018(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                                   BoxPosition;                                               // 0x0020(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Rotation;                                                  // 0x0028(0x0004) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bNegativeWinding;                                          // 0x002C(0x0001) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_MXBB[0x3];                                     // 0x002D(0x0003) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct Paper2D.SpriteGeometryCollection
-// 0x0030
-struct FSpriteGeometryCollection
-{
-	TArray<struct FSpriteGeometryShape>                Shapes;                                                    // 0x0000(0x0010) (Edit, ZeroConstructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	TEnumAsByte<Paper2D_ESpritePolygonMode>            GeometryType;                                              // 0x0010(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_06Y8[0x3];                                     // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	int                                                PixelsPerSubdivisionX;                                     // 0x0014(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                PixelsPerSubdivisionY;                                     // 0x0018(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bAvoidVertexMerging;                                       // 0x001C(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_EJMB[0x3];                                     // 0x001D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	float                                              AlphaThreshold;                                            // 0x0020(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              DetailAmount;                                              // 0x0024(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              SimplifyEpsilon;                                           // 0x0028(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_1J7C[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct Paper2D.PaperTileMetadata
-// 0x0040
-struct FPaperTileMetadata
-{
-	struct FName                                       UserDataName;                                              // 0x0000(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSpriteGeometryCollection                   CollisionData;                                             // 0x0008(0x0030) (Edit, NativeAccessSpecifierPublic)
-	unsigned char                                      TerrainMembership[0x4];                                    // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_S8CP[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct Paper2D.SpriteDrawCallRecord
-// 0x00D0
-struct FSpriteDrawCallRecord
-{
-	struct FVector                                     Destination;                                               // 0x0000(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_GWPF[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	class UTexture*                                    BaseTexture;                                               // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_G6EP[0x30];                                    // 0x0018(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FColor                                      Color;                                                     // 0x0048(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_8KWL[0x84];                                    // 0x004C(0x0084) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct Paper2D.SpriteAssetInitParameters
-// 0x0040
-struct FSpriteAssetInitParameters
-{
-	unsigned char                                      UnknownData_M50T[0x40];                                    // 0x0000(0x0040) MISSED OFFSET (PADDING)
-
-};
-
 // ScriptStruct Paper2D.PaperFlipbookKeyFrame
 // 0x0010
 struct FPaperFlipbookKeyFrame
 {
 	class UPaperSprite*                                Sprite;                                                    // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int                                                FrameRun;                                                  // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_E9PI[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_Z23Z[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (PADDING)
 
 };
 
@@ -225,13 +123,30 @@ struct FSpriteInstanceData
 
 };
 
-// ScriptStruct Paper2D.PaperSpriteSocket
-// 0x0040
-struct FPaperSpriteSocket
+// ScriptStruct Paper2D.PaperTerrainMaterialRule
+// 0x0038
+struct FPaperTerrainMaterialRule
 {
-	struct FTransform                                  LocalTransform;                                            // 0x0000(0x0030) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FName                                       SocketName;                                                // 0x0030(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_IEAL[0x8];                                     // 0x0038(0x0008) MISSED OFFSET (PADDING)
+	class UPaperSprite*                                StartCap;                                                  // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UPaperSprite*>                        Body;                                                      // 0x0008(0x0010) (Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	class UPaperSprite*                                EndCap;                                                    // 0x0018(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              MinimumAngle;                                              // 0x0020(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              MaximumAngle;                                              // 0x0024(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bEnableCollision;                                          // 0x0028(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_OOSB[0x3];                                     // 0x0029(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	float                                              CollisionOffset;                                           // 0x002C(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                DrawOrder;                                                 // 0x0030(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_OML6[0x4];                                     // 0x0034(0x0004) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct Paper2D.PaperTileInfo
+// 0x0010
+struct FPaperTileInfo
+{
+	class UPaperTileSet*                               TileSet;                                                   // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                PackedTileIndex;                                           // 0x0008(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_YKKG[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (PADDING)
 
 };
 
@@ -246,6 +161,60 @@ struct FIntMargin
 
 };
 
+// ScriptStruct Paper2D.PaperTileSetTerrain
+// 0x0018
+struct FPaperTileSetTerrain
+{
+	struct FString                                     TerrainName;                                               // 0x0000(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                CenterTileIndex;                                           // 0x0010(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_C40N[0x4];                                     // 0x0014(0x0004) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct Paper2D.SpriteGeometryShape
+// 0x0030
+struct FSpriteGeometryShape
+{
+	Paper2D_ESpriteShapeType                           ShapeType;                                                 // 0x0000(0x0001) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_1G3C[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	TArray<struct FVector2D>                           Vertices;                                                  // 0x0008(0x0010) (Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FVector2D                                   BoxSize;                                                   // 0x0018(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                                   BoxPosition;                                               // 0x0020(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Rotation;                                                  // 0x0028(0x0004) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bNegativeWinding;                                          // 0x002C(0x0001) (Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_H1MY[0x3];                                     // 0x002D(0x0003) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct Paper2D.SpriteGeometryCollection
+// 0x0030
+struct FSpriteGeometryCollection
+{
+	TArray<struct FSpriteGeometryShape>                Shapes;                                                    // 0x0000(0x0010) (Edit, ZeroConstructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+	TEnumAsByte<Paper2D_ESpritePolygonMode>            GeometryType;                                              // 0x0010(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_YTWP[0x3];                                     // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	int                                                PixelsPerSubdivisionX;                                     // 0x0014(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                PixelsPerSubdivisionY;                                     // 0x0018(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bAvoidVertexMerging;                                       // 0x001C(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_NXJZ[0x3];                                     // 0x001D(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	float                                              AlphaThreshold;                                            // 0x0020(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              DetailAmount;                                              // 0x0024(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              SimplifyEpsilon;                                           // 0x0028(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_3V7W[0x4];                                     // 0x002C(0x0004) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct Paper2D.PaperTileMetadata
+// 0x0040
+struct FPaperTileMetadata
+{
+	struct FName                                       UserDataName;                                              // 0x0000(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSpriteGeometryCollection                   CollisionData;                                             // 0x0008(0x0030) (Edit, NativeAccessSpecifierPublic)
+	unsigned char                                      TerrainMembership[0x4];                                    // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_LO8P[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
+
+};
+
 // ScriptStruct Paper2D.PaperSpriteAtlasSlot
 // 0x0040
 struct FPaperSpriteAtlasSlot
@@ -256,7 +225,38 @@ struct FPaperSpriteAtlasSlot
 	int                                                Y;                                                         // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int                                                Width;                                                     // 0x0034(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int                                                Height;                                                    // 0x0038(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_LGBX[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_H4CC[0x4];                                     // 0x003C(0x0004) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct Paper2D.SpriteDrawCallRecord
+// 0x00D0
+struct FSpriteDrawCallRecord
+{
+	struct FVector                                     Destination;                                               // 0x0000(0x000C) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_FAD6[0x4];                                     // 0x000C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	class UTexture*                                    BaseTexture;                                               // 0x0010(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_8JXG[0x30];                                    // 0x0018(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FColor                                      Color;                                                     // 0x0048(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_BBN1[0x84];                                    // 0x004C(0x0084) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct Paper2D.SpriteAssetInitParameters
+// 0x0040
+struct FSpriteAssetInitParameters
+{
+	unsigned char                                      UnknownData_F1D3[0x40];                                    // 0x0000(0x0040) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct Paper2D.PaperSpriteSocket
+// 0x0040
+struct FPaperSpriteSocket
+{
+	struct FTransform                                  LocalTransform;                                            // 0x0000(0x0030) (Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FName                                       SocketName;                                                // 0x0030(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_WYK0[0x8];                                     // 0x0038(0x0008) MISSED OFFSET (PADDING)
 
 };
 

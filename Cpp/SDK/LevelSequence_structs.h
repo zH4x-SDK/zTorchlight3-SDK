@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -19,11 +19,11 @@ namespace CG
 // Script Structs
 //---------------------------------------------------------------------------
 
-// ScriptStruct LevelSequence.LevelSequenceLegacyObjectReference
-// 0x0020
-struct FLevelSequenceLegacyObjectReference
+// ScriptStruct LevelSequence.LevelSequenceObjectReferenceMap
+// 0x0050
+struct FLevelSequenceObjectReferenceMap
 {
-	unsigned char                                      UnknownData_0OGO[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_J5F5[0x50];                                    // 0x0000(0x0050) MISSED OFFSET (PADDING)
 
 };
 
@@ -32,47 +32,9 @@ struct FLevelSequenceLegacyObjectReference
 struct FLevelSequenceObject
 {
 	TLazyObjectPtr<class UObject>                      ObjectOrOwner;                                             // 0x0000(0x001C) (IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	unsigned char                                      UnknownData_V3UR[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_2ES0[0x4];                                     // 0x001C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     ComponentName;                                             // 0x0020(0x0010) (ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TWeakObjectPtr<class UObject>                      CachedComponent;                                           // 0x0030(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-};
-
-// ScriptStruct LevelSequence.LevelSequenceSnapshotSettings
-// 0x000C
-struct FLevelSequenceSnapshotSettings
-{
-	unsigned char                                      ZeroPadAmount;                                             // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_33UH[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FFrameRate                                  FrameRate;                                                 // 0x0004(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct LevelSequence.LevelSequencePlayerSnapshot
-// 0x00B8
-struct FLevelSequencePlayerSnapshot
-{
-	struct FString                                     MasterName;                                                // 0x0000(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FQualifiedFrameTime                         MasterTime;                                                // 0x0010(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FQualifiedFrameTime                         SourceTime;                                                // 0x0020(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     CurrentShotName;                                           // 0x0030(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FQualifiedFrameTime                         CurrentShotLocalTime;                                      // 0x0040(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FQualifiedFrameTime                         CurrentShotSourceTime;                                     // 0x0050(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     SourceTimecode;                                            // 0x0060(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      CameraComponent[0x28];                                     // 0x0070(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-	struct FLevelSequenceSnapshotSettings              Settings;                                                  // 0x0098(0x000C) (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_PWMU[0x4];                                     // 0x00A4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	class ULevelSequence*                              ActiveShot;                                                // 0x00A8(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMovieSceneSequenceID                       ShotID;                                                    // 0x00B0(0x0004) (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_T6AH[0x4];                                     // 0x00B4(0x0004) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct LevelSequence.LevelSequenceObjectReferenceMap
-// 0x0050
-struct FLevelSequenceObjectReferenceMap
-{
-	unsigned char                                      UnknownData_3UV5[0x50];                                    // 0x0000(0x0050) MISSED OFFSET (PADDING)
 
 };
 
@@ -112,14 +74,6 @@ struct FLevelSequenceCameraSettings
 
 };
 
-// ScriptStruct LevelSequence.BoundActorProxy
-// 0x0001
-struct FBoundActorProxy
-{
-	unsigned char                                      UnknownData_91LP[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
-
-};
-
 // ScriptStruct LevelSequence.LevelSequenceAnimSequenceLinkItem
 // 0x0030
 struct FLevelSequenceAnimSequenceLinkItem
@@ -129,7 +83,53 @@ struct FLevelSequenceAnimSequenceLinkItem
 	bool                                               bExportTransforms;                                         // 0x0028(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               bExportCurves;                                             // 0x0029(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               bRecordInWorldSpace;                                       // 0x002A(0x0001) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_A5VQ[0x5];                                     // 0x002B(0x0005) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_GRBK[0x5];                                     // 0x002B(0x0005) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct LevelSequence.LevelSequenceSnapshotSettings
+// 0x000C
+struct FLevelSequenceSnapshotSettings
+{
+	unsigned char                                      ZeroPadAmount;                                             // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_Z9TU[0x3];                                     // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FFrameRate                                  FrameRate;                                                 // 0x0004(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+};
+
+// ScriptStruct LevelSequence.LevelSequencePlayerSnapshot
+// 0x00B8
+struct FLevelSequencePlayerSnapshot
+{
+	struct FString                                     MasterName;                                                // 0x0000(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FQualifiedFrameTime                         MasterTime;                                                // 0x0010(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FQualifiedFrameTime                         SourceTime;                                                // 0x0020(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     CurrentShotName;                                           // 0x0030(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FQualifiedFrameTime                         CurrentShotLocalTime;                                      // 0x0040(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FQualifiedFrameTime                         CurrentShotSourceTime;                                     // 0x0050(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     SourceTimecode;                                            // 0x0060(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      CameraComponent[0x28];                                     // 0x0070(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
+	struct FLevelSequenceSnapshotSettings              Settings;                                                  // 0x0098(0x000C) (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_TOTZ[0x4];                                     // 0x00A4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	class ULevelSequence*                              ActiveShot;                                                // 0x00A8(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMovieSceneSequenceID                       ShotID;                                                    // 0x00B0(0x0004) (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_HYWR[0x4];                                     // 0x00B4(0x0004) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct LevelSequence.BoundActorProxy
+// 0x0001
+struct FBoundActorProxy
+{
+	unsigned char                                      UnknownData_P7OV[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct LevelSequence.LevelSequenceLegacyObjectReference
+// 0x0020
+struct FLevelSequenceLegacyObjectReference
+{
+	unsigned char                                      UnknownData_6BYM[0x20];                                    // 0x0000(0x0020) MISSED OFFSET (PADDING)
 
 };
 

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -19,11 +19,19 @@ namespace CG
 // Script Structs
 //---------------------------------------------------------------------------
 
+// ScriptStruct GeometryCache.TrackRenderData
+// 0x0070
+struct FTrackRenderData
+{
+	unsigned char                                      UnknownData_YGHC[0x70];                                    // 0x0000(0x0070) MISSED OFFSET (PADDING)
+
+};
+
 // ScriptStruct GeometryCache.GeometryCacheMeshData
 // 0x00A8
 struct FGeometryCacheMeshData
 {
-	unsigned char                                      UnknownData_31Y7[0xA8];                                    // 0x0000(0x00A8) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ED6N[0xA8];                                    // 0x0000(0x00A8) MISSED OFFSET (PADDING)
 
 };
 
@@ -31,7 +39,7 @@ struct FGeometryCacheMeshData
 // 0x0008
 struct FGeometryCacheVertexInfo
 {
-	unsigned char                                      UnknownData_QOPX[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_UI7S[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (PADDING)
 
 };
 
@@ -39,15 +47,7 @@ struct FGeometryCacheVertexInfo
 // 0x000C
 struct FGeometryCacheMeshBatchInfo
 {
-	unsigned char                                      UnknownData_L8YG[0xC];                                     // 0x0000(0x000C) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct GeometryCache.TrackRenderData
-// 0x0070
-struct FTrackRenderData
-{
-	unsigned char                                      UnknownData_D5TX[0x70];                                    // 0x0000(0x0070) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_AMIW[0xC];                                     // 0x0000(0x000C) MISSED OFFSET (PADDING)
 
 };
 

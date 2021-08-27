@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -18,6 +18,21 @@ namespace CG
 //---------------------------------------------------------------------------
 // Enums
 //---------------------------------------------------------------------------
+
+// Enum MagicLeapIdentity.EMagicLeapIdentityKey
+enum class MagicLeapIdentity_EMagicLeapIdentityKey : uint8_t
+{
+	EMagicLeapIdentityKey__GivenName = 0,
+	EMagicLeapIdentityKey__FamilyName = 1,
+	EMagicLeapIdentityKey__Email   = 2,
+	EMagicLeapIdentityKey__Bio     = 3,
+	EMagicLeapIdentityKey__PhoneNumber = 4,
+	EMagicLeapIdentityKey__Avatar2D = 5,
+	EMagicLeapIdentityKey__Avatar3D = 6,
+	EMagicLeapIdentityKey__Unknown = 7,
+	EMagicLeapIdentityKey__EMagicLeapIdentityKey_MAX = 8,
+
+};
 
 // Enum MagicLeapIdentity.EMagicLeapIdentityError
 enum class MagicLeapIdentity_EMagicLeapIdentityError : uint8_t
@@ -44,21 +59,6 @@ enum class MagicLeapIdentity_EMagicLeapIdentityError : uint8_t
 
 };
 
-// Enum MagicLeapIdentity.EMagicLeapIdentityKey
-enum class MagicLeapIdentity_EMagicLeapIdentityKey : uint8_t
-{
-	EMagicLeapIdentityKey__GivenName = 0,
-	EMagicLeapIdentityKey__FamilyName = 1,
-	EMagicLeapIdentityKey__Email   = 2,
-	EMagicLeapIdentityKey__Bio     = 3,
-	EMagicLeapIdentityKey__PhoneNumber = 4,
-	EMagicLeapIdentityKey__Avatar2D = 5,
-	EMagicLeapIdentityKey__Avatar3D = 6,
-	EMagicLeapIdentityKey__Unknown = 7,
-	EMagicLeapIdentityKey__EMagicLeapIdentityKey_MAX = 8,
-
-};
-
 //---------------------------------------------------------------------------
 // Script Structs
 //---------------------------------------------------------------------------
@@ -68,7 +68,7 @@ enum class MagicLeapIdentity_EMagicLeapIdentityKey : uint8_t
 struct FMagicLeapIdentityAttribute
 {
 	MagicLeapIdentity_EMagicLeapIdentityKey            Attribute;                                                 // 0x0000(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_R17X[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_3JAG[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     Value;                                                     // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 };

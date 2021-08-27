@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -41,7 +41,7 @@ public:
 class UMeshDescriptionBase : public UObject
 {
 public:
-	unsigned char                                      UnknownData_IC6S[0x368];                                   // 0x0028(0x0368) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_YG7V[0x368];                                   // 0x0028(0x0368) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

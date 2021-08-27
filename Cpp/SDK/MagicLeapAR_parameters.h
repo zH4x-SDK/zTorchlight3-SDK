@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -18,24 +18,6 @@ namespace CG
 //---------------------------------------------------------------------------
 // Parameters
 //---------------------------------------------------------------------------
-
-// Function MagicLeapAR.LuminARCandidateImage.GetUseUnreliablePose
-struct ULuminARCandidateImage_GetUseUnreliablePose_Params
-{
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function MagicLeapAR.LuminARCandidateImage.GetImageIsStationary
-struct ULuminARCandidateImage_GetImageIsStationary_Params
-{
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function MagicLeapAR.LuminARCandidateImage.GetAxisOrientation
-struct ULuminARCandidateImage_GetAxisOrientation_Params
-{
-	MagicLeapImageTracker_EMagicLeapImageTargetOrientation ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
 
 // Function MagicLeapAR.LuminARSessionFunctionLibrary.StartLuminARSession
 struct ULuminARSessionFunctionLibrary_StartLuminARSession_Params
@@ -89,6 +71,24 @@ struct ULuminARImageTrackingFunctionLibrary_AddLuminRuntimeCandidateImage_Params
 struct ULuminARLightEstimate_GetAmbientIntensityNits_Params
 {
 	TArray<float>                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function MagicLeapAR.LuminARCandidateImage.GetUseUnreliablePose
+struct ULuminARCandidateImage_GetUseUnreliablePose_Params
+{
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function MagicLeapAR.LuminARCandidateImage.GetImageIsStationary
+struct ULuminARCandidateImage_GetImageIsStationary_Params
+{
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function MagicLeapAR.LuminARCandidateImage.GetAxisOrientation
+struct ULuminARCandidateImage_GetAxisOrientation_Params
+{
+	MagicLeapImageTracker_EMagicLeapImageTargetOrientation ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 }

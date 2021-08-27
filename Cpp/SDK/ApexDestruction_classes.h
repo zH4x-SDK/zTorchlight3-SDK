@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -44,14 +44,14 @@ class UDestructibleComponent : public USkinnedMeshComponent
 {
 public:
 	unsigned char                                      bFractureEffectOverride : 1;                               // 0x0690(0x0001) BIT_FIELD (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_O7QD[0x7];                                     // 0x0691(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_NZ7X[0x7];                                     // 0x0691(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FFractureEffect>                     FractureEffects;                                           // 0x0698(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, EditFixedSize, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                               bEnableHardSleeping;                                       // 0x06A8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_RFPT[0x3];                                     // 0x06A9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_8VSV[0x3];                                     // 0x06A9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              LargeChunkThreshold;                                       // 0x06AC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_82FB[0x10];                                    // 0x06B0(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_SYTT[0x10];                                    // 0x06B0(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FScriptMulticastDelegate                    OnComponentFracture;                                       // 0x06C0(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_QYYB[0xA0];                                    // 0x06D0(0x00A0) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_NJA1[0xA0];                                    // 0x06D0(0x00A0) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -76,13 +76,13 @@ public:
 	int                                                CellSiteCount;                                             // 0x0028(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFractureMaterial                           FractureMaterialDesc;                                      // 0x002C(0x0024) (Edit, Transient, NoDestructor, NativeAccessSpecifierPublic)
 	int                                                RandomSeed;                                                // 0x0050(0x0004) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_193F[0x4];                                     // 0x0054(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_D0FS[0x4];                                     // 0x0054(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FVector>                             VoronoiSites;                                              // 0x0058(0x0010) (ZeroConstructor, NativeAccessSpecifierPublic)
 	int                                                OriginalSubmeshCount;                                      // 0x0068(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_5Y08[0x4];                                     // 0x006C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_03NL[0x4];                                     // 0x006C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<class UMaterialInterface*>                  Materials;                                                 // 0x0070(0x0010) (ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FDestructibleChunkParameters>        ChunkParameters;                                           // 0x0080(0x0010) (ZeroConstructor, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_9XZ7[0x28];                                    // 0x0090(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_EM6L[0x28];                                    // 0x0090(0x0028) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -102,7 +102,7 @@ class UDestructibleMesh : public USkeletalMesh
 public:
 	struct FDestructibleParameters                     DefaultDestructibleParameters;                             // 0x0398(0x0088) (Edit, NativeAccessSpecifierPublic)
 	TArray<struct FFractureEffect>                     FractureEffects;                                           // 0x0420(0x0010) (Edit, EditFixedSize, ZeroConstructor, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_DPO3[0x8];                                     // 0x0430(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_NZGJ[0x8];                                     // 0x0430(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

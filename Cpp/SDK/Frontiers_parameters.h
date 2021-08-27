@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -544,3083 +544,6 @@ struct UArea_AddRule_Params
 	bool                                               bStopHere;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Frontiers.AreaLoader.SetupAreaLevels
-struct AAreaLoader_SetupAreaLevels_Params
-{
-};
-
-// Function Frontiers.AreaLoader.BeginLoad
-struct AAreaLoader_BeginLoad_Params
-{
-	Frontiers_EAreaLoadError                           ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.AreaManagerComponent.ShouldShowClock
-struct UAreaManagerComponent_ShouldShowClock_Params
-{
-	class AController*                                 Controller;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.AreaManagerComponent.OnRep_Areas
-struct UAreaManagerComponent_OnRep_Areas_Params
-{
-};
-
-// Function Frontiers.AreaManagerComponent.GetSpokeTagByLocation
-struct UAreaManagerComponent_GetSpokeTagByLocation_Params
-{
-	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                                ReturnValue;                                               // (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.AreaManagerComponent.GetAreaName
-struct UAreaManagerComponent_GetAreaName_Params
-{
-	class AController*                                 Controller;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FText                                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.QuestUpdater.OnTimeOfDayPeriod
-struct UQuestUpdater_OnTimeOfDayPeriod_Params
-{
-	Frontiers_ETimeOfDayPeriod                         Period;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.QuestUpdater.OnParentQuestComponentReplicated
-struct UQuestUpdater_OnParentQuestComponentReplicated_Params
-{
-};
-
-// Function Frontiers.QuestUpdater.OnEquippedItemsChanged
-struct UQuestUpdater_OnEquippedItemsChanged_Params
-{
-	TArray<struct FItemReplicatedData>                 Items;                                                     // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.QuestUpdater.OnAreaChanged
-struct UQuestUpdater_OnAreaChanged_Params
-{
-	struct FGuid                                       NewAreaId;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       NewAreaName;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.QuestUpdater.ClientRemoveQuest
-struct UQuestUpdater_ClientRemoveQuest_Params
-{
-	struct FName                                       QuestId;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.QuestUpdater.ClientClearCompletedQuests
-struct UQuestUpdater_ClientClearCompletedQuests_Params
-{
-	Frontiers_EQuestType                               Filter;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.QuestUpdater.ClientClearActiveQuests
-struct UQuestUpdater_ClientClearActiveQuests_Params
-{
-	Frontiers_EQuestType                               Filter;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ConductorHandler.PreHandleObjects
-struct UConductorHandler_PreHandleObjects_Params
-{
-};
-
-// Function Frontiers.ConductorHandler.PostHandleObjects
-struct UConductorHandler_PostHandleObjects_Params
-{
-};
-
-// Function Frontiers.ConductorHandler.IsAreaHandler
-struct UConductorHandler_IsAreaHandler_Params
-{
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ConductorHandler.HandleObject
-struct UConductorHandler_HandleObject_Params
-{
-	class ATLCharacter*                                Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                     Object;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.AudioEffectMap.GetFmodEventReferenceForEventName
-struct UAudioEffectMap_GetFmodEventReferenceForEventName_Params
-{
-	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       Event;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFMODEventReference                         ReturnValue;                                               // (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.AudioFunctionLibrary.VolumePercentToControl
-struct UAudioFunctionLibrary_VolumePercentToControl_Params
-{
-	float                                              VolumePercent;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              DynamicRange;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.AudioFunctionLibrary.ControlToVolumePercent
-struct UAudioFunctionLibrary_ControlToVolumePercent_Params
-{
-	float                                              ControlPercent;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              DynamicRange;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.AutoOperateSphereComponent.OnAutoOperateEndOverlap
-struct UAutoOperateSphereComponent_OnAutoOperateEndOverlap_Params
-{
-	class UPrimitiveComponent*                         OverlappedComponent;                                       // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                OtherBodyIndex;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.AutoOperateSphereComponent.OnAutoOperateBeginOverlap
-struct UAutoOperateSphereComponent_OnAutoOperateBeginOverlap_Params
-{
-	class UPrimitiveComponent*                         OverlappedComp;                                            // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                OtherBodyIndex;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bFromSweep;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHitResult                                  SweepResult;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.BossFightObserverComponent.GetBossFightSpawnsWarpBack
-struct UBossFightObserverComponent_GetBossFightSpawnsWarpBack_Params
-{
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.BossMonsterComponent.OnRowHandleChanged
-struct UBossMonsterComponent_OnRowHandleChanged_Params
-{
-};
-
-// Function Frontiers.BossMonsterComponent.OnBossDied
-struct UBossMonsterComponent_OnBossDied_Params
-{
-	class APawn*                                       Dying;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Killer;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.BossMonsterInfoVolume.OnEndOverlap
-struct UBossMonsterInfoVolume_OnEndOverlap_Params
-{
-	class UPrimitiveComponent*                         OverlappedComponent;                                       // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                OtherBodyIndex;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.BossMonsterInfoVolume.OnBeginOverlap
-struct UBossMonsterInfoVolume_OnBeginOverlap_Params
-{
-	class UPrimitiveComponent*                         OverlappedComp;                                            // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                OtherBodyIndex;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bFromSweep;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHitResult                                  SweepResult;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.BossFightManager.ShowBossNameUI
-struct UBossFightManager_ShowBossNameUI_Params
-{
-	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.BossFightManager.ShowBossHP
-struct UBossFightManager_ShowBossHP_Params
-{
-	class AActor*                                      Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.BossFightManager.ShouldShowSelectedTarget
-struct UBossFightManager_ShouldShowSelectedTarget_Params
-{
-	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.BossFightManager.ShouldShowBossHP
-struct UBossFightManager_ShouldShowBossHP_Params
-{
-	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.BossFightManager.IsBossMonster
-struct UBossFightManager_IsBossMonster_Params
-{
-	class AActor*                                      Monster;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.BossFightManager.HideBossHP
-struct UBossFightManager_HideBossHP_Params
-{
-	class AActor*                                      Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.BossFightManager.GetBossMonster
-struct UBossFightManager_GetBossMonster_Params
-{
-	class AActor*                                      Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.BossFightManager.GetBossFightManager
-struct UBossFightManager_GetBossFightManager_Params
-{
-	class UObject*                                     WorldContextObject;                                        // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBossFightManager*                           ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.BossFightShape.OnRep_BossFightState
-struct ABossFightShape_OnRep_BossFightState_Params
-{
-};
-
-// Function Frontiers.BossFightShape.OnPlayerRevived
-struct ABossFightShape_OnPlayerRevived_Params
-{
-	class APawn*                                       Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.BossFightShape.OnPlayerDied
-struct ABossFightShape_OnPlayerDied_Params
-{
-	class APawn*                                       Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Killer;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.BossFightShape.OnBossDied
-struct ABossFightShape_OnBossDied_Params
-{
-	class APawn*                                       Dying;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Killer;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TLCharacterCreateBaseActor.SetNameplateVisible
-struct ATLCharacterCreateBaseActor_SetNameplateVisible_Params
-{
-	bool                                               bNameplateVisible;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TLCharacterCreateBaseActor.GetOwnedGameplayTags
-struct ATLCharacterCreateBaseActor_GetOwnedGameplayTags_Params
-{
-	struct FGameplayTagContainer                       OutTagContainer;                                           // (Parm, OutParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TLCharacterCreateBaseActor.GetDisplayName
-struct ATLCharacterCreateBaseActor_GetDisplayName_Params
-{
-	struct FText                                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TLCharacterCreateBaseActor.GetComponentsToHide
-struct ATLCharacterCreateBaseActor_GetComponentsToHide_Params
-{
-	TArray<class USkeletalMeshComponent*>              ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TLCharacterCreateBaseActor.GetBaseMesh
-struct ATLCharacterCreateBaseActor_GetBaseMesh_Params
-{
-	class USkeletalMeshComponent*                      ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.CharacterCustomizationComponent.OnRep_CharacterCustomization
-struct UCharacterCustomizationComponent_OnRep_CharacterCustomization_Params
-{
-};
-
-// Function Frontiers.TLCharacterSelectAnimInstance.GetAnimation
-struct UTLCharacterSelectAnimInstance_GetAnimation_Params
-{
-	Frontiers_ECharacterCreateAnimState                From;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ECharacterCreateAnimState                To;                                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bShouldLoop;                                               // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimSequenceBase*                           ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ChatComponent.ServerSetUsingMicrophone
-struct UChatComponent_ServerSetUsingMicrophone_Params
-{
-	bool                                               bInUsingMicrophone;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ChatComponent.ServerRejoinAllChannels
-struct UChatComponent_ServerRejoinAllChannels_Params
-{
-};
-
-// Function Frontiers.ChatComponent.ServerOnClientLoggedIn
-struct UChatComponent_ServerOnClientLoggedIn_Params
-{
-	bool                                               bInUsingMicrophone;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ChatComponent.OnLoggedIntoChatSession
-struct UChatComponent_OnLoggedIntoChatSession_Params
-{
-};
-
-// Function Frontiers.ChatComponent.ClientReceiveSystemMessage
-struct UChatComponent_ClientReceiveSystemMessage_Params
-{
-	TArray<struct FSwitchboardEventMessageBody>        Message;                                                   // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	FrontiersUI_EUIMessageType                         MessageType;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bShowInChat;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              DurationSeconds;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ChatComponent.ClientLogin
-struct UChatComponent_ClientLogin_Params
-{
-	struct FChatHandle                                 ChatHandle;                                                // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FString                                     LoginToken;                                                // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ChatComponent.ClientLeaveChannel
-struct UChatComponent_ClientLeaveChannel_Params
-{
-	Frontiers_EChatChannelType                         ChannelType;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ChatComponent.ClientJoinOrUpdateChannel
-struct UChatComponent_ClientJoinOrUpdateChannel_Params
-{
-	struct FString                                     ChannelName;                                               // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EChatChannelType                         ChannelType;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EChatChannelSpace                        ChannelSpace;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     ChannelToken;                                              // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EChatChannelMediaType                    ChannelMediaTypes;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ColorRange.GetColorFromTextureStrip
-struct UColorRange_GetColorFromTextureStrip_Params
-{
-	class UTexture2D*                                  Texture;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Percent;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                TextureRow;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bWrap;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FColor                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ColorRange.ColorLerp
-struct UColorRange_ColorLerp_Params
-{
-	struct FColor                                      First;                                                     // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FColor                                      Second;                                                    // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Alpha;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FColor                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ConductorComponent.OnAreaChanged
-struct UConductorComponent_OnAreaChanged_Params
-{
-	struct FGuid                                       NewAreaId;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       NewAreaName;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ConsoleUtility.GetCvarStringValue
-struct UConsoleUtility_GetCvarStringValue_Params
-{
-	struct FString                                     Name;                                                      // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ConsoleUtility.GetCvarIntValue
-struct UConsoleUtility_GetCvarIntValue_Params
-{
-	struct FString                                     Name;                                                      // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ConsoleUtility.GetCvarFloatValue
-struct UConsoleUtility_GetCvarFloatValue_Params
-{
-	struct FString                                     Name;                                                      // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ContractComponent.ServerUpdateLastSeenContractLevel
-struct UContractComponent_ServerUpdateLastSeenContractLevel_Params
-{
-};
-
-// Function Frontiers.ContractComponent.ServerSwitchContract
-struct UContractComponent_ServerSwitchContract_Params
-{
-	struct FName                                       NewContractName;                                           // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ContractComponent.ServerClaimNext
-struct UContractComponent_ServerClaimNext_Params
-{
-};
-
-// Function Frontiers.ContractComponent.OnRep_CurrentContract
-struct UContractComponent_OnRep_CurrentContract_Params
-{
-};
-
-// Function Frontiers.ContractComponent.IsContractUIEnabled
-struct UContractComponent_IsContractUIEnabled_Params
-{
-	class UObject*                                     WorldContextObject;                                        // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ContractComponent.ClientOnRewardClaimed
-struct UContractComponent_ClientOnRewardClaimed_Params
-{
-	Frontiers_ECraftingResult                          Result;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FContractTableRowHandle                     Contract;                                                  // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-	int                                                LevelClaimed;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bPaid;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                NumUnclaimedRewards;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.DifficultyDataHelpers.GetDifficultyTraitArray
-struct UDifficultyDataHelpers_GetDifficultyTraitArray_Params
-{
-	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDifficultyTableRowHandle                   DifficultyRow;                                             // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TArray<struct FTraitPair>                          ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.DRLGLevelProxy.GetLevelProxyName
-struct ADRLGLevelProxy_GetLevelProxyName_Params
-{
-	struct FString                                     ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.DungeonMaster.SetDungeonFailed
-struct UDungeonMaster_SetDungeonFailed_Params
-{
-	class UObject*                                     WorldContextObject;                                        // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.DungeonMaster.SetDungeonCleared
-struct UDungeonMaster_SetDungeonCleared_Params
-{
-	class UObject*                                     WorldContextObject;                                        // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.DungeonMaster.OnParticipantDiedInDungeon
-struct UDungeonMaster_OnParticipantDiedInDungeon_Params
-{
-	class APawn*                                       PlayerPawn;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Attacker;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.DungeonMaster.IsActorInEndlessDungeon
-struct UDungeonMaster_IsActorInEndlessDungeon_Params
-{
-	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.DungeonPlayerComponent.ServerRequestDungeonPortal
-struct UDungeonPlayerComponent_ServerRequestDungeonPortal_Params
-{
-	int                                                RequestedChallengeLevel;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       RequestedQuality;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      PortalSourceActor;                                         // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.DungeonPlayerComponent.ServerAcknowledgeChallengeResult
-struct UDungeonPlayerComponent_ServerAcknowledgeChallengeResult_Params
-{
-};
-
-// Function Frontiers.DungeonPlayerComponent.ClientFailedDungeon
-struct UDungeonPlayerComponent_ClientFailedDungeon_Params
-{
-	bool                                               bProgressReset;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                NewHighestClearedLevel;                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Dye.ApplyToSkeletalMesh
-struct UDye_ApplyToSkeletalMesh_Params
-{
-	class USkeletalMeshComponent*                      MeshComponent;                                             // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FCharacterCustomization                     Customization;                                             // (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.EmberWeaponBlueprintLibrary.GetEmberWeaponDrainValueFromTime
-struct UEmberWeaponBlueprintLibrary_GetEmberWeaponDrainValueFromTime_Params
-{
-	class AActor*                                      Owner;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              TimeSeconds;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.EmberWeaponBlueprintLibrary.GetEmberWeaponChargeValueFromTime
-struct UEmberWeaponBlueprintLibrary_GetEmberWeaponChargeValueFromTime_Params
-{
-	class AActor*                                      Owner;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              TimeSeconds;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortEditComponent.ShowPetDisplayUIForProp
-struct UFortEditComponent_ShowPetDisplayUIForProp_Params
-{
-	class AActor*                                      Prop;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortEditComponent.ShowCraftingUIForProp
-struct UFortEditComponent_ShowCraftingUIForProp_Params
-{
-	int                                                PropInventoryEntryId;                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Prop;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortEditComponent.ServerUpgradeProp
-struct UFortEditComponent_ServerUpgradeProp_Params
-{
-	int                                                InventoryEntryId;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortEditComponent.ServerTogglePropGender
-struct UFortEditComponent_ServerTogglePropGender_Params
-{
-	class AActor*                                      WardrobeProp;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortEditComponent.ServerToggleEditMode
-struct UFortEditComponent_ServerToggleEditMode_Params
-{
-};
-
-// Function Frontiers.FortEditComponent.ServerStoreAll
-struct UFortEditComponent_ServerStoreAll_Params
-{
-};
-
-// Function Frontiers.FortEditComponent.ServerSelectProp
-struct UFortEditComponent_ServerSelectProp_Params
-{
-	struct FFortPropTableRowHandle                     Prop;                                                      // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortEditComponent.ServerRotateProp
-struct UFortEditComponent_ServerRotateProp_Params
-{
-	Frontiers_EPropRotationMode                        RotateMode;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortEditComponent.ServerPlaceProp
-struct UFortEditComponent_ServerPlaceProp_Params
-{
-	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortEditComponent.ServerPickupProp
-struct UFortEditComponent_ServerPickupProp_Params
-{
-	class AActor*                                      Prop;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortEditComponent.ServerEndEditMode
-struct UFortEditComponent_ServerEndEditMode_Params
-{
-};
-
-// Function Frontiers.FortEditComponent.ServerEjectPlayerFromFort
-struct UFortEditComponent_ServerEjectPlayerFromFort_Params
-{
-};
-
-// Function Frontiers.FortEditComponent.ServerCraftProp
-struct UFortEditComponent_ServerCraftProp_Params
-{
-	struct FFortPropTableRowHandle                     Prop;                                                      // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortEditComponent.ServerCancelPlace
-struct UFortEditComponent_ServerCancelPlace_Params
-{
-	bool                                               bSendToStorage;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortEditComponent.ServerAssignPetToProp
-struct UFortEditComponent_ServerAssignPetToProp_Params
-{
-	class UFortPropComponent*                          Prop;                                                      // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGuid                                       PetGuid;                                                   // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortEditComponent.OnRep_PropToPlace
-struct UFortEditComponent_OnRep_PropToPlace_Params
-{
-};
-
-// Function Frontiers.FortEditComponent.OnRep_PropRotationDegrees
-struct UFortEditComponent_OnRep_PropRotationDegrees_Params
-{
-};
-
-// Function Frontiers.FortEditComponent.OnRep_IsInOwnFortArea
-struct UFortEditComponent_OnRep_IsInOwnFortArea_Params
-{
-};
-
-// Function Frontiers.FortEditComponent.OnRep_IsBlockedFort
-struct UFortEditComponent_OnRep_IsBlockedFort_Params
-{
-};
-
-// Function Frontiers.FortEditComponent.OnRep_FortEditMode
-struct UFortEditComponent_OnRep_FortEditMode_Params
-{
-};
-
-// Function Frontiers.FortEditComponent.Get
-struct UFortEditComponent_Get_Params
-{
-	class AActor*                                      Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFortEditComponent*                          ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortEditComponent.CraftProp
-struct UFortEditComponent_CraftProp_Params
-{
-	struct FFortPropTableRowHandle                     Prop;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                               bSave;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortEditComponent.ClientShowPetDisplayUIForProp
-struct UFortEditComponent_ClientShowPetDisplayUIForProp_Params
-{
-	int                                                PropInventoryEntryId;                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Prop;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortEditComponent.ClientShowCraftingUIForProp
-struct UFortEditComponent_ClientShowCraftingUIForProp_Params
-{
-	int                                                PropInventoryEntryId;                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Prop;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortPropComponent.SpawnAttachedActor
-struct UFortPropComponent_SpawnAttachedActor_Params
-{
-	class UClass*                                      ActorClass;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USceneComponent*                             AttachTo;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortPropComponent.PlayClosedAudio
-struct UFortPropComponent_PlayClosedAudio_Params
-{
-};
-
-// Function Frontiers.FortPropComponent.OnRep_AssignedPetRow
-struct UFortPropComponent_OnRep_AssignedPetRow_Params
-{
-};
-
-// Function Frontiers.FortPropComponent.OnRep_AssignedPetInventoryGuid
-struct UFortPropComponent_OnRep_AssignedPetInventoryGuid_Params
-{
-};
-
-// Function Frontiers.FortPropComponent.IsOwner
-struct UFortPropComponent_IsOwner_Params
-{
-	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortPropComponent.GetInventoryIdForActor
-struct UFortPropComponent_GetInventoryIdForActor_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortPropComponent.ClientOnUpgraded
-struct UFortPropComponent_ClientOnUpgraded_Params
-{
-	int                                                InventoryEntryId;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFortEditComponent*                          FortEditComponent;                                         // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.FortVolume.OnRepFortOwner
-struct AFortVolume_OnRepFortOwner_Params
-{
-};
-
-// Function Frontiers.FriendsComponent.ServerSetNumFriendsInParty
-struct UFriendsComponent_ServerSetNumFriendsInParty_Params
-{
-	unsigned char                                      NumFriends;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TLActorShared.GetOwnedGameplayTags
-struct ATLActorShared_GetOwnedGameplayTags_Params
-{
-	struct FGameplayTagContainer                       TagContainer;                                              // (Parm, OutParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TLActor.TLGetDisplayName
-struct ATLActor_TLGetDisplayName_Params
-{
-	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FText                                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TLActor.OnOperatedClient
-struct ATLActor_OnOperatedClient_Params
-{
-	class AActor*                                      Other;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TLActor.OnOperated
-struct ATLActor_OnOperated_Params
-{
-	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TLActor.ClientOperate
-struct ATLActor_ClientOperate_Params
-{
-	class AActor*                                      Other;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TLActor.BlueprintServerOnTakeDamage
-struct ATLActor_BlueprintServerOnTakeDamage_Params
-{
-	class AActor*                                      Attacker;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              TotalDamage;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Gadget.SpawnItem
-struct AGadget_SpawnItem_Params
-{
-	class AActor*                                      Source;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APawn*                                       TargetPlayer;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Gadget.SetQuestId
-struct AGadget_SetQuestId_Params
-{
-	struct FName                                       QuestId;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Gadget.SetCanBeOperated
-struct AGadget_SetCanBeOperated_Params
-{
-	bool                                               bStatus;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Gadget.OnStatusChanged
-struct AGadget_OnStatusChanged_Params
-{
-};
-
-// Function Frontiers.Gadget.OnAnimationHitEvent
-struct AGadget_OnAnimationHitEvent_Params
-{
-	int                                                HitIndex;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Gadget.IsAtLastOperationalStatus
-struct AGadget_IsAtLastOperationalStatus_Params
-{
-	class AActor*                                      Other;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Gadget.HasOperateHitNotify
-struct AGadget_HasOperateHitNotify_Params
-{
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Gadget.GetOperationalStatus
-struct AGadget_GetOperationalStatus_Params
-{
-	class AActor*                                      Other;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Gadget.FindSkeletalMesh
-struct AGadget_FindSkeletalMesh_Params
-{
-	class USkeletalMeshComponent*                      ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Gadget.CheckOperateFailed
-struct AGadget_CheckOperateFailed_Params
-{
-	class AActor*                                      Other;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Gadget.CanBeOperated
-struct AGadget_CanBeOperated_Params
-{
-	class AActor*                                      Operator;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Gadget.BlueprintGetOperatorActor
-struct AGadget_BlueprintGetOperatorActor_Params
-{
-	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Gadget.AdvanceOperationalStatus
-struct AGadget_AdvanceOperationalStatus_Params
-{
-	class AActor*                                      Operator;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerGadgetComponent.ServerRequestGadgetStatus
-struct UPlayerGadgetComponent_ServerRequestGadgetStatus_Params
-{
-	class AGadget*                                     Gadget;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerGadgetComponent.ClientPlayAudioForGadget
-struct UPlayerGadgetComponent_ClientPlayAudioForGadget_Params
-{
-	class AGadget*                                     Gadget;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EGadgetOperateSuccess                    GadgetOperateSuccess;                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.GamePadComponent.IsInGamepadMode
-struct UGamePadComponent_IsInGamepadMode_Params
-{
-	class APlayerController*                           Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.TauntMinions
-struct UStatusEffect_TauntMinions_Params
-{
-	class AActor*                                      Taunter;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      MinionOwner;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                       RequiredMinionTags;                                        // (Parm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.Taunt
-struct UStatusEffect_Taunt_Params
-{
-	class AActor*                                      Taunter;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SwapAttachment
-struct UStatusEffect_SwapAttachment_Params
-{
-	struct FName                                       ToAttachRight;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       ToAttachLeft;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SpawnSkillBeam
-struct UStatusEffect_SpawnSkillBeam_Params
-{
-	struct FFireSkillBeamData                          FireBeamData;                                              // (Parm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SpawnParticles
-struct UStatusEffect_SpawnParticles_Params
-{
-	TArray<struct FEffectDefinition>                   ParticleInfo;                                              // (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-	int                                                Priority;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SpawnActorToAttach
-struct UStatusEffect_SpawnActorToAttach_Params
-{
-	class UClass*                                      ActorClass;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       AttachPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ShowVignette
-struct UStatusEffect_ShowVignette_Params
-{
-	class UTexture*                                    Texture;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ShowUI
-struct UStatusEffect_ShowUI_Params
-{
-	FrontiersUI_ETLWidget                              Widget;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bCloseWidgetWhenDone;                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bCloseOtherOpenWindows;                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ShowMessage
-struct UStatusEffect_ShowMessage_Params
-{
-	struct FSlateColor                                 InColor;                                                   // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ShowLoadingScreen
-struct UStatusEffect_ShowLoadingScreen_Params
-{
-};
-
-// Function Frontiers.StatusEffect.ShowHudPanel
-struct UStatusEffect_ShowHudPanel_Params
-{
-	FrontiersUI_ECharacterMenuTab                      Tab;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SetTimer
-struct UStatusEffect_SetTimer_Params
-{
-	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SetSkillSlotForTrainCar
-struct UStatusEffect_SetSkillSlotForTrainCar_Params
-{
-	struct FGameplayTagContainer                       InGameplayTags;                                            // (Parm, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSlot                               InSkillSlot;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SetNotTargetable
-struct UStatusEffect_SetNotTargetable_Params
-{
-};
-
-// Function Frontiers.StatusEffect.SetMusicOverrideForArea
-struct UStatusEffect_SetMusicOverrideForArea_Params
-{
-	struct FFMODEventReference                         Event;                                                     // (Parm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SetMusicIntensityOverrideForArea
-struct UStatusEffect_SetMusicIntensityOverrideForArea_Params
-{
-	Frontiers_EMusicIntensity                          Intensity;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SetMonsterManagerStateOverride
-struct UStatusEffect_SetMonsterManagerStateOverride_Params
-{
-	Frontiers_EMonsterManagerState                     State;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SetMinionForTrainCar
-struct UStatusEffect_SetMinionForTrainCar_Params
-{
-	struct FGameplayTagContainer                       InGameplayTags;                                            // (Parm, NativeAccessSpecifierPublic)
-	struct FMinionTableRowHandle                       MinionRowHandle;                                           // (Parm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SetMaterialInstance
-struct UStatusEffect_SetMaterialInstance_Params
-{
-	class UMaterialInstance*                           Material;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                Priority;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bApplyToAttachedActors;                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bSwapParentMaterial;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bSkipUnlitMeshes;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SetMaterial
-struct UStatusEffect_SetMaterial_Params
-{
-	class UMaterial*                                   Material;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                Priority;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SetIdleMoveBlendspace
-struct UStatusEffect_SetIdleMoveBlendspace_Params
-{
-	Frontiers_ETLBlendSpaceTypes                       Type;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SetFallbackSelectedActor
-struct UStatusEffect_SetFallbackSelectedActor_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SetAnimInstanceClass
-struct UStatusEffect_SetAnimInstanceClass_Params
-{
-	class UClass*                                      AnimInstanceClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.SetAmbienceOverrideForArea
-struct UStatusEffect_SetAmbienceOverrideForArea_Params
-{
-	struct FFMODEventReference                         Event;                                                     // (Parm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ScheduleTrigger
-struct UStatusEffect_ScheduleTrigger_Params
-{
-	float                                              DelaySeconds;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.RunBehaviorTree
-struct UStatusEffect_RunBehaviorTree_Params
-{
-	class UBehaviorTree*                               BehaviorTree;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bStopActiveSkill;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.RemoveStatusEffect
-struct UStatusEffect_RemoveStatusEffect_Params
-{
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                Count;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.PreventSkillUse
-struct UStatusEffect_PreventSkillUse_Params
-{
-};
-
-// Function Frontiers.StatusEffect.PlayWidgetAnim
-struct UStatusEffect_PlayWidgetAnim_Params
-{
-	class UUserWidget*                                 InWidget;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     WidgetAnimName;                                            // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                NumLoops;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.PlaySequenceOnRemove
-struct UStatusEffect_PlaySequenceOnRemove_Params
-{
-	class UClass*                                      TriggerClass;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      SequenceActorClass;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.PlayLoopedSoundEventReference
-struct UStatusEffect_PlayLoopedSoundEventReference_Params
-{
-	struct FFMODEventReference                         Event;                                                     // (Parm, NoDestructor, NativeAccessSpecifierPublic)
-	int                                                Priority;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bUsePriority;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.PlayClientSequenceOnRemove
-struct UStatusEffect_PlayClientSequenceOnRemove_Params
-{
-	class UClass*                                      SequenceActorClass;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.PauseSoundsFromAnimations
-struct UStatusEffect_PauseSoundsFromAnimations_Params
-{
-};
-
-// Function Frontiers.StatusEffect.OverrideSkillSet
-struct UStatusEffect_OverrideSkillSet_Params
-{
-	Frontiers_ESkillSet                                SkillSet;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                Priority;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.OverrideDisplayName
-struct UStatusEffect_OverrideDisplayName_Params
-{
-	struct FText                                       DisplayNameOverride;                                       // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FText                                       DescriptionOverride;                                       // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.OverrideAnimationForSkill
-struct UStatusEffect_OverrideAnimationForSkill_Params
-{
-	class UClass*                                      SkillClass;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimSequenceBase*                           Animation;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.OnWarped
-struct UStatusEffect_OnWarped_Params
-{
-	struct FVector                                     Location;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.OnTriggered
-struct UStatusEffect_OnTriggered_Params
-{
-};
-
-// Function Frontiers.StatusEffect.OnSkillStart
-struct UStatusEffect_OnSkillStart_Params
-{
-	struct FSkillEventData                             SkillEventData;                                            // (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.OnPreDeath
-struct UStatusEffect_OnPreDeath_Params
-{
-};
-
-// Function Frontiers.StatusEffect.OnPreApply
-struct UStatusEffect_OnPreApply_Params
-{
-};
-
-// Function Frontiers.StatusEffect.OnPostDeath
-struct UStatusEffect_OnPostDeath_Params
-{
-};
-
-// Function Frontiers.StatusEffect.OnPostApply
-struct UStatusEffect_OnPostApply_Params
-{
-};
-
-// Function Frontiers.StatusEffect.OnExpired
-struct UStatusEffect_OnExpired_Params
-{
-};
-
-// Function Frontiers.StatusEffect.OnEventTimerTick
-struct UStatusEffect_OnEventTimerTick_Params
-{
-};
-
-// Function Frontiers.StatusEffect.OnCleared
-struct UStatusEffect_OnCleared_Params
-{
-};
-
-// Function Frontiers.StatusEffect.OnAreaChanged
-struct UStatusEffect_OnAreaChanged_Params
-{
-};
-
-// Function Frontiers.StatusEffect.MoveCamera
-struct UStatusEffect_MoveCamera_Params
-{
-	float                                              CameraDistance;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              CameraPitch;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ManageComponentLifetime
-struct UStatusEffect_ManageComponentLifetime_Params
-{
-	class UActorComponent*                             Component;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ManageActorLifetime
-struct UStatusEffect_ManageActorLifetime_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              GracePeriod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.LockTargetWidget
-struct UStatusEffect_LockTargetWidget_Params
-{
-	class AActor*                                      LockedTarget;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.LockSkillCooldownsByTags
-struct UStatusEffect_LockSkillCooldownsByTags_Params
-{
-	struct FGameplayTagContainer                       Tags;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.LockInventoryContainer
-struct UStatusEffect_LockInventoryContainer_Params
-{
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      ContainerClass;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.LockIncreaseActiveTrait
-struct UStatusEffect_LockIncreaseActiveTrait_Params
-{
-	struct FActiveTraitsTableRowHandle                 ActiveTraitRowName;                                        // (Parm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.LockDecreaseActiveTrait
-struct UStatusEffect_LockDecreaseActiveTrait_Params
-{
-	struct FActiveTraitsTableRowHandle                 ActiveTraitRowName;                                        // (Parm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.LockActiveTrait
-struct UStatusEffect_LockActiveTrait_Params
-{
-	struct FActiveTraitsTableRowHandle                 ActiveTraitRowName;                                        // (Parm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.IncreasePeakDrama
-struct UStatusEffect_IncreasePeakDrama_Params
-{
-	float                                              Drama;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.HideInGame
-struct UStatusEffect_HideInGame_Params
-{
-};
-
-// Function Frontiers.StatusEffect.HasStatusEffectWithTags
-struct UStatusEffect_HasStatusEffectWithTags_Params
-{
-	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                       Tags;                                                      // (Parm, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.HasStatusEffect
-struct UStatusEffect_HasStatusEffect_Params
-{
-	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.GetStatusEffectTraits
-struct UStatusEffect_GetStatusEffectTraits_Params
-{
-	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                InSkillLevel;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FText>                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.GetStatusEffectsWithTags
-struct UStatusEffect_GetStatusEffectsWithTags_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                       Tags;                                                      // (Parm, NativeAccessSpecifierPublic)
-	TArray<class UStatusEffect*>                       ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.GetStatusEffectsOfType
-struct UStatusEffect_GetStatusEffectsOfType_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UStatusEffect*>                       ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.GetOwner
-struct UStatusEffect_GetOwner_Params
-{
-	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.GetMaxInstancesPerActor
-struct UStatusEffect_GetMaxInstancesPerActor_Params
-{
-	class AActor*                                      TargetActor;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.GetInflictor
-struct UStatusEffect_GetInflictor_Params
-{
-	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.GetDescription
-struct UStatusEffect_GetDescription_Params
-{
-	class AActor*                                      ActorOwner;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FText                                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.GetBlueprintRelevantInstigatorTraitKeys
-struct UStatusEffect_GetBlueprintRelevantInstigatorTraitKeys_Params
-{
-	TArray<struct FTraitKey>                           ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ForceHoldPosition
-struct UStatusEffect_ForceHoldPosition_Params
-{
-};
-
-// Function Frontiers.StatusEffect.Expire
-struct UStatusEffect_Expire_Params
-{
-};
-
-// Function Frontiers.StatusEffect.EnableComponentTick
-struct UStatusEffect_EnableComponentTick_Params
-{
-	class UActorComponent*                             Component;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bEnable;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.DisableSkillsByTag
-struct UStatusEffect_DisableSkillsByTag_Params
-{
-	struct FGameplayTagContainer                       Tags;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.DisableSkillsBySlot
-struct UStatusEffect_DisableSkillsBySlot_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.DisableRootMotion
-struct UStatusEffect_DisableRootMotion_Params
-{
-};
-
-// Function Frontiers.StatusEffect.DisableOperate
-struct UStatusEffect_DisableOperate_Params
-{
-};
-
-// Function Frontiers.StatusEffect.DisableOcclusionShader
-struct UStatusEffect_DisableOcclusionShader_Params
-{
-};
-
-// Function Frontiers.StatusEffect.DisableLootDrop
-struct UStatusEffect_DisableLootDrop_Params
-{
-};
-
-// Function Frontiers.StatusEffect.DisableHoverClick
-struct UStatusEffect_DisableHoverClick_Params
-{
-};
-
-// Function Frontiers.StatusEffect.DisableCharacterCollision
-struct UStatusEffect_DisableCharacterCollision_Params
-{
-};
-
-// Function Frontiers.StatusEffect.CreateMeshShell
-struct UStatusEffect_CreateMeshShell_Params
-{
-	struct FMeshShellParameters                        Params;                                                    // (Parm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.CreateComponent
-struct UStatusEffect_CreateComponent_Params
-{
-	class UClass*                                      ComponentClass;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UActorComponent*                             ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ClearStatusEffectFromInflictor
-struct UStatusEffect_ClearStatusEffectFromInflictor_Params
-{
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Inflictor;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ClearStatusEffectByGameplayTag
-struct UStatusEffect_ClearStatusEffectByGameplayTag_Params
-{
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                                Tag;                                                       // (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ClearStatusEffect
-struct UStatusEffect_ClearStatusEffect_Params
-{
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ChangeTeam
-struct UStatusEffect_ChangeTeam_Params
-{
-	Frontiers_ETLTeam                                  NewTeam;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ChangeHealthBarColor
-struct UStatusEffect_ChangeHealthBarColor_Params
-{
-	struct FSlateColor                                 Color;                                                     // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ChainBeam
-struct UStatusEffect_ChainBeam_Params
-{
-	class AActor*                                      SourceActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      ChainStartActor;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       ChainStartSocket;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       ChainHitSocket;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      SkillBeamClass;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                BounceCount;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ChainRadius;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      InStatusEffectClass;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              StatusDuration;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              DamageFraction;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.AudioSetGlobalParameter
-struct UStatusEffect_AudioSetGlobalParameter_Params
-{
-	struct FString                                     ParameterName;                                             // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ParameterValue;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.AttachHazardToOwner
-struct UStatusEffect_AttachHazardToOwner_Params
-{
-	class AActor*                                      SourceActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      HazardClass;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.AsyncLoadAndHoldAsset
-struct UStatusEffect_AsyncLoadAndHoldAsset_Params
-{
-	struct FSoftObjectPath                             ObjectPath;                                                // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ApplyTraits
-struct UStatusEffect_ApplyTraits_Params
-{
-	TArray<struct FTraitInitializer>                   TraitList;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ApplyTraitPairs
-struct UStatusEffect_ApplyTraitPairs_Params
-{
-	TArray<struct FTraitPair>                          TraitList;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ApplyStatusEffectByProximity
-struct UStatusEffect_ApplyStatusEffectByProximity_Params
-{
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Inflictor;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ASkillShape*                                 Source;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStatusEffect*                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ApplyStatusEffect
-struct UStatusEffect_ApplyStatusEffect_Params
-{
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Inflictor;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStatusEffect*                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ApplyProcStatusEffect
-struct UStatusEffect_ApplyProcStatusEffect_Params
-{
-	class AActor*                                      Inflictor;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                                ProcTag;                                                   // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       ParameterRowName;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStatusEffect*                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ApplyAssetStatusEffect
-struct UStatusEffect_ApplyAssetStatusEffect_Params
-{
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Inflictor;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStatusEffect*                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.AdjustMonsterAwarenessRadiusInArea
-struct UStatusEffect_AdjustMonsterAwarenessRadiusInArea_Params
-{
-	float                                              Centimeters;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.AddSkill
-struct UStatusEffect_AddSkill_Params
-{
-	struct FName                                       SkillRowName;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SkillLevel;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.AddProc
-struct UStatusEffect_AddProc_Params
-{
-	struct FProcTableRowHandle                         ProcRow;                                                   // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	int                                                InRequiredSkillInstanceId;                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.AddPlayerEnergyRegen
-struct UStatusEffect_AddPlayerEnergyRegen_Params
-{
-	float                                              SecondsToRefillEnergy;                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.AddItemNameplate
-struct UStatusEffect_AddItemNameplate_Params
-{
-};
-
-// Function Frontiers.StatusEffect.AddInventoryContainer
-struct UStatusEffect_AddInventoryContainer_Params
-{
-	class UClass*                                      ContainerClass;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.StatusEffect.ActivateHazard
-struct UStatusEffect_ActivateHazard_Params
-{
-	class AHazard*                                     Hazard;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bShouldBeActive;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.GradientColorComponent.UpdateMaterialFromSamplerMap
-struct UGradientColorComponent_UpdateMaterialFromSamplerMap_Params
-{
-	struct FName                                       PropertyChangedName;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.GradientColorComponent.UpdateAllMaterials
-struct UGradientColorComponent_UpdateAllMaterials_Params
-{
-};
-
-// Function Frontiers.GradientColorComponent.InitWardrobeComponents
-struct UGradientColorComponent_InitWardrobeComponents_Params
-{
-};
-
-// Function Frontiers.GradientColorComponent.ImportDyeBaseForEdit
-struct UGradientColorComponent_ImportDyeBaseForEdit_Params
-{
-};
-
-// Function Frontiers.GradientColorComponent.GetGradientRowByName
-struct UGradientColorComponent_GetGradientRowByName_Params
-{
-	struct FName                                       RowName;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.HandledComponentInterface.PreHandleComponent
-struct UHandledComponentInterface_PreHandleComponent_Params
-{
-};
-
-// Function Frontiers.HandledComponentInterface.PostHandleComponent
-struct UHandledComponentInterface_PostHandleComponent_Params
-{
-};
-
-// Function Frontiers.HarvestGadget.GetHarvestPercent
-struct AHarvestGadget_GetHarvestPercent_Params
-{
-	class APawn*                                       Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Hazard.SpawnHazard
-struct AHazard_SpawnHazard_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      HazardClass;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     Location;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              HazardDuration;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bAttached;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      AttachActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bActiveOnSpawn;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bSpawnOnClient;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bSpawnOnGround;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AHazard*                                     ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Hazard.OnPulse
-struct AHazard_OnPulse_Params
-{
-};
-
-// Function Frontiers.Hazard.OnHitTarget
-struct AHazard_OnHitTarget_Params
-{
-	class AActor*                                      ActorInContact;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Hazard.GetFilteredOverlappingActors
-struct AHazard_GetFilteredOverlappingActors_Params
-{
-	TArray<class AActor*>                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Hazard.Deactivate
-struct AHazard_Deactivate_Params
-{
-};
-
-// Function Frontiers.Hazard.ActivateHazard
-struct AHazard_ActivateHazard_Params
-{
-	class AActor*                                      HazardActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bShouldActivate;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.HighlightMaterialComponent.SetVectorParameterValueOnMaterial
-struct UHighlightMaterialComponent_SetVectorParameterValueOnMaterial_Params
-{
-	struct FName                                       ParameterName;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                                VectorVal;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.HighlightMaterialComponent.SetupMaterials
-struct UHighlightMaterialComponent_SetupMaterials_Params
-{
-	bool                                               bUseHighlightMat;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.HighlightMaterialComponent.SetScalarParameterOnMaterial
-struct UHighlightMaterialComponent_SetScalarParameterOnMaterial_Params
-{
-	struct FName                                       ParameterName;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ScalarVal;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.HighlightMaterialComponent.SetDeactivateMaterial
-struct UHighlightMaterialComponent_SetDeactivateMaterial_Params
-{
-	struct FName                                       ParameterName;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ScalarVal;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ItemOnGround.OnRep_SpawnOrigin
-struct UItemOnGround_OnRep_SpawnOrigin_Params
-{
-};
-
-// Function Frontiers.ItemOnGround.OnRep_ItemDataRow
-struct UItemOnGround_OnRep_ItemDataRow_Params
-{
-};
-
-// Function Frontiers.ItemOnGround.OnRep_ExtraAffixes
-struct UItemOnGround_OnRep_ExtraAffixes_Params
-{
-};
-
-// Function Frontiers.ItemOnGround.ClientItemPickedUp
-struct UItemOnGround_ClientItemPickedUp_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ItemOnGround.AutoPickup
-struct UItemOnGround_AutoPickup_Params
-{
-	class AActor*                                      Activator;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Delay;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ItemQualityFunctionLibrary.GetItemQuality
-struct UItemQualityFunctionLibrary_GetItemQuality_Params
-{
-	class UObject*                                     WorldContextObject;                                        // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FInventoryItemEntry                         InventoryEntry;                                            // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FName                                       ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ItemQualityFunctionLibrary.GetItemOnGroundSelectedParticleSystem
-struct UItemQualityFunctionLibrary_GetItemOnGroundSelectedParticleSystem_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UParticleSystem*                             ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ItemQualityFunctionLibrary.GetItemOnGroundParticleSystem
-struct UItemQualityFunctionLibrary_GetItemOnGroundParticleSystem_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UParticleSystem*                             ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ItemQualityFunctionLibrary.GetItemOnGroundMapMarkerComponentClass
-struct UItemQualityFunctionLibrary_GetItemOnGroundMapMarkerComponentClass_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ItemQualityFunctionLibrary.GetItemOnGroundDisplayNameColor
-struct UItemQualityFunctionLibrary_GetItemOnGroundDisplayNameColor_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                                DefaultColor;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ItemQualityFunctionLibrary.GetItemOcclusionColorIndex
-struct UItemQualityFunctionLibrary_GetItemOcclusionColorIndex_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ETLPostProcessFlag                       ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ItemQualityFunctionLibrary.GetItemDisplayNameColor
-struct UItemQualityFunctionLibrary_GetItemDisplayNameColor_Params
-{
-	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FItemData                                   ItemData;                                                  // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FLinearColor                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ItemSpawner.SpawnItemOnGround
-struct AItemSpawner_SpawnItemOnGround_Params
-{
-	struct FItemRequest                                ItemRequest;                                               // (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ItemSpawner.SetSourceActor
-struct AItemSpawner_SetSourceActor_Params
-{
-	struct FItemRequest                                ItemRequest;                                               // (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	class AActor*                                      SourceActor;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     OffsetToRotate;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ItemSpawner.GiveRandomItem
-struct AItemSpawner_GiveRandomItem_Params
-{
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       RowName;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                       ItemTags;                                                  // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	float                                              ItemLevel;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     ContextString;                                             // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.KeyablePlayerMaterial.SetScalarParameterOnMaterial
-struct UKeyablePlayerMaterial_SetScalarParameterOnMaterial_Params
-{
-	float                                              Val;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       ParameterName;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.LevelManager.OnNavigationGenerationFinished
-struct ULevelManager_OnNavigationGenerationFinished_Params
-{
-	class ANavigationData*                             NavData;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.LevelManager.OnLevelRemoved
-struct ULevelManager_OnLevelRemoved_Params
-{
-	class ULevel*                                      InLevel;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWorld*                                      InWorld;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.LevelManager.OnLevelAdded
-struct ULevelManager_OnLevelAdded_Params
-{
-	class ULevel*                                      InLevel;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWorld*                                      InWorld;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerLevelSequenceWrapper.ServerSequenceStop
-struct UPlayerLevelSequenceWrapper_ServerSequenceStop_Params
-{
-};
-
-// Function Frontiers.PlayerLevelSequenceWrapper.PlayClientOnlyLevelSequence
-struct UPlayerLevelSequenceWrapper_PlayClientOnlyLevelSequence_Params
-{
-	class UObject*                                     WorldContextObject;                                        // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      SequenceActorClass;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      AttachToActor;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ALevelSequenceActor*                         ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerLevelSequenceWrapper.ClientSequenceStop
-struct UPlayerLevelSequenceWrapper_ClientSequenceStop_Params
-{
-};
-
-// Function Frontiers.PlayerLevelSequenceWrapper.ClientSequenceStart
-struct UPlayerLevelSequenceWrapper_ClientSequenceStart_Params
-{
-	struct FClientLevelSequenceRequest                 Request;                                                   // (ConstParm, Parm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.LifetimeEventsComponent.TimerNearLifetimeEnd
-struct ULifetimeEventsComponent_TimerNearLifetimeEnd_Params
-{
-};
-
-// Function Frontiers.LifetimeEventsComponent.OnRep_ServerLifetimeInfo
-struct ULifetimeEventsComponent_OnRep_ServerLifetimeInfo_Params
-{
-};
-
-// Function Frontiers.LoreLineComponent.PlayLoreLine
-struct ULoreLineComponent_PlayLoreLine_Params
-{
-	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.LoreLineComponent.OnOwnerOverlap
-struct ULoreLineComponent_OnOwnerOverlap_Params
-{
-	class AActor*                                      OverlappedActor;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.LorePlayerComponent.StopPlayingLoreLine
-struct ULorePlayerComponent_StopPlayingLoreLine_Params
-{
-	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.LorePlayerComponent.PlayLoreLine
-struct ULorePlayerComponent_PlayLoreLine_Params
-{
-	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDialogueTableRowHandle                     LoreLine;                                                  // (Parm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MainMenuEmberWeaponHolder.GetAttachComponent
-struct AMainMenuEmberWeaponHolder_GetAttachComponent_Params
-{
-	class USceneComponent*                             ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MainMenuActorCoordinator.SequenceFinished
-struct AMainMenuActorCoordinator_SequenceFinished_Params
-{
-};
-
-// Function Frontiers.TLBasePlayerController.ServerSpawnCheats
-struct ATLBasePlayerController_ServerSpawnCheats_Params
-{
-};
-
-// Function Frontiers.TLBasePlayerController.OnRep_CheatRunner
-struct ATLBasePlayerController_OnRep_CheatRunner_Params
-{
-};
-
-// Function Frontiers.MainMenuPlayerController.ServerTravel
-struct AMainMenuPlayerController_ServerTravel_Params
-{
-	struct FString                                     URL;                                                       // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MainMenuPlayerController.ClickHoveredActor
-struct AMainMenuPlayerController_ClickHoveredActor_Params
-{
-};
-
-// Function Frontiers.MainMenuState.GoBack
-struct UMainMenuState_GoBack_Params
-{
-};
-
-// Function Frontiers.MainMenuStateCharacterCreate.ConfirmPet
-struct UMainMenuStateCharacterCreate_ConfirmPet_Params
-{
-};
-
-// Function Frontiers.MainMenuStateCharacterCreate.ConfirmCustomization
-struct UMainMenuStateCharacterCreate_ConfirmCustomization_Params
-{
-};
-
-// Function Frontiers.MainMenuStateCharacterCreate.ConfirmClass
-struct UMainMenuStateCharacterCreate_ConfirmClass_Params
-{
-};
-
-// Function Frontiers.MainMenuStateCharacterCreate.CanChangeSkinHairColor
-struct UMainMenuStateCharacterCreate_CanChangeSkinHairColor_Params
-{
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MainMenuStateCharacterCreate.CanChangeGender
-struct UMainMenuStateCharacterCreate_CanChangeGender_Params
-{
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MainMenuStateCharacterCreatePickPet.SelectHighlightedPet
-struct UMainMenuStateCharacterCreatePickPet_SelectHighlightedPet_Params
-{
-};
-
-// Function Frontiers.MainMenuStateCharacterCreateShowSkillTrees.ContinueToNextState
-struct UMainMenuStateCharacterCreateShowSkillTrees_ContinueToNextState_Params
-{
-};
-
-// Function Frontiers.MainMenuStateLogin.Login
-struct UMainMenuStateLogin_Login_Params
-{
-};
-
-// Function Frontiers.MainMenuStateLogin.Cancel
-struct UMainMenuStateLogin_Cancel_Params
-{
-};
-
-// Function Frontiers.MainMenuStateWelcome.ContinueToNextState
-struct UMainMenuStateWelcome_ContinueToNextState_Params
-{
-};
-
-// Function Frontiers.MapProxy.OnMapTilesLoaded
-struct AMapProxy_OnMapTilesLoaded_Params
-{
-};
-
-// Function Frontiers.MapWorksManager.OnRepMapWorksParams
-struct UMapWorksManager_OnRepMapWorksParams_Params
-{
-};
-
-// Function Frontiers.MapWorksObjectComponent.QueryReplaceMapworksPortal
-struct UMapWorksObjectComponent_QueryReplaceMapworksPortal_Params
-{
-	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FInventoryItemEntry                         Item;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MapWorksObjectComponent.MakePortalFromMapworksRowsAtLocation
-struct UMapWorksObjectComponent_MakePortalFromMapworksRowsAtLocation_Params
-{
-	TArray<class AActor*>                              Operators;                                                 // (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FMapWorksTableRowHandle>             MapworksRowNames;                                          // (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-	Frontiers_EPlayerPortalDestinationType             DestinationType;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                                SpokeTag;                                                  // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     SpawnLocation;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MapWorksObjectComponent.MakePortalFromMapworksRows
-struct UMapWorksObjectComponent_MakePortalFromMapworksRows_Params
-{
-	TArray<class AActor*>                              Operators;                                                 // (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FMapWorksTableRowHandle>             MapworksRowNames;                                          // (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-	Frontiers_EPlayerPortalDestinationType             DestinationType;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                                SpokeTag;                                                  // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MapWorksObjectComponent.MakePortal
-struct UMapWorksObjectComponent_MakePortal_Params
-{
-	TArray<class AActor*>                              Operators;                                                 // (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-	class AActor*                                      MapWorksObjectOwner;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EPlayerPortalDestinationType             DestinationType;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MapWorksObjectComponent.MakeItemPortal
-struct UMapWorksObjectComponent_MakeItemPortal_Params
-{
-	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FInventoryItemEntry                         Item;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MeshAttachmentComponent.AttachToTarget
-struct UMeshAttachmentComponent_AttachToTarget_Params
-{
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FAttachMeshInfo                             AttachmentInfo;                                            // (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector                                     Location;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                                    Rotation;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MeshShellComponent.SpawnShellUsingParams
-struct UMeshShellComponent_SpawnShellUsingParams_Params
-{
-	struct FMeshShellParameters                        InParams;                                                  // (Parm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MeshShellComponent.CreateShellOnTarget
-struct UMeshShellComponent_CreateShellOnTarget_Params
-{
-	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMeshShellComponent*                         ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MetricsLoggerComponent.HasTakenDamageSinceTime
-struct UMetricsLoggerComponent_HasTakenDamageSinceTime_Params
-{
-	class AActor*                                      Owner;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              SinceSecondsAgo;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              AtLeastDamage;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Missile.SpawnProjectiles
-struct AMissile_SpawnProjectiles_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     TargetLocation;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFireMissilesData                           FireMissileData;                                           // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	int                                                RandomSeed;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class AMissile*>                            ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Missile.SimulateComponentHit
-struct AMissile_SimulateComponentHit_Params
-{
-	class UPrimitiveComponent*                         HitComponent;                                              // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bBlockingHit;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Missile.SetCollisionProfile
-struct AMissile_SetCollisionProfile_Params
-{
-	struct FName                                       CollisionProfileName;                                      // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Missile.OnMissileLaunched
-struct AMissile_OnMissileLaunched_Params
-{
-};
-
-// Function Frontiers.Missile.OnMissileExploded
-struct AMissile_OnMissileExploded_Params
-{
-	struct FVector                                     ExplodeLocation;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Missile.OnMissileDidDamage
-struct AMissile_OnMissileDidDamage_Params
-{
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Missile.OnComponentHit
-struct AMissile_OnComponentHit_Params
-{
-	class UPrimitiveComponent*                         HitComponent;                                              // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     NormalImpulse;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHitResult                                  Hit;                                                       // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Missile.OnComponentBeginOverlap
-struct AMissile_OnComponentBeginOverlap_Params
-{
-	class UPrimitiveComponent*                         OverlappedComponent;                                       // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                OtherBodyIndex;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bFromSweep;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHitResult                                  SweepResult;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Missile.OnClientMissileHit
-struct AMissile_OnClientMissileHit_Params
-{
-	class AActor*                                      MissileInstigator;                                         // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class AActor*>                              HitActors;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FVector                                     Location;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                                    Rotator;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                               bAffectedArea;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Missile.MissileStopped
-struct AMissile_MissileStopped_Params
-{
-};
-
-// Function Frontiers.Missile.GetSkillInstanceId
-struct AMissile_GetSkillInstanceId_Params
-{
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Missile.DoHit
-struct AMissile_DoHit_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bBlockingHit;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ModalWidgetComponent.WidgetReject
-struct UModalWidgetComponent_WidgetReject_Params
-{
-	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ModalWidgetComponent.WidgetAccept
-struct UModalWidgetComponent_WidgetAccept_Params
-{
-	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ModalWidgetComponent.ShowWidget
-struct UModalWidgetComponent_ShowWidget_Params
-{
-	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterChampionComponent.RemoveMonsterFromChampionPack
-struct UMonsterChampionComponent_RemoveMonsterFromChampionPack_Params
-{
-	class AActor*                                      Monster;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterChampionComponent.OnOwnerDied
-struct UMonsterChampionComponent_OnOwnerDied_Params
-{
-	class APawn*                                       Dying;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Attacker;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterChampionComponent.MakeIntoChampionWithAffixes
-struct UMonsterChampionComponent_MakeIntoChampionWithAffixes_Params
-{
-	class AActor*                                      Monster;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EMonsterSpawnType                        MonsterSpawnType;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FMonsterAffixTableRowHandle>         Affixes;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                               bPlaySpawnEffects;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bPlayDeathEffects;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterChampionComponent.GetSelectedAffixes
-struct UMonsterChampionComponent_GetSelectedAffixes_Params
-{
-	TArray<struct FMonsterAffixTableRowHandle>         ReturnValue;                                               // (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterChampionComponent.GetPackSize
-struct UMonsterChampionComponent_GetPackSize_Params
-{
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterChampionComponent.GetNumAliveInPack
-struct UMonsterChampionComponent_GetNumAliveInPack_Params
-{
-	bool                                               bSameSpawnType;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterChampionComponent.GetMonsterType
-struct UMonsterChampionComponent_GetMonsterType_Params
-{
-	class AActor*                                      Monster;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EMonsterSpawnType                        ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterChampionComponent.GetMonsterChampionComponent
-struct UMonsterChampionComponent_GetMonsterChampionComponent_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMonsterChampionComponent*                   ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterChampionComponent.GetLivingPackMembers
-struct UMonsterChampionComponent_GetLivingPackMembers_Params
-{
-	TArray<class AActor*>                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterChampionComponent.AddNewMonsterToPack
-struct UMonsterChampionComponent_AddNewMonsterToPack_Params
-{
-	class AActor*                                      Monster;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EMonsterSpawnType                        MonsterSpawnType;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FMonsterAffixTableRowHandle>         IgnoredAffixes;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                               bReplace;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bPlaySpawnEffects;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bPlayDeathEffects;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterManagerPlayerComponent.PreHandleComponent
-struct UMonsterManagerPlayerComponent_PreHandleComponent_Params
-{
-};
-
-// Function Frontiers.MonsterManagerPlayerComponent.PostHandleComponent
-struct UMonsterManagerPlayerComponent_PostHandleComponent_Params
-{
-};
-
-// Function Frontiers.MonsterManagerComponent.TriggerNearbySpawners
-struct UMonsterManagerComponent_TriggerNearbySpawners_Params
-{
-	class AActor*                                      ReferenceActor;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      MonsterSpawnerClass;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bAllSpawnersInArea;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterManagerComponent.ForceActivateNearbySpawners
-struct UMonsterManagerComponent_ForceActivateNearbySpawners_Params
-{
-	class AActor*                                      ReferenceActor;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      MonsterSpawnerClass;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bAllSpawnersInArea;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterManagerComponent.EmptyPendingMonstersNearby
-struct UMonsterManagerComponent_EmptyPendingMonstersNearby_Params
-{
-	class AActor*                                      ReferenceActor;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      MonsterSpawnerClass;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bAllSpawnersInArea;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterSpawner.SpawnMonsterNear
-struct AMonsterSpawner_SpawnMonsterNear_Params
-{
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMonstersTableRowHandle                     TableRow;                                                  // (Parm, NativeAccessSpecifierPublic)
-	struct FVector                                     LocationIn;                                                // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              AcceptanceRadius;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Level;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bChampion;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bPawnIsOwner;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSlot                               SpawnSkillSlot;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bInIgnoreSpawnCollision;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterSpawner.SpawnMonster
-struct AMonsterSpawner_SpawnMonster_Params
-{
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMonsterSpawnRequest                        Request;                                                   // (Parm, NativeAccessSpecifierPublic)
-	struct FMonstersTableRowHandle                     TableRow;                                                  // (Parm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterSpawner.OnMonsterCountChanged
-struct AMonsterSpawner_OnMonsterCountChanged_Params
-{
-	int                                                Count;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterSpawner.OnAllMonstersKilled
-struct AMonsterSpawner_OnAllMonstersKilled_Params
-{
-};
-
-// Function Frontiers.MonsterSpawnerBoss.OnMonsterSpawned
-struct UMonsterSpawnerBoss_OnMonsterSpawned_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MonsterSpawnerTrigger.ResetTrigger
-struct UMonsterSpawnerTrigger_ResetTrigger_Params
-{
-};
-
-// Function Frontiers.MonsterSpawnerTrigger.OnOverlap
-struct UMonsterSpawnerTrigger_OnOverlap_Params
-{
-	class UPrimitiveComponent*                         OverlappedComp;                                            // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                OtherBodyIndex;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bFromSweep;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHitResult                                  SweepResult;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.UpdateGadgetState
-struct UMulticastFunctionComponent_UpdateGadgetState_Params
-{
-	class AGadget*                                     Gadget;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint64_t                                           ObserverId;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bInCanBeOperated;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                InOperationalStatus;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.UpdateAreaQuestStatus
-struct UMulticastFunctionComponent_UpdateAreaQuestStatus_Params
-{
-	class UAreaQuestComponent*                         Component;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FQuestInstanceDataMsg                       Msg;                                                       // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.UpdateAreaQuestCompleteStatus
-struct UMulticastFunctionComponent_UpdateAreaQuestCompleteStatus_Params
-{
-	class UAreaQuestComponent*                         Component;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FQuestInstanceDataCompletedMsg              Msg;                                                       // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.TrapTriggered
-struct UMulticastFunctionComponent_TrapTriggered_Params
-{
-	class UTrapComponent*                              TrapComponent;                                             // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      TriggeredBy;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Delay;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.StartSkill
-struct UMulticastFunctionComponent_StartSkill_Params
-{
-	class USkillManager*                               SkillManager;                                              // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSkillReplicationData                       SkillActiveData;                                           // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.StartSecondarySkill
-struct UMulticastFunctionComponent_StartSecondarySkill_Params
-{
-	class USkillManager*                               SkillManager;                                              // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      SkillClass;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector_NetQuantize10                       TargetLocation;                                            // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.RootMotionEndedOnServer
-struct UMulticastFunctionComponent_RootMotionEndedOnServer_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.PlayTLEffectAttached
-struct UMulticastFunctionComponent_PlayTLEffectAttached_Params
-{
-	class AActor*                                      EffectOwner;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       AttachPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TEnumAsByte<Engine_EAttachLocation>                AttachLocationType;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector_NetQuantize10                       Offset;                                                    // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              LifeSpan;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.PlayTLEffectAtLocation
-struct UMulticastFunctionComponent_PlayTLEffectAtLocation_Params
-{
-	class AActor*                                      EffectOwner;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector_NetQuantize10                       Location;                                                  // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              LifeSpan;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.PlaySkillDamageEffectWithNumbers
-struct UMulticastFunctionComponent_PlaySkillDamageEffectWithNumbers_Params
-{
-	class UTLCombatActorComponent*                     CombatFX;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APawn*                                       Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D_NetQuantizeDirection              DirectionOfAttackNormalized;                               // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ECombatFxElementType                     Element;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsCritical;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsLethal;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsOverkill;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                Damage;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.PlaySkillDamageEffect
-struct UMulticastFunctionComponent_PlaySkillDamageEffect_Params
-{
-	class UTLCombatActorComponent*                     CombatFX;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APawn*                                       Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D_NetQuantizeDirection              DirectionOfAttackNormalized;                               // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ECombatFxElementType                     Element;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsCritical;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsLethal;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsOverkill;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.PlayRecoverHealthEffect
-struct UMulticastFunctionComponent_PlayRecoverHealthEffect_Params
-{
-	class UTLCombatActorComponent*                     CombatFX;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.PlayEffectAttached
-struct UMulticastFunctionComponent_PlayEffectAttached_Params
-{
-	class AActor*                                      EffectOwner;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UParticleSystem*                             EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFMODEventReference                         EventReference;                                            // (Parm, NoDestructor, NativeAccessSpecifierPublic)
-	struct FName                                       AttachPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TEnumAsByte<Engine_EAttachLocation>                AttachLocationType;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector_NetQuantize10                       Offset;                                                    // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.PlayEffectAtLocation
-struct UMulticastFunctionComponent_PlayEffectAtLocation_Params
-{
-	class AActor*                                      EffectOwner;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UParticleSystem*                             EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFMODEventReference                         EventReference;                                            // (Parm, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector_NetQuantize10                       Location;                                                  // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator_NetQuantizeByte                    Rotation;                                                  // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.PlayDamageEffectWithNumbers
-struct UMulticastFunctionComponent_PlayDamageEffectWithNumbers_Params
-{
-	class UTLCombatActorComponent*                     CombatFX;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APawn*                                       Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D_NetQuantizeDirection              DirectionOfAttackNormalized;                               // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ECombatFxElementType                     Element;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsCritical;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsLethal;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsOverkill;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                Damage;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.PlayDamageEffect
-struct UMulticastFunctionComponent_PlayDamageEffect_Params
-{
-	class UTLCombatActorComponent*                     CombatFX;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APawn*                                       Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D_NetQuantizeDirection              DirectionOfAttackNormalized;                               // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ECombatFxElementType                     Element;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsCritical;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsLethal;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsOverkill;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.PlayDamageAvoidedEffect
-struct UMulticastFunctionComponent_PlayDamageAvoidedEffect_Params
-{
-	class UTLCombatActorComponent*                     CombatFX;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D_NetQuantizeDirection              DirectionOfAttackNormalized;                               // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ECombatWidgetNotifyType                  NotifyType;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.MissileStoppedOnServer
-struct UMulticastFunctionComponent_MissileStoppedOnServer_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      MissileInstigator;                                         // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      MissileClass;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector_NetQuantize                         Location;                                                  // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator_NetQuantizeByte                    Rotator;                                                   // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint32_t                                           SyncId;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bExpired;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bHitSomething;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      HitActor;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.MissileHitOnServer
-struct UMulticastFunctionComponent_MissileHitOnServer_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      MissileInstigator;                                         // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      MissileClass;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class AActor*>                              HitActors;                                                 // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FVector_NetQuantize                         Location;                                                  // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator_NetQuantizeByte                    Rotator;                                                   // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                               bExploded;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.MissileFoundTargetOnServer
-struct UMulticastFunctionComponent_MissileFoundTargetOnServer_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint32_t                                           SyncId;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.EndRootMotionForce
-struct UMulticastFunctionComponent_EndRootMotionForce_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.EndPortalSkillAnimation
-struct UMulticastFunctionComponent_EndPortalSkillAnimation_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.MulticastFunctionComponent.ApplyRadialRootMotionForce
-struct UMulticastFunctionComponent_ApplyRadialRootMotionForce_Params
-{
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector_NetQuantize                         Origin;                                                    // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Speed;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsPush;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.NarratorComponent.TriggerQuip
-struct UNarratorComponent_TriggerQuip_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ENarratorQuip                            Quip;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.NarratorComponent.ParseNarratorQuip
-struct UNarratorComponent_ParseNarratorQuip_Params
-{
-	struct FName                                       QuipName;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ENarratorQuip                            ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.OperableComponent.OnOperateClient
-struct UOperableComponent_OnOperateClient_Params
-{
-	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.OperableComponent.OnOperate
-struct UOperableComponent_OnOperate_Params
-{
-	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.OperableComponent.IsActorOperable
-struct UOperableComponent_IsActorOperable_Params
-{
-	class AActor*                                      Operator;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.OperableComponent.Enable
-struct UOperableComponent_Enable_Params
-{
-};
-
-// Function Frontiers.OperableComponent.Disable
-struct UOperableComponent_Disable_Params
-{
-};
-
-// Function Frontiers.OperableComponent.ClientOperate
-struct UOperableComponent_ClientOperate_Params
-{
-	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PartyComponent.ServerUpdateBlockedPartyMemberTLAccountIds
-struct UPartyComponent_ServerUpdateBlockedPartyMemberTLAccountIds_Params
-{
-	TArray<struct FString>                             InBlockedPartyMemberTLAccountIds;                          // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PartyComponent.ServerSendInstanceResetRequest
-struct UPartyComponent_ServerSendInstanceResetRequest_Params
-{
-};
-
-// Function Frontiers.PartyComponent.ServerSendInstanceResetNotification
-struct UPartyComponent_ServerSendInstanceResetNotification_Params
-{
-	TArray<struct FPartyMember>                        KickedPartyMembers;                                        // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PartyComponent.ServerRespondToInvite
-struct UPartyComponent_ServerRespondToInvite_Params
-{
-	struct FString                                     InviterId;                                                 // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EPartyStatusUpdate                       Status;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PartyComponent.ServerKickPartyMember
-struct UPartyComponent_ServerKickPartyMember_Params
-{
-	struct FString                                     MemberId;                                                  // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PartyComponent.ServerJoinSession
-struct UPartyComponent_ServerJoinSession_Params
-{
-	struct FString                                     ToJoinPlatformAccountId;                                   // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     ToJoinPlatformAccountName;                                 // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PartyComponent.ServerInvitePartyMember
-struct UPartyComponent_ServerInvitePartyMember_Params
-{
-	struct FString                                     ToInvitePlatformAccountId;                                 // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     ToInvitePlatformAccountName;                               // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PartyComponent.ServerDoPartyInstanceReset
-struct UPartyComponent_ServerDoPartyInstanceReset_Params
-{
-};
-
-// Function Frontiers.PartyComponent.ServerCanAcceptJoiningPlayerResponse
-struct UPartyComponent_ServerCanAcceptJoiningPlayerResponse_Params
-{
-	bool                                               bCanAccept;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJoinSessionEvent                           JoinSessionEvent;                                          // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-	int                                                RequestID;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PartyComponent.ServerAcceptInstanceResetRequest
-struct UPartyComponent_ServerAcceptInstanceResetRequest_Params
-{
-	struct FString                                     TravelToArea;                                              // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PartyComponent.OnRep_PendingInvites
-struct UPartyComponent_OnRep_PendingInvites_Params
-{
-	TArray<struct FPartyInvite>                        OldPendingInvites;                                         // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PartyComponent.OnRep_Party
-struct UPartyComponent_OnRep_Party_Params
-{
-	struct FParty                                      OldParty;                                                  // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PartyComponent.ClientShowInstanceResetNotification
-struct UPartyComponent_ClientShowInstanceResetNotification_Params
-{
-	TArray<struct FString>                             KickedMemberNames;                                         // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PartyComponent.ClientReceiveMemberStatusUpdate
-struct UPartyComponent_ClientReceiveMemberStatusUpdate_Params
-{
-	struct FString                                     MemberPlatformAccountName;                                 // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     MemberTLAccountId;                                         // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EPartyStatusUpdate                       Status;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PartyComponent.ClientReceiveInstanceResetRequest
-struct UPartyComponent_ClientReceiveInstanceResetRequest_Params
-{
-	struct FPartyInstanceResetRequest                  PartyInstanceResetRequest;                                 // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PartyComponent.ClientLeavingPartyInstance
-struct UPartyComponent_ClientLeavingPartyInstance_Params
-{
-};
-
-// Function Frontiers.PartyComponent.ClientJoinSessionProcessResult
-struct UPartyComponent_ClientJoinSessionProcessResult_Params
-{
-	struct FJoinSessionResultEvent                     JoinSessionResultEvent;                                    // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PartyComponent.ClientCanAcceptJoiningPlayer
-struct UPartyComponent_ClientCanAcceptJoiningPlayer_Params
-{
-	struct FJoinSessionEvent                           JoinSessionEvent;                                          // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-	int                                                RequestID;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PersistenceServerComm.DisableCharacterPersistence
-struct UPersistenceServerComm_DisableCharacterPersistence_Params
-{
-};
-
-// Function Frontiers.PersistentEffectsActor.OnSystemFinished
-struct APersistentEffectsActor_OnSystemFinished_Params
-{
-	class UParticleSystemComponent*                    PSComponent;                                               // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PersistentEffectsActor.OnAttachParentDestroyed
-struct APersistentEffectsActor_OnAttachParentDestroyed_Params
-{
-	class AActor*                                      Parent;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PersistentEffectsActor.CreatePersistentParticles
-struct APersistentEffectsActor_CreatePersistentParticles_Params
-{
-	class UParticleSystem*                             EmitterTemplate;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      AttachToActor;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       AttachPointName;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     Location;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                                    Rotation;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	TEnumAsByte<Engine_EAttachLocation>                LocationType;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bAutoDestroy;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     Scale3D;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APersistentEffectsActor*                     ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Photobooth.GetMesh
-struct APhotobooth_GetMesh_Params
-{
-	class USkeletalMeshComponent*                      ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Photobooth.GetIconCaptureLocator
-struct APhotobooth_GetIconCaptureLocator_Params
-{
-	class UArrowComponent*                             ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerAffixComponent.OnPlayerRevived_Delegate
-struct UPlayerAffixComponent_OnPlayerRevived_Delegate_Params
-{
-	class APawn*                                       Revived;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerBotBehaviorComponent.GetServerBotBehavior
-struct UPlayerBotBehaviorComponent_GetServerBotBehavior_Params
-{
-	class APlayerController*                           PlayerController;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBehaviorTree*                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerBotBehaviorComponent.GetClientBotBehavior
-struct UPlayerBotBehaviorComponent_GetClientBotBehavior_Params
-{
-	class APlayerController*                           PlayerController;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBehaviorTree*                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.NameDataComponent.OnRep_DisplayName
-struct UNameDataComponent_OnRep_DisplayName_Params
-{
-};
-
-// Function Frontiers.PlayerCharacterDataComponent.OnRep_AccountName
-struct UPlayerCharacterDataComponent_OnRep_AccountName_Params
-{
-};
-
-// Function Frontiers.PlayerCraftingComponent.ServerSacrificeItem
-struct UPlayerCraftingComponent_ServerSacrificeItem_Params
-{
-	struct FCraftingRequest                            Request;                                                   // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerCraftingComponent.ServerMarkRecipeSeen
-struct UPlayerCraftingComponent_ServerMarkRecipeSeen_Params
-{
-	int                                                RecipeIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerCraftingComponent.ServerDisenchantItem
-struct UPlayerCraftingComponent_ServerDisenchantItem_Params
-{
-	struct FCraftingRequest                            Request;                                                   // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerCraftingComponent.ServerCraftingRequest
-struct UPlayerCraftingComponent_ServerCraftingRequest_Params
-{
-	struct FCraftingRequest                            Request;                                                   // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerCraftingComponent.ServerClaim
-struct UPlayerCraftingComponent_ServerClaim_Params
-{
-	struct FName                                       QueueName;                                                 // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     JobId;                                                     // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerCraftingComponent.ClientStartCraftingEntry
-struct UPlayerCraftingComponent_ClientStartCraftingEntry_Params
-{
-	struct FName                                       QueueName;                                                 // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FCraftingQueueEntry                         InEntry;                                                   // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerCraftingComponent.ClientCraftingCompleted
-struct UPlayerCraftingComponent_ClientCraftingCompleted_Params
-{
-	Frontiers_ECraftingResult                          Result;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FCraftingRequest                            Request;                                                   // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerCraftingComponent.ClientClaimCraftingEntry
-struct UPlayerCraftingComponent_ClientClaimCraftingEntry_Params
-{
-	struct FName                                       QueueName;                                                 // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     JobId;                                                     // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerDialogueComponent.ClientStartQuestDialogue
-struct UPlayerDialogueComponent_ClientStartQuestDialogue_Params
-{
-	struct FName                                       QuestId;                                                   // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       TaskId;                                                    // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      SpeakerActor;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerDialogueComponent.ClientStartModalDialogue
-struct UPlayerDialogueComponent_ClientStartModalDialogue_Params
-{
-	struct FName                                       DialogueRowName;                                           // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      SpeakerActor;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerDialogueComponent.ClientStartBubbleDialogue
-struct UPlayerDialogueComponent_ClientStartBubbleDialogue_Params
-{
-	class AActor*                                      SpeakerActor;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerLevelManagerComponent.ClientLearnLevels
-struct UPlayerLevelManagerComponent_ClientLearnLevels_Params
-{
-	struct FGuid                                       NewAreaGuid;                                               // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FDRLGLevelInstance>                  NewLevels;                                                 // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerLevelManagerComponent.ClientForgetLevels
-struct UPlayerLevelManagerComponent_ClientForgetLevels_Params
-{
-	struct FGuid                                       OldAreaGuid;                                               // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FDRLGLevelInstance>                  OldLevels;                                                 // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerPortalComponent.SpawnPortal
-struct UPlayerPortalComponent_SpawnPortal_Params
-{
-	class APortalProxy*                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerPortalComponent.ServerSetPortalDestination
-struct UPlayerPortalComponent_ServerSetPortalDestination_Params
-{
-	Frontiers_EPlayerPortalDestinationType             Destination;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                BindIndex;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     OtherPlayerAccountId;                                      // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerPortalComponent.ServerRequestReplaceMapworksPortalProxyFromItem
-struct UPlayerPortalComponent_ServerRequestReplaceMapworksPortalProxyFromItem_Params
-{
-	int                                                InventoryEntryId;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerPortalComponent.ServerRequestImmediateTravelTo
-struct UPlayerPortalComponent_ServerRequestImmediateTravelTo_Params
-{
-	Frontiers_EPlayerPortalDestinationType             Destination;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                BindIndex;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      GadgetInUse;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerPortalComponent.ServerCancelPortalSkill
-struct UPlayerPortalComponent_ServerCancelPortalSkill_Params
-{
-};
-
-// Function Frontiers.PlayerPortalComponent.IsWaypointUnlocked
-struct UPlayerPortalComponent_IsWaypointUnlocked_Params
-{
-	class AActor*                                      Waypoint;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Player;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerPortalComponent.IsWaypointBoundToCurrentArea
-struct UPlayerPortalComponent_IsWaypointBoundToCurrentArea_Params
-{
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerPortalComponent.IsWaypointBoundToArea
-struct UPlayerPortalComponent_IsWaypointBoundToArea_Params
-{
-	struct FName                                       AreaName;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerPortalComponent.IsWaypointBound
-struct UPlayerPortalComponent_IsWaypointBound_Params
-{
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerPortalComponent.HasMapWorksPortal
-struct UPlayerPortalComponent_HasMapWorksPortal_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerPortalComponent.HasAvailableDestinationFromList
-struct UPlayerPortalComponent_HasAvailableDestinationFromList_Params
-{
-	TArray<Frontiers_EPlayerPortalDestinationType>     InDestinations;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerPortalComponent.GetPlayerPortalComponent
-struct UPlayerPortalComponent_GetPlayerPortalComponent_Params
-{
-	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPlayerPortalComponent*                      ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerPortalComponent.GetDestinations
-struct UPlayerPortalComponent_GetDestinations_Params
-{
-	TArray<struct FPlayerPortalDestination>            ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerPortalComponent.BindWaypointToCurrentArea
-struct UPlayerPortalComponent_BindWaypointToCurrentArea_Params
-{
-};
-
-// Function Frontiers.PlayerPortalComponent.BindWaypointToArea
-struct UPlayerPortalComponent_BindWaypointToArea_Params
-{
-	struct FName                                       AreaName;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerPortalComponent.AttemptTravel
-struct UPlayerPortalComponent_AttemptTravel_Params
-{
-	class APawn*                                       Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      GadgetInUse;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerQuestComponent.SpawnQuestRewards
-struct UPlayerQuestComponent_SpawnQuestRewards_Params
-{
-	class AActor*                                      SourceActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       QuestId;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerQuestComponent.ServerSetPinned
-struct UPlayerQuestComponent_ServerSetPinned_Params
-{
-	struct FName                                       QuestId;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsPinned;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerQuestComponent.ServerSeeBoss
-struct UPlayerQuestComponent_ServerSeeBoss_Params
-{
-	class AActor*                                      Boss;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerQuestComponent.ServerConfirmQuestRewardChoice
-struct UPlayerQuestComponent_ServerConfirmQuestRewardChoice_Params
-{
-	struct FName                                       QuestId;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       TaskId;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                RewardIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerQuestComponent.ServerConfirmQuestDialogue
-struct UPlayerQuestComponent_ServerConfirmQuestDialogue_Params
-{
-	struct FName                                       QuestId;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       TaskId;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerQuestComponent.ServerAcceptQuestOffer
-struct UPlayerQuestComponent_ServerAcceptQuestOffer_Params
-{
-	struct FName                                       QuestId;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerQuestComponent.ClientUpdateQuestStatusToPlayer
-struct UPlayerQuestComponent_ClientUpdateQuestStatusToPlayer_Params
-{
-	struct FQuestInstanceDataMsg                       Msg;                                                       // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerQuestComponent.ClientUpdateQuestCompletedToPlayer
-struct UPlayerQuestComponent_ClientUpdateQuestCompletedToPlayer_Params
-{
-	struct FQuestInstanceDataCompletedMsg              Msg;                                                       // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerQuestComponent.ClientUpdateAchievementProgressToPlayer
-struct UPlayerQuestComponent_ClientUpdateAchievementProgressToPlayer_Params
-{
-	struct FAchievementQuestProgressMsg                Msg;                                                       // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerQuestComponent.ClientUpdateAchievementCompletedToPlayer
-struct UPlayerQuestComponent_ClientUpdateAchievementCompletedToPlayer_Params
-{
-	struct FAchievementQuestCompletedMsg               Msg;                                                       // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerQuestComponent.ClientPlayRandomLoreLine
-struct UPlayerQuestComponent_ClientPlayRandomLoreLine_Params
-{
-	struct FGameplayTagContainer                       GameplayTags;                                              // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerQuestComponent.ClientPlayLoreLine
-struct UPlayerQuestComponent_ClientPlayLoreLine_Params
-{
-	struct FDialogueTableRowHandle                     DialogueRowHandle;                                         // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerQuestComponent.ClientOnQuestAdded
-struct UPlayerQuestComponent_ClientOnQuestAdded_Params
-{
-	struct FName                                       QuestId;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerQuestComponent.ClientAddWidgetToHUDFullscreen
-struct UPlayerQuestComponent_ClientAddWidgetToHUDFullscreen_Params
-{
-	class UClass*                                      Widget;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.PlayerSaveComponent.NextTickSaveTimer
-struct UPlayerSaveComponent_NextTickSaveTimer_Params
-{
-};
-
-// Function Frontiers.PlayerSaveComponent.NextConvenientSaveTimer
-struct UPlayerSaveComponent_NextConvenientSaveTimer_Params
-{
-};
-
 // Function Frontiers.TLCharacter.UpdateBaseMovementSpeed
 struct ATLCharacter_UpdateBaseMovementSpeed_Params
 {
@@ -3840,6 +763,126 @@ struct APortalProxy_SpawnPortalProxy_Params
 	class APortalProxy*                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// Function Frontiers.TLActorShared.GetOwnedGameplayTags
+struct ATLActorShared_GetOwnedGameplayTags_Params
+{
+	struct FGameplayTagContainer                       TagContainer;                                              // (Parm, OutParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TLActor.TLGetDisplayName
+struct ATLActor_TLGetDisplayName_Params
+{
+	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FText                                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TLActor.OnOperatedClient
+struct ATLActor_OnOperatedClient_Params
+{
+	class AActor*                                      Other;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TLActor.OnOperated
+struct ATLActor_OnOperated_Params
+{
+	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TLActor.ClientOperate
+struct ATLActor_ClientOperate_Params
+{
+	class AActor*                                      Other;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TLActor.BlueprintServerOnTakeDamage
+struct ATLActor_BlueprintServerOnTakeDamage_Params
+{
+	class AActor*                                      Attacker;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              TotalDamage;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Gadget.SpawnItem
+struct AGadget_SpawnItem_Params
+{
+	class AActor*                                      Source;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APawn*                                       TargetPlayer;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Gadget.SetQuestId
+struct AGadget_SetQuestId_Params
+{
+	struct FName                                       QuestId;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Gadget.SetCanBeOperated
+struct AGadget_SetCanBeOperated_Params
+{
+	bool                                               bStatus;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Gadget.OnStatusChanged
+struct AGadget_OnStatusChanged_Params
+{
+};
+
+// Function Frontiers.Gadget.OnAnimationHitEvent
+struct AGadget_OnAnimationHitEvent_Params
+{
+	int                                                HitIndex;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Gadget.IsAtLastOperationalStatus
+struct AGadget_IsAtLastOperationalStatus_Params
+{
+	class AActor*                                      Other;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Gadget.HasOperateHitNotify
+struct AGadget_HasOperateHitNotify_Params
+{
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Gadget.GetOperationalStatus
+struct AGadget_GetOperationalStatus_Params
+{
+	class AActor*                                      Other;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Gadget.FindSkeletalMesh
+struct AGadget_FindSkeletalMesh_Params
+{
+	class USkeletalMeshComponent*                      ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Gadget.CheckOperateFailed
+struct AGadget_CheckOperateFailed_Params
+{
+	class AActor*                                      Other;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Gadget.CanBeOperated
+struct AGadget_CanBeOperated_Params
+{
+	class AActor*                                      Operator;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Gadget.BlueprintGetOperatorActor
+struct AGadget_BlueprintGetOperatorActor_Params
+{
+	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Gadget.AdvanceOperationalStatus
+struct AGadget_AdvanceOperationalStatus_Params
+{
+	class AActor*                                      Operator;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // Function Frontiers.WarpGadget.SetWarpMapMarker
 struct AWarpGadget_SetWarpMapMarker_Params
 {
@@ -3940,1260 +983,6 @@ struct UProcComponent_AddProc_Params
 struct UQuestEvent_ActivateTask_Params
 {
 	class ACharacter*                                  Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.QuestObjectComponent.OnInteract
-struct UQuestObjectComponent_OnInteract_Params
-{
-	class AActor*                                      Other;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.QuestObjectComponent.OffersQuestForPlayer
-struct UQuestObjectComponent_OffersQuestForPlayer_Params
-{
-	class AActor*                                      Player;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.QuestObjectComponent.HasRelevantTaskForActor
-struct UQuestObjectComponent_HasRelevantTaskForActor_Params
-{
-	class AActor*                                      Other;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TLRandomFunctionLibrary.RandPointsInBox
-struct UTLRandomFunctionLibrary_RandPointsInBox_Params
-{
-	struct FBox                                        Box;                                                       // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FRandomStream                               RandomStream;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	int                                                NumPoints;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              MinDistBetween;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FVector>                             ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TLRandomFunctionLibrary.RandPointInBox
-struct UTLRandomFunctionLibrary_RandPointInBox_Params
-{
-	struct FBox                                        Box;                                                       // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FRandomStream                               RandomStream;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector                                     ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TLRandomFunctionLibrary.RandFloatFromGlobalStream
-struct UTLRandomFunctionLibrary_RandFloatFromGlobalStream_Params
-{
-	float                                              Min;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Max;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TLRandomFunctionLibrary.GetGlobalRandomStream
-struct UTLRandomFunctionLibrary_GetGlobalRandomStream_Params
-{
-	struct FRandomStream                               ReturnValue;                                               // (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SplineEmitterFollowerComponent.GetParticleSystem
-struct USplineEmitterFollowerComponent_GetParticleSystem_Params
-{
-	class UParticleSystem*                             ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SplineActorFollowerComponent.GetActorClass
-struct USplineActorFollowerComponent_GetActorClass_Params
-{
-	class UClass*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SplineFollowerAudioComponent.SetSplineFollowerToTrack
-struct USplineFollowerAudioComponent_SetSplineFollowerToTrack_Params
-{
-	class USplineFollowerComponent*                    InSplineFollower;                                          // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ReplicatedSplineComponent.SetFollowActor
-struct UReplicatedSplineComponent_SetFollowActor_Params
-{
-	class AActor*                                      InFollowActor;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ELocationType                            InLocationType;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.ReplicatedSplineComponent.OnRep_SplinePoints
-struct UReplicatedSplineComponent_OnRep_SplinePoints_Params
-{
-};
-
-// Function Frontiers.ReplicatedSplineComponent.AddReplicatedPoint
-struct UReplicatedSplineComponent_AddReplicatedPoint_Params
-{
-	struct FVector                                     WorldLocation;                                             // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SelectableInterface.ShouldDisplayName
-struct USelectableInterface_ShouldDisplayName_Params
-{
-	class AActor*                                      Other;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SelectableInterface.Operate
-struct USelectableInterface_Operate_Params
-{
-	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SelectableInterface.MarkUnselected
-struct USelectableInterface_MarkUnselected_Params
-{
-};
-
-// Function Frontiers.SelectableInterface.MarkSelected
-struct USelectableInterface_MarkSelected_Params
-{
-};
-
-// Function Frontiers.SelectableInterface.IsSelected
-struct USelectableInterface_IsSelected_Params
-{
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SelectableInterface.IsOperable
-struct USelectableInterface_IsOperable_Params
-{
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SelectableInterface.IsHoverable
-struct USelectableInterface_IsHoverable_Params
-{
-	class AActor*                                      Other;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SelectableInterface.GetOperateSkillSlot
-struct USelectableInterface_GetOperateSkillSlot_Params
-{
-	Frontiers_ESkillSlot                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SelectableInterface.ClientOperate
-struct USelectableInterface_ClientOperate_Params
-{
-	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SelectableInterface.CanOperate
-struct USelectableInterface_CanOperate_Params
-{
-	class AActor*                                      Operator;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SelectableInterface.CanBeSelected
-struct USelectableInterface_CanBeSelected_Params
-{
-	class AActor*                                      Other;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.SpawnSkillShape
-struct USkill_SpawnSkillShape_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      ShapeClass;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     Location;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ShapeDuration;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bAttached;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              RandomRange;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bSpawnOnClient;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bSpawnAtTarget;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                                    CustomRotation;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                               bAllowSecondaryOverlaps;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SecondaryOverlapsMax;                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     SpawnOffset;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ASkillShape*                                 ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.SkillStart
-struct USkill_SkillStart_Params
-{
-	class UClass*                                      SkillClass;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      SkillTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Param;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.SetUIVisible
-struct USkill_SetUIVisible_Params
-{
-	class APawn*                                       Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      UIClass;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsVisible;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UWidget*                                     ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.Operate
-struct USkill_Operate_Params
-{
-	class AActor*                                      Attacker;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnSkillUnequipped
-struct USkill_OnSkillUnequipped_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnSkillTick
-struct USkill_OnSkillTick_Params
-{
-	float                                              DeltaSeconds;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     TargetLocation;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnSkillStop
-struct USkill_OnSkillStop_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnSkillStart
-struct USkill_OnSkillStart_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      SkillTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Param;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnSkillRemoved
-struct USkill_OnSkillRemoved_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnSkillLevelUpdated
-struct USkill_OnSkillLevelUpdated_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SkillLevel;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnSkillEventHit02
-struct USkill_OnSkillEventHit02_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     TargetLocation;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnSkillEventHit01
-struct USkill_OnSkillEventHit01_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     TargetLocation;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnSkillEventAnimStart
-struct USkill_OnSkillEventAnimStart_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnSkillEventAnimEnd
-struct USkill_OnSkillEventAnimEnd_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnSkillEquipped
-struct USkill_OnSkillEquipped_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnSkillDidDamage
-struct USkill_OnSkillDidDamage_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      DeliveryActor;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Amount;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bKilledTarget;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bCritical;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnSkillBeamPulse
-struct USkill_OnSkillBeamPulse_Params
-{
-	class AActor*                                      Instigator;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     BeamEnd;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bHitTerrain;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnSkillActorOverlap
-struct USkill_OnSkillActorOverlap_Params
-{
-	class AActor*                                      Instigator;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ASkillShape*                                 Shape;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsPrimaryTarget;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnSkillActorEndOverlap
-struct USkill_OnSkillActorEndOverlap_Params
-{
-	class AActor*                                      Instigator;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ASkillShape*                                 Shape;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnActorRevived
-struct USkill_OnActorRevived_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.OnActorDeath
-struct USkill_OnActorDeath_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Attacker;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.GetSkillPerLevelBonus
-struct USkill_GetSkillPerLevelBonus_Params
-{
-	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FTLCurveTableRowHandle                      CurveRow;                                                  // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	float                                              Multiplier;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Level;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.GetSkillDescription
-struct USkill_GetSkillDescription_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SkillLevel;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FText                                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.GetSkillDamageFactor
-struct USkill_GetSkillDamageFactor_Params
-{
-	class AActor*                                      Source;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              DamageFactorOverride;                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.GetOverrideSkill
-struct USkill_GetOverrideSkill_Params
-{
-	Frontiers_ESkillSlot                               InSkillSlot;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                InSkillSet;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSlot                               OutSkillSlot;                                              // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                OutSkillSet;                                               // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APawn*                                       Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.GetOriginActor
-struct USkill_GetOriginActor_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.GetDurationPercent
-struct USkill_GetDurationPercent_Params
-{
-	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.GetCooldown
-struct USkill_GetCooldown_Params
-{
-	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.GetAllTags
-struct USkill_GetAllTags_Params
-{
-	struct FGameplayTagContainer                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.FindAITargetLocation
-struct USkill_FindAITargetLocation_Params
-{
-	class AActor*                                      Pawn;                                                      // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      InOptionalTarget;                                          // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     OutTargetLocation;                                         // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.DetachSkillActor
-struct USkill_DetachSkillActor_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      AttachedActorClass;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bLogErrorIfNotFound;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.BlueprintCanSkillStart
-struct USkill_BlueprintCanSkillStart_Params
-{
-	class AActor*                                      SourceActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     TargetLocation;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.Attack
-struct USkill_Attack_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Attacker;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Victim;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     TargetLocation;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bFindTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bPlayMeleeHitSound;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Fraction;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Skill.AttachSkillActor
-struct USkill_AttachSkillActor_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      AttachedActorClass;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       SocketName;                                                // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillBeam.SpawnBeam
-struct ASkillBeam_SpawnBeam_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      SourceActor;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFireSkillBeamData                          BeamData;                                                  // (Parm, NoDestructor, NativeAccessSpecifierPublic)
-	class ASkillBeam*                                  ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillDelegate.CanInteractWith
-struct USkillDelegate_CanInteractWith_Params
-{
-	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIgnoreMortality;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillDelegateInterface.CanInteractWith
-struct USkillDelegateInterface_CanInteractWith_Params
-{
-	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIgnoreMortality;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillEffects.PlayEffectsOnActor
-struct USkillEffects_PlayEffectsOnActor_Params
-{
-	class AActor*                                      EffectOwner;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                                   DirectionOfAttack;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FEffectDefinition                           Effects;                                                   // (Parm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillEffects.PlayEffectsAtLocation
-struct USkillEffects_PlayEffectsAtLocation_Params
-{
-	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                                    Rotation;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	class AActor*                                      EffectOwner;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                                   DirectionOfAttack;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FEffectDefinition                           Effects;                                                   // (Parm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillEffects.PlayAudioEffectOnBone
-struct USkillEffects_PlayAudioEffectOnBone_Params
-{
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       AudioEffect;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillEffects.NetPlayTLEffectAttached
-struct USkillEffects_NetPlayTLEffectAttached_Params
-{
-	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     LocationOffset;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              LifeSpan;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       AttachPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TEnumAsByte<Engine_EAttachLocation>                AttachLocationType;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillEffects.NetPlayTLEffectAtLocation
-struct USkillEffects_NetPlayTLEffectAtLocation_Params
-{
-	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              LifeSpan;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillEffects.NetPlayEffectAttached
-struct USkillEffects_NetPlayEffectAttached_Params
-{
-	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UParticleSystem*                             EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFMODEventReference                         EventReference;                                            // (Parm, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector                                     LocationOffset;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       AttachPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TEnumAsByte<Engine_EAttachLocation>                AttachLocationType;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillEffects.NetPlayEffectAtLocation
-struct USkillEffects_NetPlayEffectAtLocation_Params
-{
-	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UParticleSystem*                             EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFMODEventReference                         EventReference;                                            // (Parm, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                                    Rotation;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillEffects.DeactivateParticles
-struct USkillEffects_DeactivateParticles_Params
-{
-	class AActor*                                      ActorWithParticles;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bDetachParticles;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.WeaponEquipped
-struct USkillManager_WeaponEquipped_Params
-{
-	Frontiers_EWeaponSlot                              TraitMode;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.UnlockCooldownsByTags
-struct USkillManager_UnlockCooldownsByTags_Params
-{
-	struct FGameplayTagContainer                       Tags;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.SwitchBasicAttackHands
-struct USkillManager_SwitchBasicAttackHands_Params
-{
-};
-
-// Function Frontiers.SkillManager.StopActiveSkill
-struct USkillManager_StopActiveSkill_Params
-{
-};
-
-// Function Frontiers.SkillManager.SkillSlotHasSkill
-struct USkillManager_SkillSlotHasSkill_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.SetCooldownBySkill
-struct USkillManager_SetCooldownBySkill_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.SetCooldown
-struct USkillManager_SetCooldown_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.ServerUpdateInputState
-struct USkillManager_ServerUpdateInputState_Params
-{
-	struct FVector_NetQuantize10                       Location;                                                  // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSlot                               Pressed;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.ServerStopCurrentSkill
-struct USkillManager_ServerStopCurrentSkill_Params
-{
-};
-
-// Function Frontiers.SkillManager.ServerSkillTryToStart
-struct USkillManager_ServerSkillTryToStart_Params
-{
-	class AActor*                                      SkillTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector_NetQuantize10                       Location;                                                  // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Timestamp;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSkillStartParams                           SkillStartParams;                                          // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.ServerSetSkill
-struct USkillManager_ServerSetSkill_Params
-{
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       RowName;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.ServerRespecSkills
-struct USkillManager_ServerRespecSkills_Params
-{
-};
-
-// Function Frontiers.SkillManager.ServerRejectRespecSkills
-struct USkillManager_ServerRejectRespecSkills_Params
-{
-};
-
-// Function Frontiers.SkillManager.ServerRegretSkillLevel
-struct USkillManager_ServerRegretSkillLevel_Params
-{
-	struct FName                                       RowName;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.ServerBuySkillLevel
-struct USkillManager_ServerBuySkillLevel_Params
-{
-	struct FName                                       RowName;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.ResumeSkills
-struct USkillManager_ResumeSkills_Params
-{
-};
-
-// Function Frontiers.SkillManager.ResetCooldownBySkill
-struct USkillManager_ResetCooldownBySkill_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.ReduceCooldownBySkill
-struct USkillManager_ReduceCooldownBySkill_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              DurationReduced;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.PauseSkills
-struct USkillManager_PauseSkills_Params
-{
-};
-
-// Function Frontiers.SkillManager.OnSkillEvent
-struct USkillManager_OnSkillEvent_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillEvent                              SkillEvent;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.OnRevive
-struct USkillManager_OnRevive_Params
-{
-	class APawn*                                       Revived;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.OnRep_SkillCooldowns
-struct USkillManager_OnRep_SkillCooldowns_Params
-{
-};
-
-// Function Frontiers.SkillManager.OnRep_ServerSkillTargetLocation
-struct USkillManager_OnRep_ServerSkillTargetLocation_Params
-{
-};
-
-// Function Frontiers.SkillManager.OnRep_ServerSkillActiveData
-struct USkillManager_OnRep_ServerSkillActiveData_Params
-{
-};
-
-// Function Frontiers.SkillManager.OnRep_ServerInitialSkillActiveData
-struct USkillManager_OnRep_ServerInitialSkillActiveData_Params
-{
-};
-
-// Function Frontiers.SkillManager.OnRep_LastSkillRespecTime
-struct USkillManager_OnRep_LastSkillRespecTime_Params
-{
-};
-
-// Function Frontiers.SkillManager.OnEquippedItemsChanged
-struct USkillManager_OnEquippedItemsChanged_Params
-{
-	TArray<struct FItemReplicatedData>                 ItemSlotData;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.OnDeath
-struct USkillManager_OnDeath_Params
-{
-	class APawn*                                       Dying;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Attacker;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.MulticastSkillListUpdated
-struct USkillManager_MulticastSkillListUpdated_Params
-{
-	TArray<struct FSkillRepArrayEntry>                 SkillList;                                                 // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.LockCooldownsByTags
-struct USkillManager_LockCooldownsByTags_Params
-{
-	struct FGameplayTagContainer                       Tags;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.K2_SkillTryToStart
-struct USkillManager_K2_SkillTryToStart_Params
-{
-	class AActor*                                      SkillTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bAsSecondarySkill;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bNoRootMotion;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Param;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bPriority;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillResult                             ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.K2_SkillStart
-struct USkillManager_K2_SkillStart_Params
-{
-	class AActor*                                      SkillTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                SkillInstance;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Param;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.IsValidTarget
-struct USkillManager_IsValidTarget_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Victim;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.IsThisSkillUnlocked
-struct USkillManager_IsThisSkillUnlocked_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.IsThisSkillActive
-struct USkillManager_IsThisSkillActive_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.IsTargetInRange
-struct USkillManager_IsTargetInRange_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     TargetLocation;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.IsSkillUnlocked
-struct USkillManager_IsSkillUnlocked_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.IsSkillSlotUnlocked
-struct USkillManager_IsSkillSlotUnlocked_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.IsSkillActive
-struct USkillManager_IsSkillActive_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.IsLockedInAction
-struct USkillManager_IsLockedInAction_Params
-{
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.IsEmberWeaponAffixUnlocked
-struct USkillManager_IsEmberWeaponAffixUnlocked_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       AffixRowName;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.HasSkillInAssignableSlot
-struct USkillManager_HasSkillInAssignableSlot_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.HasSkillAssigned
-struct USkillManager_HasSkillAssigned_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       SkillDataRowName;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetTargetTraceType
-struct USkillManager_GetTargetTraceType_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TEnumAsByte<Engine_ECollisionChannel>              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetSlotUnlockLevel
-struct USkillManager_GetSlotUnlockLevel_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetSkillPointsAvailable
-struct USkillManager_GetSkillPointsAvailable_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetSkillNameFromSlot
-struct USkillManager_GetSkillNameFromSlot_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FText                                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetSkillMoveToRangeFromSlot
-struct USkillManager_GetSkillMoveToRangeFromSlot_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Source;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetSkillLevel
-struct USkillManager_GetSkillLevel_Params
-{
-	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       SkillRowName;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetSkillIconFromSlot
-struct USkillManager_GetSkillIconFromSlot_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetSkillGamepadTargetRange
-struct USkillManager_GetSkillGamepadTargetRange_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetNextBasicWeaponSlot
-struct USkillManager_GetNextBasicWeaponSlot_Params
-{
-	Frontiers_EWeaponSlot                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetDebugSkillString
-struct USkillManager_GetDebugSkillString_Params
-{
-	class AActor*                                      DebugActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetCooldownRemainingFromSlot
-struct USkillManager_GetCooldownRemainingFromSlot_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetCooldownPercentFromSlot
-struct USkillManager_GetCooldownPercentFromSlot_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetCooldownPercentForSkill
-struct USkillManager_GetCooldownPercentForSkill_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetCooldownEndTimeFromSkill
-struct USkillManager_GetCooldownEndTimeFromSkill_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetCooldownDurationFromSlot
-struct USkillManager_GetCooldownDurationFromSlot_Params
-{
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetBaseSkillLevel
-struct USkillManager_GetBaseSkillLevel_Params
-{
-	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       SkillRowName;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.GetActiveSkillWeaponSlot
-struct USkillManager_GetActiveSkillWeaponSlot_Params
-{
-	Frontiers_EWeaponSlot                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.EnableSkillsByTags
-struct USkillManager_EnableSkillsByTags_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                       Tags;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.DisableSkillsByTags
-struct USkillManager_DisableSkillsByTags_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                       Tags;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.ClientStopActiveSkill
-struct USkillManager_ClientStopActiveSkill_Params
-{
-};
-
-// Function Frontiers.SkillManager.ClientSkillPurchaseCompleted
-struct USkillManager_ClientSkillPurchaseCompleted_Params
-{
-	bool                                               bSuccess;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       RowName;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                NewLevel;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.ClientSetSkill
-struct USkillManager_ClientSetSkill_Params
-{
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FName                                       RowName;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.ClientResetCooldownBySkill
-struct USkillManager_ClientResetCooldownBySkill_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.ClientRequestedSkillFailedToStart
-struct USkillManager_ClientRequestedSkillFailedToStart_Params
-{
-	int                                                ClientActiveSkillInstanceId;                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                ServerSet;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSlot                               ServerSlot;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                ServerInstanceId;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ServerTimestamp;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.ClientReduceCooldownBySkill
-struct USkillManager_ClientReduceCooldownBySkill_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              DurationReduced;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.CanSpendSkillPoints
-struct USkillManager_CanSpendSkillPoints_Params
-{
-	class AActor*                                      Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillManager.CanSkillStart
-struct USkillManager_CanSkillStart_Params
-{
-	class AActor*                                      SkillTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     TargetLocation;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bPriority;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bValidateTargetAndRange;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bValidateCooldown;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ESkillResult                             ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMinions.ReplaceMonster
-struct USkillMinions_ReplaceMonster_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Instigator;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      SpawnFacingActor;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMonstersTableRowHandle                     MonsterRow;                                                // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	Frontiers_ESkillSlot                               SpawnSkillSlot;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMinions.RemoveMinions
-struct USkillMinions_RemoveMinions_Params
-{
-	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      InventoryContainerClass;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMinions.FindNearestTrackBufferWithinRadius
-struct USkillMinions_FindNearestTrackBufferWithinRadius_Params
-{
-	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      InventoryContainerClass;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EFindMinionResult                        OutExecPin;                                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ATrackBuffer*                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMinions.FindNearestTrackBufferFromLocation
-struct USkillMinions_FindNearestTrackBufferFromLocation_Params
-{
-	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      InventoryContainerClass;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EFindMinionResult                        OutExecPin;                                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ATrackBuffer*                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMinions.FindMinionsWithinRadius
-struct USkillMinions_FindMinionsWithinRadius_Params
-{
-	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      InventoryContainerClass;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                      PetClass;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EFindMinionResult                        OutExecPin;                                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class AActor*>                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMinions.FindInventoryContainerForMinion
-struct USkillMinions_FindInventoryContainerForMinion_Params
-{
-	class AActor*                                      Source;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMinionTableRowHandle                       MinionRow;                                                 // (Parm, NativeAccessSpecifierPublic)
-	struct FName                                       TraitTag;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTLInventoryContainer*                       ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMinions.BlueprintSpawnMinionOnNextFrames
-struct USkillMinions_BlueprintSpawnMinionOnNextFrames_Params
-{
-	class AActor*                                      Source;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMinionTableRowHandle                       MinionRow;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FVector                                     Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                                    TargetRotation;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FSpawnMinionParams                          Params;                                                    // (Parm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMinions.BlueprintSpawnMinion
-struct USkillMinions_BlueprintSpawnMinion_Params
-{
-	class AActor*                                      Source;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMinionTableRowHandle                       MinionRow;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FVector                                     Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSpawnMinionParams                          Params;                                                    // (Parm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMovement.StopMoving
-struct USkillMovement_StopMoving_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMovement.StartMoving
-struct USkillMovement_StartMoving_Params
-{
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APawn*                                       Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      MoveTargetActor;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     MoveTargetLocation;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMovement.MulticastEndRootMotionForce
-struct USkillMovement_MulticastEndRootMotionForce_Params
-{
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMovement.HasRootMotionForceFinished
-struct USkillMovement_HasRootMotionForceFinished_Params
-{
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMovement.FaceTarget
-struct USkillMovement_FaceTarget_Params
-{
-	class APawn*                                       Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bForceInstant;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMovement.EndRootMotionForce
-struct USkillMovement_EndRootMotionForce_Params
-{
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMovement.EndAnimationIfRootMotionFinished
-struct USkillMovement_EndAnimationIfRootMotionFinished_Params
-{
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMovement.ApplyRadialRootMotionForce
-struct USkillMovement_ApplyRadialRootMotionForce_Params
-{
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     Origin;                                                    // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Speed;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsPush;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMovement.ApplyMoveToRootMotionForceWithDuration
-struct USkillMovement_ApplyMoveToRootMotionForceWithDuration_Params
-{
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     TargetLocation;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMovement.ApplyMoveToRootMotionForce
-struct USkillMovement_ApplyMoveToRootMotionForce_Params
-{
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     TargetLocation;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Speed;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMovement.ApplyKnockbackRootMotionForce
-struct USkillMovement_ApplyKnockbackRootMotionForce_Params
-{
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Inflictor;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              BaseVelocity;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              VelocityMultiplier;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bIsPush;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.SkillMovement.ApplyConstantRootMotionForce
-struct USkillMovement_ApplyConstantRootMotionForce_Params
-{
-	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                     Direction;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Speed;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function Frontiers.SkillTargeting.ProjectPointToNavigation
@@ -5397,6 +1186,30 @@ struct ATimeOfDayGadget_Trigger_Params
 {
 	float                                              StartTime;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              EndTime;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ConductorHandler.PreHandleObjects
+struct UConductorHandler_PreHandleObjects_Params
+{
+};
+
+// Function Frontiers.ConductorHandler.PostHandleObjects
+struct UConductorHandler_PostHandleObjects_Params
+{
+};
+
+// Function Frontiers.ConductorHandler.IsAreaHandler
+struct UConductorHandler_IsAreaHandler_Params
+{
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ConductorHandler.HandleObject
+struct UConductorHandler_HandleObject_Params
+{
+	class ATLCharacter*                                Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                     Object;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function Frontiers.TimeOfDayHandler.UpdateMaterialTimeOfDayGlobals_LightDirection
@@ -8991,6 +4804,4193 @@ struct UTLInventoryContainerEquippedLegendaryAffixes_HasNewSlots_Params
 	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// Function Frontiers.AreaLoader.SetupAreaLevels
+struct AAreaLoader_SetupAreaLevels_Params
+{
+};
+
+// Function Frontiers.AreaLoader.BeginLoad
+struct AAreaLoader_BeginLoad_Params
+{
+	Frontiers_EAreaLoadError                           ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.AreaManagerComponent.ShouldShowClock
+struct UAreaManagerComponent_ShouldShowClock_Params
+{
+	class AController*                                 Controller;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.AreaManagerComponent.OnRep_Areas
+struct UAreaManagerComponent_OnRep_Areas_Params
+{
+};
+
+// Function Frontiers.AreaManagerComponent.GetSpokeTagByLocation
+struct UAreaManagerComponent_GetSpokeTagByLocation_Params
+{
+	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                                ReturnValue;                                               // (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.AreaManagerComponent.GetAreaName
+struct UAreaManagerComponent_GetAreaName_Params
+{
+	class AController*                                 Controller;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FText                                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.QuestUpdater.OnTimeOfDayPeriod
+struct UQuestUpdater_OnTimeOfDayPeriod_Params
+{
+	Frontiers_ETimeOfDayPeriod                         Period;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.QuestUpdater.OnParentQuestComponentReplicated
+struct UQuestUpdater_OnParentQuestComponentReplicated_Params
+{
+};
+
+// Function Frontiers.QuestUpdater.OnEquippedItemsChanged
+struct UQuestUpdater_OnEquippedItemsChanged_Params
+{
+	TArray<struct FItemReplicatedData>                 Items;                                                     // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.QuestUpdater.OnAreaChanged
+struct UQuestUpdater_OnAreaChanged_Params
+{
+	struct FGuid                                       NewAreaId;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       NewAreaName;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.QuestUpdater.ClientRemoveQuest
+struct UQuestUpdater_ClientRemoveQuest_Params
+{
+	struct FName                                       QuestId;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.QuestUpdater.ClientClearCompletedQuests
+struct UQuestUpdater_ClientClearCompletedQuests_Params
+{
+	Frontiers_EQuestType                               Filter;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.QuestUpdater.ClientClearActiveQuests
+struct UQuestUpdater_ClientClearActiveQuests_Params
+{
+	Frontiers_EQuestType                               Filter;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.AudioEffectMap.GetFmodEventReferenceForEventName
+struct UAudioEffectMap_GetFmodEventReferenceForEventName_Params
+{
+	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       Event;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFMODEventReference                         ReturnValue;                                               // (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.AudioFunctionLibrary.VolumePercentToControl
+struct UAudioFunctionLibrary_VolumePercentToControl_Params
+{
+	float                                              VolumePercent;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              DynamicRange;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.AudioFunctionLibrary.ControlToVolumePercent
+struct UAudioFunctionLibrary_ControlToVolumePercent_Params
+{
+	float                                              ControlPercent;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              DynamicRange;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.AutoOperateSphereComponent.OnAutoOperateEndOverlap
+struct UAutoOperateSphereComponent_OnAutoOperateEndOverlap_Params
+{
+	class UPrimitiveComponent*                         OverlappedComponent;                                       // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                OtherBodyIndex;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.AutoOperateSphereComponent.OnAutoOperateBeginOverlap
+struct UAutoOperateSphereComponent_OnAutoOperateBeginOverlap_Params
+{
+	class UPrimitiveComponent*                         OverlappedComp;                                            // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                OtherBodyIndex;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bFromSweep;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FHitResult                                  SweepResult;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.BossFightObserverComponent.GetBossFightSpawnsWarpBack
+struct UBossFightObserverComponent_GetBossFightSpawnsWarpBack_Params
+{
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.BossMonsterComponent.OnRowHandleChanged
+struct UBossMonsterComponent_OnRowHandleChanged_Params
+{
+};
+
+// Function Frontiers.BossMonsterComponent.OnBossDied
+struct UBossMonsterComponent_OnBossDied_Params
+{
+	class APawn*                                       Dying;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Killer;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.BossMonsterInfoVolume.OnEndOverlap
+struct UBossMonsterInfoVolume_OnEndOverlap_Params
+{
+	class UPrimitiveComponent*                         OverlappedComponent;                                       // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                OtherBodyIndex;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.BossMonsterInfoVolume.OnBeginOverlap
+struct UBossMonsterInfoVolume_OnBeginOverlap_Params
+{
+	class UPrimitiveComponent*                         OverlappedComp;                                            // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                OtherBodyIndex;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bFromSweep;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FHitResult                                  SweepResult;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.BossFightManager.ShowBossNameUI
+struct UBossFightManager_ShowBossNameUI_Params
+{
+	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.BossFightManager.ShowBossHP
+struct UBossFightManager_ShowBossHP_Params
+{
+	class AActor*                                      Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.BossFightManager.ShouldShowSelectedTarget
+struct UBossFightManager_ShouldShowSelectedTarget_Params
+{
+	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.BossFightManager.ShouldShowBossHP
+struct UBossFightManager_ShouldShowBossHP_Params
+{
+	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.BossFightManager.IsBossMonster
+struct UBossFightManager_IsBossMonster_Params
+{
+	class AActor*                                      Monster;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.BossFightManager.HideBossHP
+struct UBossFightManager_HideBossHP_Params
+{
+	class AActor*                                      Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.BossFightManager.GetBossMonster
+struct UBossFightManager_GetBossMonster_Params
+{
+	class AActor*                                      Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.BossFightManager.GetBossFightManager
+struct UBossFightManager_GetBossFightManager_Params
+{
+	class UObject*                                     WorldContextObject;                                        // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBossFightManager*                           ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.BossFightShape.OnRep_BossFightState
+struct ABossFightShape_OnRep_BossFightState_Params
+{
+};
+
+// Function Frontiers.BossFightShape.OnPlayerRevived
+struct ABossFightShape_OnPlayerRevived_Params
+{
+	class APawn*                                       Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.BossFightShape.OnPlayerDied
+struct ABossFightShape_OnPlayerDied_Params
+{
+	class APawn*                                       Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Killer;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.BossFightShape.OnBossDied
+struct ABossFightShape_OnBossDied_Params
+{
+	class APawn*                                       Dying;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Killer;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TLCharacterCreateBaseActor.SetNameplateVisible
+struct ATLCharacterCreateBaseActor_SetNameplateVisible_Params
+{
+	bool                                               bNameplateVisible;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TLCharacterCreateBaseActor.GetOwnedGameplayTags
+struct ATLCharacterCreateBaseActor_GetOwnedGameplayTags_Params
+{
+	struct FGameplayTagContainer                       OutTagContainer;                                           // (Parm, OutParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TLCharacterCreateBaseActor.GetDisplayName
+struct ATLCharacterCreateBaseActor_GetDisplayName_Params
+{
+	struct FText                                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TLCharacterCreateBaseActor.GetComponentsToHide
+struct ATLCharacterCreateBaseActor_GetComponentsToHide_Params
+{
+	TArray<class USkeletalMeshComponent*>              ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TLCharacterCreateBaseActor.GetBaseMesh
+struct ATLCharacterCreateBaseActor_GetBaseMesh_Params
+{
+	class USkeletalMeshComponent*                      ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.CharacterCustomizationComponent.OnRep_CharacterCustomization
+struct UCharacterCustomizationComponent_OnRep_CharacterCustomization_Params
+{
+};
+
+// Function Frontiers.TLCharacterSelectAnimInstance.GetAnimation
+struct UTLCharacterSelectAnimInstance_GetAnimation_Params
+{
+	Frontiers_ECharacterCreateAnimState                From;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ECharacterCreateAnimState                To;                                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bShouldLoop;                                               // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimSequenceBase*                           ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ChatComponent.ServerSetUsingMicrophone
+struct UChatComponent_ServerSetUsingMicrophone_Params
+{
+	bool                                               bInUsingMicrophone;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ChatComponent.ServerRejoinAllChannels
+struct UChatComponent_ServerRejoinAllChannels_Params
+{
+};
+
+// Function Frontiers.ChatComponent.ServerOnClientLoggedIn
+struct UChatComponent_ServerOnClientLoggedIn_Params
+{
+	bool                                               bInUsingMicrophone;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ChatComponent.OnLoggedIntoChatSession
+struct UChatComponent_OnLoggedIntoChatSession_Params
+{
+};
+
+// Function Frontiers.ChatComponent.ClientReceiveSystemMessage
+struct UChatComponent_ClientReceiveSystemMessage_Params
+{
+	TArray<struct FSwitchboardEventMessageBody>        Message;                                                   // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	FrontiersUI_EUIMessageType                         MessageType;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bShowInChat;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              DurationSeconds;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ChatComponent.ClientLogin
+struct UChatComponent_ClientLogin_Params
+{
+	struct FChatHandle                                 ChatHandle;                                                // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FString                                     LoginToken;                                                // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ChatComponent.ClientLeaveChannel
+struct UChatComponent_ClientLeaveChannel_Params
+{
+	Frontiers_EChatChannelType                         ChannelType;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ChatComponent.ClientJoinOrUpdateChannel
+struct UChatComponent_ClientJoinOrUpdateChannel_Params
+{
+	struct FString                                     ChannelName;                                               // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EChatChannelType                         ChannelType;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EChatChannelSpace                        ChannelSpace;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     ChannelToken;                                              // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EChatChannelMediaType                    ChannelMediaTypes;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ColorRange.GetColorFromTextureStrip
+struct UColorRange_GetColorFromTextureStrip_Params
+{
+	class UTexture2D*                                  Texture;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Percent;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                TextureRow;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bWrap;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FColor                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ColorRange.ColorLerp
+struct UColorRange_ColorLerp_Params
+{
+	struct FColor                                      First;                                                     // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FColor                                      Second;                                                    // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Alpha;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FColor                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ConductorComponent.OnAreaChanged
+struct UConductorComponent_OnAreaChanged_Params
+{
+	struct FGuid                                       NewAreaId;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       NewAreaName;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ConsoleUtility.GetCvarStringValue
+struct UConsoleUtility_GetCvarStringValue_Params
+{
+	struct FString                                     Name;                                                      // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ConsoleUtility.GetCvarIntValue
+struct UConsoleUtility_GetCvarIntValue_Params
+{
+	struct FString                                     Name;                                                      // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ConsoleUtility.GetCvarFloatValue
+struct UConsoleUtility_GetCvarFloatValue_Params
+{
+	struct FString                                     Name;                                                      // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ContractComponent.ServerUpdateLastSeenContractLevel
+struct UContractComponent_ServerUpdateLastSeenContractLevel_Params
+{
+};
+
+// Function Frontiers.ContractComponent.ServerSwitchContract
+struct UContractComponent_ServerSwitchContract_Params
+{
+	struct FName                                       NewContractName;                                           // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ContractComponent.ServerClaimNext
+struct UContractComponent_ServerClaimNext_Params
+{
+};
+
+// Function Frontiers.ContractComponent.OnRep_CurrentContract
+struct UContractComponent_OnRep_CurrentContract_Params
+{
+};
+
+// Function Frontiers.ContractComponent.IsContractUIEnabled
+struct UContractComponent_IsContractUIEnabled_Params
+{
+	class UObject*                                     WorldContextObject;                                        // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ContractComponent.ClientOnRewardClaimed
+struct UContractComponent_ClientOnRewardClaimed_Params
+{
+	Frontiers_ECraftingResult                          Result;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FContractTableRowHandle                     Contract;                                                  // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+	int                                                LevelClaimed;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bPaid;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                NumUnclaimedRewards;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.DifficultyDataHelpers.GetDifficultyTraitArray
+struct UDifficultyDataHelpers_GetDifficultyTraitArray_Params
+{
+	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDifficultyTableRowHandle                   DifficultyRow;                                             // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TArray<struct FTraitPair>                          ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.DRLGLevelProxy.GetLevelProxyName
+struct ADRLGLevelProxy_GetLevelProxyName_Params
+{
+	struct FString                                     ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.DungeonMaster.SetDungeonFailed
+struct UDungeonMaster_SetDungeonFailed_Params
+{
+	class UObject*                                     WorldContextObject;                                        // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.DungeonMaster.SetDungeonCleared
+struct UDungeonMaster_SetDungeonCleared_Params
+{
+	class UObject*                                     WorldContextObject;                                        // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.DungeonMaster.OnParticipantDiedInDungeon
+struct UDungeonMaster_OnParticipantDiedInDungeon_Params
+{
+	class APawn*                                       PlayerPawn;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Attacker;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.DungeonMaster.IsActorInEndlessDungeon
+struct UDungeonMaster_IsActorInEndlessDungeon_Params
+{
+	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.DungeonPlayerComponent.ServerRequestDungeonPortal
+struct UDungeonPlayerComponent_ServerRequestDungeonPortal_Params
+{
+	int                                                RequestedChallengeLevel;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       RequestedQuality;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      PortalSourceActor;                                         // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.DungeonPlayerComponent.ServerAcknowledgeChallengeResult
+struct UDungeonPlayerComponent_ServerAcknowledgeChallengeResult_Params
+{
+};
+
+// Function Frontiers.DungeonPlayerComponent.ClientFailedDungeon
+struct UDungeonPlayerComponent_ClientFailedDungeon_Params
+{
+	bool                                               bProgressReset;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                NewHighestClearedLevel;                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Dye.ApplyToSkeletalMesh
+struct UDye_ApplyToSkeletalMesh_Params
+{
+	class USkeletalMeshComponent*                      MeshComponent;                                             // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FCharacterCustomization                     Customization;                                             // (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.EmberWeaponBlueprintLibrary.GetEmberWeaponDrainValueFromTime
+struct UEmberWeaponBlueprintLibrary_GetEmberWeaponDrainValueFromTime_Params
+{
+	class AActor*                                      Owner;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              TimeSeconds;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.EmberWeaponBlueprintLibrary.GetEmberWeaponChargeValueFromTime
+struct UEmberWeaponBlueprintLibrary_GetEmberWeaponChargeValueFromTime_Params
+{
+	class AActor*                                      Owner;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              TimeSeconds;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortEditComponent.ShowPetDisplayUIForProp
+struct UFortEditComponent_ShowPetDisplayUIForProp_Params
+{
+	class AActor*                                      Prop;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortEditComponent.ShowCraftingUIForProp
+struct UFortEditComponent_ShowCraftingUIForProp_Params
+{
+	int                                                PropInventoryEntryId;                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Prop;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortEditComponent.ServerUpgradeProp
+struct UFortEditComponent_ServerUpgradeProp_Params
+{
+	int                                                InventoryEntryId;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortEditComponent.ServerTogglePropGender
+struct UFortEditComponent_ServerTogglePropGender_Params
+{
+	class AActor*                                      WardrobeProp;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortEditComponent.ServerToggleEditMode
+struct UFortEditComponent_ServerToggleEditMode_Params
+{
+};
+
+// Function Frontiers.FortEditComponent.ServerStoreAll
+struct UFortEditComponent_ServerStoreAll_Params
+{
+};
+
+// Function Frontiers.FortEditComponent.ServerSelectProp
+struct UFortEditComponent_ServerSelectProp_Params
+{
+	struct FFortPropTableRowHandle                     Prop;                                                      // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortEditComponent.ServerRotateProp
+struct UFortEditComponent_ServerRotateProp_Params
+{
+	Frontiers_EPropRotationMode                        RotateMode;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortEditComponent.ServerPlaceProp
+struct UFortEditComponent_ServerPlaceProp_Params
+{
+	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortEditComponent.ServerPickupProp
+struct UFortEditComponent_ServerPickupProp_Params
+{
+	class AActor*                                      Prop;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortEditComponent.ServerEndEditMode
+struct UFortEditComponent_ServerEndEditMode_Params
+{
+};
+
+// Function Frontiers.FortEditComponent.ServerEjectPlayerFromFort
+struct UFortEditComponent_ServerEjectPlayerFromFort_Params
+{
+};
+
+// Function Frontiers.FortEditComponent.ServerCraftProp
+struct UFortEditComponent_ServerCraftProp_Params
+{
+	struct FFortPropTableRowHandle                     Prop;                                                      // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortEditComponent.ServerCancelPlace
+struct UFortEditComponent_ServerCancelPlace_Params
+{
+	bool                                               bSendToStorage;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortEditComponent.ServerAssignPetToProp
+struct UFortEditComponent_ServerAssignPetToProp_Params
+{
+	class UFortPropComponent*                          Prop;                                                      // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuid                                       PetGuid;                                                   // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortEditComponent.OnRep_PropToPlace
+struct UFortEditComponent_OnRep_PropToPlace_Params
+{
+};
+
+// Function Frontiers.FortEditComponent.OnRep_PropRotationDegrees
+struct UFortEditComponent_OnRep_PropRotationDegrees_Params
+{
+};
+
+// Function Frontiers.FortEditComponent.OnRep_IsInOwnFortArea
+struct UFortEditComponent_OnRep_IsInOwnFortArea_Params
+{
+};
+
+// Function Frontiers.FortEditComponent.OnRep_IsBlockedFort
+struct UFortEditComponent_OnRep_IsBlockedFort_Params
+{
+};
+
+// Function Frontiers.FortEditComponent.OnRep_FortEditMode
+struct UFortEditComponent_OnRep_FortEditMode_Params
+{
+};
+
+// Function Frontiers.FortEditComponent.Get
+struct UFortEditComponent_Get_Params
+{
+	class AActor*                                      Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFortEditComponent*                          ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortEditComponent.CraftProp
+struct UFortEditComponent_CraftProp_Params
+{
+	struct FFortPropTableRowHandle                     Prop;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                               bSave;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortEditComponent.ClientShowPetDisplayUIForProp
+struct UFortEditComponent_ClientShowPetDisplayUIForProp_Params
+{
+	int                                                PropInventoryEntryId;                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Prop;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortEditComponent.ClientShowCraftingUIForProp
+struct UFortEditComponent_ClientShowCraftingUIForProp_Params
+{
+	int                                                PropInventoryEntryId;                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Prop;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortPropComponent.SpawnAttachedActor
+struct UFortPropComponent_SpawnAttachedActor_Params
+{
+	class UClass*                                      ActorClass;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USceneComponent*                             AttachTo;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortPropComponent.PlayClosedAudio
+struct UFortPropComponent_PlayClosedAudio_Params
+{
+};
+
+// Function Frontiers.FortPropComponent.OnRep_AssignedPetRow
+struct UFortPropComponent_OnRep_AssignedPetRow_Params
+{
+};
+
+// Function Frontiers.FortPropComponent.OnRep_AssignedPetInventoryGuid
+struct UFortPropComponent_OnRep_AssignedPetInventoryGuid_Params
+{
+};
+
+// Function Frontiers.FortPropComponent.IsOwner
+struct UFortPropComponent_IsOwner_Params
+{
+	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortPropComponent.GetInventoryIdForActor
+struct UFortPropComponent_GetInventoryIdForActor_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortPropComponent.ClientOnUpgraded
+struct UFortPropComponent_ClientOnUpgraded_Params
+{
+	int                                                InventoryEntryId;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFortEditComponent*                          FortEditComponent;                                         // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.FortVolume.OnRepFortOwner
+struct AFortVolume_OnRepFortOwner_Params
+{
+};
+
+// Function Frontiers.FriendsComponent.ServerSetNumFriendsInParty
+struct UFriendsComponent_ServerSetNumFriendsInParty_Params
+{
+	unsigned char                                      NumFriends;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerGadgetComponent.ServerRequestGadgetStatus
+struct UPlayerGadgetComponent_ServerRequestGadgetStatus_Params
+{
+	class AGadget*                                     Gadget;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerGadgetComponent.ClientPlayAudioForGadget
+struct UPlayerGadgetComponent_ClientPlayAudioForGadget_Params
+{
+	class AGadget*                                     Gadget;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EGadgetOperateSuccess                    GadgetOperateSuccess;                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.GamePadComponent.IsInGamepadMode
+struct UGamePadComponent_IsInGamepadMode_Params
+{
+	class APlayerController*                           Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.TauntMinions
+struct UStatusEffect_TauntMinions_Params
+{
+	class AActor*                                      Taunter;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      MinionOwner;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                       RequiredMinionTags;                                        // (Parm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.Taunt
+struct UStatusEffect_Taunt_Params
+{
+	class AActor*                                      Taunter;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SwapAttachment
+struct UStatusEffect_SwapAttachment_Params
+{
+	struct FName                                       ToAttachRight;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       ToAttachLeft;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SpawnSkillBeam
+struct UStatusEffect_SpawnSkillBeam_Params
+{
+	struct FFireSkillBeamData                          FireBeamData;                                              // (Parm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SpawnParticles
+struct UStatusEffect_SpawnParticles_Params
+{
+	TArray<struct FEffectDefinition>                   ParticleInfo;                                              // (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	int                                                Priority;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SpawnActorToAttach
+struct UStatusEffect_SpawnActorToAttach_Params
+{
+	class UClass*                                      ActorClass;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       AttachPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ShowVignette
+struct UStatusEffect_ShowVignette_Params
+{
+	class UTexture*                                    Texture;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ShowUI
+struct UStatusEffect_ShowUI_Params
+{
+	FrontiersUI_ETLWidget                              Widget;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bCloseWidgetWhenDone;                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bCloseOtherOpenWindows;                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ShowMessage
+struct UStatusEffect_ShowMessage_Params
+{
+	struct FSlateColor                                 InColor;                                                   // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ShowLoadingScreen
+struct UStatusEffect_ShowLoadingScreen_Params
+{
+};
+
+// Function Frontiers.StatusEffect.ShowHudPanel
+struct UStatusEffect_ShowHudPanel_Params
+{
+	FrontiersUI_ECharacterMenuTab                      Tab;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SetTimer
+struct UStatusEffect_SetTimer_Params
+{
+	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SetSkillSlotForTrainCar
+struct UStatusEffect_SetSkillSlotForTrainCar_Params
+{
+	struct FGameplayTagContainer                       InGameplayTags;                                            // (Parm, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSlot                               InSkillSlot;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SetNotTargetable
+struct UStatusEffect_SetNotTargetable_Params
+{
+};
+
+// Function Frontiers.StatusEffect.SetMusicOverrideForArea
+struct UStatusEffect_SetMusicOverrideForArea_Params
+{
+	struct FFMODEventReference                         Event;                                                     // (Parm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SetMusicIntensityOverrideForArea
+struct UStatusEffect_SetMusicIntensityOverrideForArea_Params
+{
+	Frontiers_EMusicIntensity                          Intensity;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SetMonsterManagerStateOverride
+struct UStatusEffect_SetMonsterManagerStateOverride_Params
+{
+	Frontiers_EMonsterManagerState                     State;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SetMinionForTrainCar
+struct UStatusEffect_SetMinionForTrainCar_Params
+{
+	struct FGameplayTagContainer                       InGameplayTags;                                            // (Parm, NativeAccessSpecifierPublic)
+	struct FMinionTableRowHandle                       MinionRowHandle;                                           // (Parm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SetMaterialInstance
+struct UStatusEffect_SetMaterialInstance_Params
+{
+	class UMaterialInstance*                           Material;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                Priority;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bApplyToAttachedActors;                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bSwapParentMaterial;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bSkipUnlitMeshes;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SetMaterial
+struct UStatusEffect_SetMaterial_Params
+{
+	class UMaterial*                                   Material;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                Priority;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SetIdleMoveBlendspace
+struct UStatusEffect_SetIdleMoveBlendspace_Params
+{
+	Frontiers_ETLBlendSpaceTypes                       Type;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SetFallbackSelectedActor
+struct UStatusEffect_SetFallbackSelectedActor_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SetAnimInstanceClass
+struct UStatusEffect_SetAnimInstanceClass_Params
+{
+	class UClass*                                      AnimInstanceClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.SetAmbienceOverrideForArea
+struct UStatusEffect_SetAmbienceOverrideForArea_Params
+{
+	struct FFMODEventReference                         Event;                                                     // (Parm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ScheduleTrigger
+struct UStatusEffect_ScheduleTrigger_Params
+{
+	float                                              DelaySeconds;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.RunBehaviorTree
+struct UStatusEffect_RunBehaviorTree_Params
+{
+	class UBehaviorTree*                               BehaviorTree;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bStopActiveSkill;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.RemoveStatusEffect
+struct UStatusEffect_RemoveStatusEffect_Params
+{
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                Count;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.PreventSkillUse
+struct UStatusEffect_PreventSkillUse_Params
+{
+};
+
+// Function Frontiers.StatusEffect.PlayWidgetAnim
+struct UStatusEffect_PlayWidgetAnim_Params
+{
+	class UUserWidget*                                 InWidget;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     WidgetAnimName;                                            // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                NumLoops;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.PlaySequenceOnRemove
+struct UStatusEffect_PlaySequenceOnRemove_Params
+{
+	class UClass*                                      TriggerClass;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      SequenceActorClass;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.PlayLoopedSoundEventReference
+struct UStatusEffect_PlayLoopedSoundEventReference_Params
+{
+	struct FFMODEventReference                         Event;                                                     // (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	int                                                Priority;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bUsePriority;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.PlayClientSequenceOnRemove
+struct UStatusEffect_PlayClientSequenceOnRemove_Params
+{
+	class UClass*                                      SequenceActorClass;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.PauseSoundsFromAnimations
+struct UStatusEffect_PauseSoundsFromAnimations_Params
+{
+};
+
+// Function Frontiers.StatusEffect.OverrideSkillSet
+struct UStatusEffect_OverrideSkillSet_Params
+{
+	Frontiers_ESkillSet                                SkillSet;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                Priority;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.OverrideDisplayName
+struct UStatusEffect_OverrideDisplayName_Params
+{
+	struct FText                                       DisplayNameOverride;                                       // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FText                                       DescriptionOverride;                                       // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.OverrideAnimationForSkill
+struct UStatusEffect_OverrideAnimationForSkill_Params
+{
+	class UClass*                                      SkillClass;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimSequenceBase*                           Animation;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.OnWarped
+struct UStatusEffect_OnWarped_Params
+{
+	struct FVector                                     Location;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.OnTriggered
+struct UStatusEffect_OnTriggered_Params
+{
+};
+
+// Function Frontiers.StatusEffect.OnSkillStart
+struct UStatusEffect_OnSkillStart_Params
+{
+	struct FSkillEventData                             SkillEventData;                                            // (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.OnPreDeath
+struct UStatusEffect_OnPreDeath_Params
+{
+};
+
+// Function Frontiers.StatusEffect.OnPreApply
+struct UStatusEffect_OnPreApply_Params
+{
+};
+
+// Function Frontiers.StatusEffect.OnPostDeath
+struct UStatusEffect_OnPostDeath_Params
+{
+};
+
+// Function Frontiers.StatusEffect.OnPostApply
+struct UStatusEffect_OnPostApply_Params
+{
+};
+
+// Function Frontiers.StatusEffect.OnExpired
+struct UStatusEffect_OnExpired_Params
+{
+};
+
+// Function Frontiers.StatusEffect.OnEventTimerTick
+struct UStatusEffect_OnEventTimerTick_Params
+{
+};
+
+// Function Frontiers.StatusEffect.OnCleared
+struct UStatusEffect_OnCleared_Params
+{
+};
+
+// Function Frontiers.StatusEffect.OnAreaChanged
+struct UStatusEffect_OnAreaChanged_Params
+{
+};
+
+// Function Frontiers.StatusEffect.MoveCamera
+struct UStatusEffect_MoveCamera_Params
+{
+	float                                              CameraDistance;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              CameraPitch;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ManageComponentLifetime
+struct UStatusEffect_ManageComponentLifetime_Params
+{
+	class UActorComponent*                             Component;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ManageActorLifetime
+struct UStatusEffect_ManageActorLifetime_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              GracePeriod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.LockTargetWidget
+struct UStatusEffect_LockTargetWidget_Params
+{
+	class AActor*                                      LockedTarget;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.LockSkillCooldownsByTags
+struct UStatusEffect_LockSkillCooldownsByTags_Params
+{
+	struct FGameplayTagContainer                       Tags;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.LockInventoryContainer
+struct UStatusEffect_LockInventoryContainer_Params
+{
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      ContainerClass;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.LockIncreaseActiveTrait
+struct UStatusEffect_LockIncreaseActiveTrait_Params
+{
+	struct FActiveTraitsTableRowHandle                 ActiveTraitRowName;                                        // (Parm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.LockDecreaseActiveTrait
+struct UStatusEffect_LockDecreaseActiveTrait_Params
+{
+	struct FActiveTraitsTableRowHandle                 ActiveTraitRowName;                                        // (Parm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.LockActiveTrait
+struct UStatusEffect_LockActiveTrait_Params
+{
+	struct FActiveTraitsTableRowHandle                 ActiveTraitRowName;                                        // (Parm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.IncreasePeakDrama
+struct UStatusEffect_IncreasePeakDrama_Params
+{
+	float                                              Drama;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.HideInGame
+struct UStatusEffect_HideInGame_Params
+{
+};
+
+// Function Frontiers.StatusEffect.HasStatusEffectWithTags
+struct UStatusEffect_HasStatusEffectWithTags_Params
+{
+	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                       Tags;                                                      // (Parm, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.HasStatusEffect
+struct UStatusEffect_HasStatusEffect_Params
+{
+	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.GetStatusEffectTraits
+struct UStatusEffect_GetStatusEffectTraits_Params
+{
+	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                InSkillLevel;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FText>                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.GetStatusEffectsWithTags
+struct UStatusEffect_GetStatusEffectsWithTags_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                       Tags;                                                      // (Parm, NativeAccessSpecifierPublic)
+	TArray<class UStatusEffect*>                       ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.GetStatusEffectsOfType
+struct UStatusEffect_GetStatusEffectsOfType_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UStatusEffect*>                       ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.GetOwner
+struct UStatusEffect_GetOwner_Params
+{
+	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.GetMaxInstancesPerActor
+struct UStatusEffect_GetMaxInstancesPerActor_Params
+{
+	class AActor*                                      TargetActor;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.GetInflictor
+struct UStatusEffect_GetInflictor_Params
+{
+	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.GetDescription
+struct UStatusEffect_GetDescription_Params
+{
+	class AActor*                                      ActorOwner;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FText                                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.GetBlueprintRelevantInstigatorTraitKeys
+struct UStatusEffect_GetBlueprintRelevantInstigatorTraitKeys_Params
+{
+	TArray<struct FTraitKey>                           ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ForceHoldPosition
+struct UStatusEffect_ForceHoldPosition_Params
+{
+};
+
+// Function Frontiers.StatusEffect.Expire
+struct UStatusEffect_Expire_Params
+{
+};
+
+// Function Frontiers.StatusEffect.EnableComponentTick
+struct UStatusEffect_EnableComponentTick_Params
+{
+	class UActorComponent*                             Component;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bEnable;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.DisableSkillsByTag
+struct UStatusEffect_DisableSkillsByTag_Params
+{
+	struct FGameplayTagContainer                       Tags;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.DisableSkillsBySlot
+struct UStatusEffect_DisableSkillsBySlot_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.DisableRootMotion
+struct UStatusEffect_DisableRootMotion_Params
+{
+};
+
+// Function Frontiers.StatusEffect.DisableOperate
+struct UStatusEffect_DisableOperate_Params
+{
+};
+
+// Function Frontiers.StatusEffect.DisableOcclusionShader
+struct UStatusEffect_DisableOcclusionShader_Params
+{
+};
+
+// Function Frontiers.StatusEffect.DisableLootDrop
+struct UStatusEffect_DisableLootDrop_Params
+{
+};
+
+// Function Frontiers.StatusEffect.DisableHoverClick
+struct UStatusEffect_DisableHoverClick_Params
+{
+};
+
+// Function Frontiers.StatusEffect.DisableCharacterCollision
+struct UStatusEffect_DisableCharacterCollision_Params
+{
+};
+
+// Function Frontiers.StatusEffect.CreateMeshShell
+struct UStatusEffect_CreateMeshShell_Params
+{
+	struct FMeshShellParameters                        Params;                                                    // (Parm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.CreateComponent
+struct UStatusEffect_CreateComponent_Params
+{
+	class UClass*                                      ComponentClass;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UActorComponent*                             ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ClearStatusEffectFromInflictor
+struct UStatusEffect_ClearStatusEffectFromInflictor_Params
+{
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Inflictor;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ClearStatusEffectByGameplayTag
+struct UStatusEffect_ClearStatusEffectByGameplayTag_Params
+{
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                                Tag;                                                       // (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ClearStatusEffect
+struct UStatusEffect_ClearStatusEffect_Params
+{
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ChangeTeam
+struct UStatusEffect_ChangeTeam_Params
+{
+	Frontiers_ETLTeam                                  NewTeam;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ChangeHealthBarColor
+struct UStatusEffect_ChangeHealthBarColor_Params
+{
+	struct FSlateColor                                 Color;                                                     // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ChainBeam
+struct UStatusEffect_ChainBeam_Params
+{
+	class AActor*                                      SourceActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      ChainStartActor;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       ChainStartSocket;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       ChainHitSocket;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      SkillBeamClass;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                BounceCount;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ChainRadius;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      InStatusEffectClass;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              StatusDuration;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              DamageFraction;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.AudioSetGlobalParameter
+struct UStatusEffect_AudioSetGlobalParameter_Params
+{
+	struct FString                                     ParameterName;                                             // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ParameterValue;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.AttachHazardToOwner
+struct UStatusEffect_AttachHazardToOwner_Params
+{
+	class AActor*                                      SourceActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      HazardClass;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.AsyncLoadAndHoldAsset
+struct UStatusEffect_AsyncLoadAndHoldAsset_Params
+{
+	struct FSoftObjectPath                             ObjectPath;                                                // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ApplyTraits
+struct UStatusEffect_ApplyTraits_Params
+{
+	TArray<struct FTraitInitializer>                   TraitList;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ApplyTraitPairs
+struct UStatusEffect_ApplyTraitPairs_Params
+{
+	TArray<struct FTraitPair>                          TraitList;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ApplyStatusEffectByProximity
+struct UStatusEffect_ApplyStatusEffectByProximity_Params
+{
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Inflictor;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ASkillShape*                                 Source;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStatusEffect*                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ApplyStatusEffect
+struct UStatusEffect_ApplyStatusEffect_Params
+{
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Inflictor;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStatusEffect*                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ApplyProcStatusEffect
+struct UStatusEffect_ApplyProcStatusEffect_Params
+{
+	class AActor*                                      Inflictor;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      StatusEffectClass;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                                ProcTag;                                                   // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       ParameterRowName;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStatusEffect*                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ApplyAssetStatusEffect
+struct UStatusEffect_ApplyAssetStatusEffect_Params
+{
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Inflictor;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStatusEffect*                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.AdjustMonsterAwarenessRadiusInArea
+struct UStatusEffect_AdjustMonsterAwarenessRadiusInArea_Params
+{
+	float                                              Centimeters;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.AddSkill
+struct UStatusEffect_AddSkill_Params
+{
+	struct FName                                       SkillRowName;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SkillLevel;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.AddProc
+struct UStatusEffect_AddProc_Params
+{
+	struct FProcTableRowHandle                         ProcRow;                                                   // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	int                                                InRequiredSkillInstanceId;                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.AddPlayerEnergyRegen
+struct UStatusEffect_AddPlayerEnergyRegen_Params
+{
+	float                                              SecondsToRefillEnergy;                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.AddItemNameplate
+struct UStatusEffect_AddItemNameplate_Params
+{
+};
+
+// Function Frontiers.StatusEffect.AddInventoryContainer
+struct UStatusEffect_AddInventoryContainer_Params
+{
+	class UClass*                                      ContainerClass;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.StatusEffect.ActivateHazard
+struct UStatusEffect_ActivateHazard_Params
+{
+	class AHazard*                                     Hazard;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bShouldBeActive;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.GradientColorComponent.UpdateMaterialFromSamplerMap
+struct UGradientColorComponent_UpdateMaterialFromSamplerMap_Params
+{
+	struct FName                                       PropertyChangedName;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.GradientColorComponent.UpdateAllMaterials
+struct UGradientColorComponent_UpdateAllMaterials_Params
+{
+};
+
+// Function Frontiers.GradientColorComponent.InitWardrobeComponents
+struct UGradientColorComponent_InitWardrobeComponents_Params
+{
+};
+
+// Function Frontiers.GradientColorComponent.ImportDyeBaseForEdit
+struct UGradientColorComponent_ImportDyeBaseForEdit_Params
+{
+};
+
+// Function Frontiers.GradientColorComponent.GetGradientRowByName
+struct UGradientColorComponent_GetGradientRowByName_Params
+{
+	struct FName                                       RowName;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.HandledComponentInterface.PreHandleComponent
+struct UHandledComponentInterface_PreHandleComponent_Params
+{
+};
+
+// Function Frontiers.HandledComponentInterface.PostHandleComponent
+struct UHandledComponentInterface_PostHandleComponent_Params
+{
+};
+
+// Function Frontiers.HarvestGadget.GetHarvestPercent
+struct AHarvestGadget_GetHarvestPercent_Params
+{
+	class APawn*                                       Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Hazard.SpawnHazard
+struct AHazard_SpawnHazard_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      HazardClass;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     Location;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              HazardDuration;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bAttached;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      AttachActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bActiveOnSpawn;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bSpawnOnClient;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bSpawnOnGround;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AHazard*                                     ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Hazard.OnPulse
+struct AHazard_OnPulse_Params
+{
+};
+
+// Function Frontiers.Hazard.OnHitTarget
+struct AHazard_OnHitTarget_Params
+{
+	class AActor*                                      ActorInContact;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Hazard.GetFilteredOverlappingActors
+struct AHazard_GetFilteredOverlappingActors_Params
+{
+	TArray<class AActor*>                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Hazard.Deactivate
+struct AHazard_Deactivate_Params
+{
+};
+
+// Function Frontiers.Hazard.ActivateHazard
+struct AHazard_ActivateHazard_Params
+{
+	class AActor*                                      HazardActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bShouldActivate;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.HighlightMaterialComponent.SetVectorParameterValueOnMaterial
+struct UHighlightMaterialComponent_SetVectorParameterValueOnMaterial_Params
+{
+	struct FName                                       ParameterName;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                                VectorVal;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.HighlightMaterialComponent.SetupMaterials
+struct UHighlightMaterialComponent_SetupMaterials_Params
+{
+	bool                                               bUseHighlightMat;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.HighlightMaterialComponent.SetScalarParameterOnMaterial
+struct UHighlightMaterialComponent_SetScalarParameterOnMaterial_Params
+{
+	struct FName                                       ParameterName;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ScalarVal;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.HighlightMaterialComponent.SetDeactivateMaterial
+struct UHighlightMaterialComponent_SetDeactivateMaterial_Params
+{
+	struct FName                                       ParameterName;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ScalarVal;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ItemOnGround.OnRep_SpawnOrigin
+struct UItemOnGround_OnRep_SpawnOrigin_Params
+{
+};
+
+// Function Frontiers.ItemOnGround.OnRep_ItemDataRow
+struct UItemOnGround_OnRep_ItemDataRow_Params
+{
+};
+
+// Function Frontiers.ItemOnGround.OnRep_ExtraAffixes
+struct UItemOnGround_OnRep_ExtraAffixes_Params
+{
+};
+
+// Function Frontiers.ItemOnGround.ClientItemPickedUp
+struct UItemOnGround_ClientItemPickedUp_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ItemOnGround.AutoPickup
+struct UItemOnGround_AutoPickup_Params
+{
+	class AActor*                                      Activator;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Delay;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ItemQualityFunctionLibrary.GetItemQuality
+struct UItemQualityFunctionLibrary_GetItemQuality_Params
+{
+	class UObject*                                     WorldContextObject;                                        // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FInventoryItemEntry                         InventoryEntry;                                            // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FName                                       ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ItemQualityFunctionLibrary.GetItemOnGroundSelectedParticleSystem
+struct UItemQualityFunctionLibrary_GetItemOnGroundSelectedParticleSystem_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UParticleSystem*                             ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ItemQualityFunctionLibrary.GetItemOnGroundParticleSystem
+struct UItemQualityFunctionLibrary_GetItemOnGroundParticleSystem_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UParticleSystem*                             ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ItemQualityFunctionLibrary.GetItemOnGroundMapMarkerComponentClass
+struct UItemQualityFunctionLibrary_GetItemOnGroundMapMarkerComponentClass_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ItemQualityFunctionLibrary.GetItemOnGroundDisplayNameColor
+struct UItemQualityFunctionLibrary_GetItemOnGroundDisplayNameColor_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                                DefaultColor;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ItemQualityFunctionLibrary.GetItemOcclusionColorIndex
+struct UItemQualityFunctionLibrary_GetItemOcclusionColorIndex_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ETLPostProcessFlag                       ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ItemQualityFunctionLibrary.GetItemDisplayNameColor
+struct UItemQualityFunctionLibrary_GetItemDisplayNameColor_Params
+{
+	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FItemData                                   ItemData;                                                  // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FLinearColor                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ItemSpawner.SpawnItemOnGround
+struct AItemSpawner_SpawnItemOnGround_Params
+{
+	struct FItemRequest                                ItemRequest;                                               // (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ItemSpawner.SetSourceActor
+struct AItemSpawner_SetSourceActor_Params
+{
+	struct FItemRequest                                ItemRequest;                                               // (Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class AActor*                                      SourceActor;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     OffsetToRotate;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ItemSpawner.GiveRandomItem
+struct AItemSpawner_GiveRandomItem_Params
+{
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       RowName;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                       ItemTags;                                                  // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	float                                              ItemLevel;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     ContextString;                                             // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.KeyablePlayerMaterial.SetScalarParameterOnMaterial
+struct UKeyablePlayerMaterial_SetScalarParameterOnMaterial_Params
+{
+	float                                              Val;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       ParameterName;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.LevelManager.OnNavigationGenerationFinished
+struct ULevelManager_OnNavigationGenerationFinished_Params
+{
+	class ANavigationData*                             NavData;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.LevelManager.OnLevelRemoved
+struct ULevelManager_OnLevelRemoved_Params
+{
+	class ULevel*                                      InLevel;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWorld*                                      InWorld;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.LevelManager.OnLevelAdded
+struct ULevelManager_OnLevelAdded_Params
+{
+	class ULevel*                                      InLevel;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWorld*                                      InWorld;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerLevelSequenceWrapper.ServerSequenceStop
+struct UPlayerLevelSequenceWrapper_ServerSequenceStop_Params
+{
+};
+
+// Function Frontiers.PlayerLevelSequenceWrapper.PlayClientOnlyLevelSequence
+struct UPlayerLevelSequenceWrapper_PlayClientOnlyLevelSequence_Params
+{
+	class UObject*                                     WorldContextObject;                                        // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      SequenceActorClass;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      AttachToActor;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ALevelSequenceActor*                         ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerLevelSequenceWrapper.ClientSequenceStop
+struct UPlayerLevelSequenceWrapper_ClientSequenceStop_Params
+{
+};
+
+// Function Frontiers.PlayerLevelSequenceWrapper.ClientSequenceStart
+struct UPlayerLevelSequenceWrapper_ClientSequenceStart_Params
+{
+	struct FClientLevelSequenceRequest                 Request;                                                   // (ConstParm, Parm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.LifetimeEventsComponent.TimerNearLifetimeEnd
+struct ULifetimeEventsComponent_TimerNearLifetimeEnd_Params
+{
+};
+
+// Function Frontiers.LifetimeEventsComponent.OnRep_ServerLifetimeInfo
+struct ULifetimeEventsComponent_OnRep_ServerLifetimeInfo_Params
+{
+};
+
+// Function Frontiers.LoreLineComponent.PlayLoreLine
+struct ULoreLineComponent_PlayLoreLine_Params
+{
+	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.LoreLineComponent.OnOwnerOverlap
+struct ULoreLineComponent_OnOwnerOverlap_Params
+{
+	class AActor*                                      OverlappedActor;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.LorePlayerComponent.StopPlayingLoreLine
+struct ULorePlayerComponent_StopPlayingLoreLine_Params
+{
+	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.LorePlayerComponent.PlayLoreLine
+struct ULorePlayerComponent_PlayLoreLine_Params
+{
+	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDialogueTableRowHandle                     LoreLine;                                                  // (Parm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MainMenuEmberWeaponHolder.GetAttachComponent
+struct AMainMenuEmberWeaponHolder_GetAttachComponent_Params
+{
+	class USceneComponent*                             ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MainMenuActorCoordinator.SequenceFinished
+struct AMainMenuActorCoordinator_SequenceFinished_Params
+{
+};
+
+// Function Frontiers.TLBasePlayerController.ServerSpawnCheats
+struct ATLBasePlayerController_ServerSpawnCheats_Params
+{
+};
+
+// Function Frontiers.TLBasePlayerController.OnRep_CheatRunner
+struct ATLBasePlayerController_OnRep_CheatRunner_Params
+{
+};
+
+// Function Frontiers.MainMenuPlayerController.ServerTravel
+struct AMainMenuPlayerController_ServerTravel_Params
+{
+	struct FString                                     URL;                                                       // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MainMenuPlayerController.ClickHoveredActor
+struct AMainMenuPlayerController_ClickHoveredActor_Params
+{
+};
+
+// Function Frontiers.MainMenuState.GoBack
+struct UMainMenuState_GoBack_Params
+{
+};
+
+// Function Frontiers.MainMenuStateCharacterCreate.ConfirmPet
+struct UMainMenuStateCharacterCreate_ConfirmPet_Params
+{
+};
+
+// Function Frontiers.MainMenuStateCharacterCreate.ConfirmCustomization
+struct UMainMenuStateCharacterCreate_ConfirmCustomization_Params
+{
+};
+
+// Function Frontiers.MainMenuStateCharacterCreate.ConfirmClass
+struct UMainMenuStateCharacterCreate_ConfirmClass_Params
+{
+};
+
+// Function Frontiers.MainMenuStateCharacterCreate.CanChangeSkinHairColor
+struct UMainMenuStateCharacterCreate_CanChangeSkinHairColor_Params
+{
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MainMenuStateCharacterCreate.CanChangeGender
+struct UMainMenuStateCharacterCreate_CanChangeGender_Params
+{
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MainMenuStateCharacterCreatePickPet.SelectHighlightedPet
+struct UMainMenuStateCharacterCreatePickPet_SelectHighlightedPet_Params
+{
+};
+
+// Function Frontiers.MainMenuStateCharacterCreateShowSkillTrees.ContinueToNextState
+struct UMainMenuStateCharacterCreateShowSkillTrees_ContinueToNextState_Params
+{
+};
+
+// Function Frontiers.MainMenuStateLogin.Login
+struct UMainMenuStateLogin_Login_Params
+{
+};
+
+// Function Frontiers.MainMenuStateLogin.Cancel
+struct UMainMenuStateLogin_Cancel_Params
+{
+};
+
+// Function Frontiers.MainMenuStateWelcome.ContinueToNextState
+struct UMainMenuStateWelcome_ContinueToNextState_Params
+{
+};
+
+// Function Frontiers.MapProxy.OnMapTilesLoaded
+struct AMapProxy_OnMapTilesLoaded_Params
+{
+};
+
+// Function Frontiers.MapWorksManager.OnRepMapWorksParams
+struct UMapWorksManager_OnRepMapWorksParams_Params
+{
+};
+
+// Function Frontiers.MapWorksObjectComponent.QueryReplaceMapworksPortal
+struct UMapWorksObjectComponent_QueryReplaceMapworksPortal_Params
+{
+	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FInventoryItemEntry                         Item;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MapWorksObjectComponent.MakePortalFromMapworksRowsAtLocation
+struct UMapWorksObjectComponent_MakePortalFromMapworksRowsAtLocation_Params
+{
+	TArray<class AActor*>                              Operators;                                                 // (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FMapWorksTableRowHandle>             MapworksRowNames;                                          // (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	Frontiers_EPlayerPortalDestinationType             DestinationType;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                                SpokeTag;                                                  // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     SpawnLocation;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MapWorksObjectComponent.MakePortalFromMapworksRows
+struct UMapWorksObjectComponent_MakePortalFromMapworksRows_Params
+{
+	TArray<class AActor*>                              Operators;                                                 // (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FMapWorksTableRowHandle>             MapworksRowNames;                                          // (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	Frontiers_EPlayerPortalDestinationType             DestinationType;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                                SpokeTag;                                                  // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MapWorksObjectComponent.MakePortal
+struct UMapWorksObjectComponent_MakePortal_Params
+{
+	TArray<class AActor*>                              Operators;                                                 // (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	class AActor*                                      MapWorksObjectOwner;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EPlayerPortalDestinationType             DestinationType;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MapWorksObjectComponent.MakeItemPortal
+struct UMapWorksObjectComponent_MakeItemPortal_Params
+{
+	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FInventoryItemEntry                         Item;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MeshAttachmentComponent.AttachToTarget
+struct UMeshAttachmentComponent_AttachToTarget_Params
+{
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FAttachMeshInfo                             AttachmentInfo;                                            // (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector                                     Location;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                                    Rotation;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MeshShellComponent.SpawnShellUsingParams
+struct UMeshShellComponent_SpawnShellUsingParams_Params
+{
+	struct FMeshShellParameters                        InParams;                                                  // (Parm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MeshShellComponent.CreateShellOnTarget
+struct UMeshShellComponent_CreateShellOnTarget_Params
+{
+	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMeshShellComponent*                         ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MetricsLoggerComponent.HasTakenDamageSinceTime
+struct UMetricsLoggerComponent_HasTakenDamageSinceTime_Params
+{
+	class AActor*                                      Owner;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              SinceSecondsAgo;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              AtLeastDamage;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Missile.SpawnProjectiles
+struct AMissile_SpawnProjectiles_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     TargetLocation;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFireMissilesData                           FireMissileData;                                           // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	int                                                RandomSeed;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class AMissile*>                            ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Missile.SimulateComponentHit
+struct AMissile_SimulateComponentHit_Params
+{
+	class UPrimitiveComponent*                         HitComponent;                                              // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bBlockingHit;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Missile.SetCollisionProfile
+struct AMissile_SetCollisionProfile_Params
+{
+	struct FName                                       CollisionProfileName;                                      // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Missile.OnMissileLaunched
+struct AMissile_OnMissileLaunched_Params
+{
+};
+
+// Function Frontiers.Missile.OnMissileExploded
+struct AMissile_OnMissileExploded_Params
+{
+	struct FVector                                     ExplodeLocation;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Missile.OnMissileDidDamage
+struct AMissile_OnMissileDidDamage_Params
+{
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Missile.OnComponentHit
+struct AMissile_OnComponentHit_Params
+{
+	class UPrimitiveComponent*                         HitComponent;                                              // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     NormalImpulse;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FHitResult                                  Hit;                                                       // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Missile.OnComponentBeginOverlap
+struct AMissile_OnComponentBeginOverlap_Params
+{
+	class UPrimitiveComponent*                         OverlappedComponent;                                       // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                OtherBodyIndex;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bFromSweep;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FHitResult                                  SweepResult;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Missile.OnClientMissileHit
+struct AMissile_OnClientMissileHit_Params
+{
+	class AActor*                                      MissileInstigator;                                         // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class AActor*>                              HitActors;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FVector                                     Location;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                                    Rotator;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                               bAffectedArea;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Missile.MissileStopped
+struct AMissile_MissileStopped_Params
+{
+};
+
+// Function Frontiers.Missile.GetSkillInstanceId
+struct AMissile_GetSkillInstanceId_Params
+{
+	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Missile.DoHit
+struct AMissile_DoHit_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bBlockingHit;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ModalWidgetComponent.WidgetReject
+struct UModalWidgetComponent_WidgetReject_Params
+{
+	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ModalWidgetComponent.WidgetAccept
+struct UModalWidgetComponent_WidgetAccept_Params
+{
+	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ModalWidgetComponent.ShowWidget
+struct UModalWidgetComponent_ShowWidget_Params
+{
+	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterChampionComponent.RemoveMonsterFromChampionPack
+struct UMonsterChampionComponent_RemoveMonsterFromChampionPack_Params
+{
+	class AActor*                                      Monster;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterChampionComponent.OnOwnerDied
+struct UMonsterChampionComponent_OnOwnerDied_Params
+{
+	class APawn*                                       Dying;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Attacker;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterChampionComponent.MakeIntoChampionWithAffixes
+struct UMonsterChampionComponent_MakeIntoChampionWithAffixes_Params
+{
+	class AActor*                                      Monster;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EMonsterSpawnType                        MonsterSpawnType;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FMonsterAffixTableRowHandle>         Affixes;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                               bPlaySpawnEffects;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bPlayDeathEffects;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterChampionComponent.GetSelectedAffixes
+struct UMonsterChampionComponent_GetSelectedAffixes_Params
+{
+	TArray<struct FMonsterAffixTableRowHandle>         ReturnValue;                                               // (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterChampionComponent.GetPackSize
+struct UMonsterChampionComponent_GetPackSize_Params
+{
+	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterChampionComponent.GetNumAliveInPack
+struct UMonsterChampionComponent_GetNumAliveInPack_Params
+{
+	bool                                               bSameSpawnType;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterChampionComponent.GetMonsterType
+struct UMonsterChampionComponent_GetMonsterType_Params
+{
+	class AActor*                                      Monster;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EMonsterSpawnType                        ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterChampionComponent.GetMonsterChampionComponent
+struct UMonsterChampionComponent_GetMonsterChampionComponent_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMonsterChampionComponent*                   ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterChampionComponent.GetLivingPackMembers
+struct UMonsterChampionComponent_GetLivingPackMembers_Params
+{
+	TArray<class AActor*>                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterChampionComponent.AddNewMonsterToPack
+struct UMonsterChampionComponent_AddNewMonsterToPack_Params
+{
+	class AActor*                                      Monster;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EMonsterSpawnType                        MonsterSpawnType;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FMonsterAffixTableRowHandle>         IgnoredAffixes;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                               bReplace;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bPlaySpawnEffects;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bPlayDeathEffects;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterManagerPlayerComponent.PreHandleComponent
+struct UMonsterManagerPlayerComponent_PreHandleComponent_Params
+{
+};
+
+// Function Frontiers.MonsterManagerPlayerComponent.PostHandleComponent
+struct UMonsterManagerPlayerComponent_PostHandleComponent_Params
+{
+};
+
+// Function Frontiers.MonsterManagerComponent.TriggerNearbySpawners
+struct UMonsterManagerComponent_TriggerNearbySpawners_Params
+{
+	class AActor*                                      ReferenceActor;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      MonsterSpawnerClass;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bAllSpawnersInArea;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterManagerComponent.ForceActivateNearbySpawners
+struct UMonsterManagerComponent_ForceActivateNearbySpawners_Params
+{
+	class AActor*                                      ReferenceActor;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      MonsterSpawnerClass;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bAllSpawnersInArea;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterManagerComponent.EmptyPendingMonstersNearby
+struct UMonsterManagerComponent_EmptyPendingMonstersNearby_Params
+{
+	class AActor*                                      ReferenceActor;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      MonsterSpawnerClass;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bAllSpawnersInArea;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterSpawner.SpawnMonsterNear
+struct AMonsterSpawner_SpawnMonsterNear_Params
+{
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMonstersTableRowHandle                     TableRow;                                                  // (Parm, NativeAccessSpecifierPublic)
+	struct FVector                                     LocationIn;                                                // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              AcceptanceRadius;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Level;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bChampion;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bPawnIsOwner;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSlot                               SpawnSkillSlot;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bInIgnoreSpawnCollision;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterSpawner.SpawnMonster
+struct AMonsterSpawner_SpawnMonster_Params
+{
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMonsterSpawnRequest                        Request;                                                   // (Parm, NativeAccessSpecifierPublic)
+	struct FMonstersTableRowHandle                     TableRow;                                                  // (Parm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterSpawner.OnMonsterCountChanged
+struct AMonsterSpawner_OnMonsterCountChanged_Params
+{
+	int                                                Count;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterSpawner.OnAllMonstersKilled
+struct AMonsterSpawner_OnAllMonstersKilled_Params
+{
+};
+
+// Function Frontiers.MonsterSpawnerBoss.OnMonsterSpawned
+struct UMonsterSpawnerBoss_OnMonsterSpawned_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MonsterSpawnerTrigger.ResetTrigger
+struct UMonsterSpawnerTrigger_ResetTrigger_Params
+{
+};
+
+// Function Frontiers.MonsterSpawnerTrigger.OnOverlap
+struct UMonsterSpawnerTrigger_OnOverlap_Params
+{
+	class UPrimitiveComponent*                         OverlappedComp;                                            // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                OtherBodyIndex;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bFromSweep;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FHitResult                                  SweepResult;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.UpdateGadgetState
+struct UMulticastFunctionComponent_UpdateGadgetState_Params
+{
+	class AGadget*                                     Gadget;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint64_t                                           ObserverId;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bInCanBeOperated;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                InOperationalStatus;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.UpdateAreaQuestStatus
+struct UMulticastFunctionComponent_UpdateAreaQuestStatus_Params
+{
+	class UAreaQuestComponent*                         Component;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FQuestInstanceDataMsg                       Msg;                                                       // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.UpdateAreaQuestCompleteStatus
+struct UMulticastFunctionComponent_UpdateAreaQuestCompleteStatus_Params
+{
+	class UAreaQuestComponent*                         Component;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FQuestInstanceDataCompletedMsg              Msg;                                                       // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.TrapTriggered
+struct UMulticastFunctionComponent_TrapTriggered_Params
+{
+	class UTrapComponent*                              TrapComponent;                                             // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      TriggeredBy;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Delay;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.StartSkill
+struct UMulticastFunctionComponent_StartSkill_Params
+{
+	class USkillManager*                               SkillManager;                                              // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSkillReplicationData                       SkillActiveData;                                           // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.StartSecondarySkill
+struct UMulticastFunctionComponent_StartSecondarySkill_Params
+{
+	class USkillManager*                               SkillManager;                                              // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      SkillClass;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector_NetQuantize10                       TargetLocation;                                            // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.RootMotionEndedOnServer
+struct UMulticastFunctionComponent_RootMotionEndedOnServer_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.PlayTLEffectAttached
+struct UMulticastFunctionComponent_PlayTLEffectAttached_Params
+{
+	class AActor*                                      EffectOwner;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       AttachPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TEnumAsByte<Engine_EAttachLocation>                AttachLocationType;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector_NetQuantize10                       Offset;                                                    // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              LifeSpan;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.PlayTLEffectAtLocation
+struct UMulticastFunctionComponent_PlayTLEffectAtLocation_Params
+{
+	class AActor*                                      EffectOwner;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector_NetQuantize10                       Location;                                                  // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              LifeSpan;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.PlaySkillDamageEffectWithNumbers
+struct UMulticastFunctionComponent_PlaySkillDamageEffectWithNumbers_Params
+{
+	class UTLCombatActorComponent*                     CombatFX;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APawn*                                       Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D_NetQuantizeDirection              DirectionOfAttackNormalized;                               // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ECombatFxElementType                     Element;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsCritical;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsLethal;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsOverkill;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                Damage;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.PlaySkillDamageEffect
+struct UMulticastFunctionComponent_PlaySkillDamageEffect_Params
+{
+	class UTLCombatActorComponent*                     CombatFX;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APawn*                                       Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D_NetQuantizeDirection              DirectionOfAttackNormalized;                               // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ECombatFxElementType                     Element;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsCritical;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsLethal;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsOverkill;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.PlayRecoverHealthEffect
+struct UMulticastFunctionComponent_PlayRecoverHealthEffect_Params
+{
+	class UTLCombatActorComponent*                     CombatFX;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.PlayEffectAttached
+struct UMulticastFunctionComponent_PlayEffectAttached_Params
+{
+	class AActor*                                      EffectOwner;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UParticleSystem*                             EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFMODEventReference                         EventReference;                                            // (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FName                                       AttachPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TEnumAsByte<Engine_EAttachLocation>                AttachLocationType;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector_NetQuantize10                       Offset;                                                    // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.PlayEffectAtLocation
+struct UMulticastFunctionComponent_PlayEffectAtLocation_Params
+{
+	class AActor*                                      EffectOwner;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UParticleSystem*                             EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFMODEventReference                         EventReference;                                            // (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector_NetQuantize10                       Location;                                                  // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator_NetQuantizeByte                    Rotation;                                                  // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.PlayDamageEffectWithNumbers
+struct UMulticastFunctionComponent_PlayDamageEffectWithNumbers_Params
+{
+	class UTLCombatActorComponent*                     CombatFX;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APawn*                                       Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D_NetQuantizeDirection              DirectionOfAttackNormalized;                               // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ECombatFxElementType                     Element;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsCritical;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsLethal;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsOverkill;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                Damage;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.PlayDamageEffect
+struct UMulticastFunctionComponent_PlayDamageEffect_Params
+{
+	class UTLCombatActorComponent*                     CombatFX;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APawn*                                       Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D_NetQuantizeDirection              DirectionOfAttackNormalized;                               // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ECombatFxElementType                     Element;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsCritical;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsLethal;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsOverkill;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.PlayDamageAvoidedEffect
+struct UMulticastFunctionComponent_PlayDamageAvoidedEffect_Params
+{
+	class UTLCombatActorComponent*                     CombatFX;                                                  // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D_NetQuantizeDirection              DirectionOfAttackNormalized;                               // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ECombatWidgetNotifyType                  NotifyType;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.MissileStoppedOnServer
+struct UMulticastFunctionComponent_MissileStoppedOnServer_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      MissileInstigator;                                         // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      MissileClass;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector_NetQuantize                         Location;                                                  // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator_NetQuantizeByte                    Rotator;                                                   // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	uint32_t                                           SyncId;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bExpired;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bHitSomething;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      HitActor;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.MissileHitOnServer
+struct UMulticastFunctionComponent_MissileHitOnServer_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      MissileInstigator;                                         // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      MissileClass;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class AActor*>                              HitActors;                                                 // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FVector_NetQuantize                         Location;                                                  // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator_NetQuantizeByte                    Rotator;                                                   // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                               bExploded;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.MissileFoundTargetOnServer
+struct UMulticastFunctionComponent_MissileFoundTargetOnServer_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint32_t                                           SyncId;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.EndRootMotionForce
+struct UMulticastFunctionComponent_EndRootMotionForce_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.EndPortalSkillAnimation
+struct UMulticastFunctionComponent_EndPortalSkillAnimation_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.MulticastFunctionComponent.ApplyRadialRootMotionForce
+struct UMulticastFunctionComponent_ApplyRadialRootMotionForce_Params
+{
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector_NetQuantize                         Origin;                                                    // (ConstParm, Parm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Speed;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsPush;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.NarratorComponent.TriggerQuip
+struct UNarratorComponent_TriggerQuip_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ENarratorQuip                            Quip;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.NarratorComponent.ParseNarratorQuip
+struct UNarratorComponent_ParseNarratorQuip_Params
+{
+	struct FName                                       QuipName;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ENarratorQuip                            ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.OperableComponent.OnOperateClient
+struct UOperableComponent_OnOperateClient_Params
+{
+	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.OperableComponent.OnOperate
+struct UOperableComponent_OnOperate_Params
+{
+	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.OperableComponent.IsActorOperable
+struct UOperableComponent_IsActorOperable_Params
+{
+	class AActor*                                      Operator;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.OperableComponent.Enable
+struct UOperableComponent_Enable_Params
+{
+};
+
+// Function Frontiers.OperableComponent.Disable
+struct UOperableComponent_Disable_Params
+{
+};
+
+// Function Frontiers.OperableComponent.ClientOperate
+struct UOperableComponent_ClientOperate_Params
+{
+	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PartyComponent.ServerUpdateBlockedPartyMemberTLAccountIds
+struct UPartyComponent_ServerUpdateBlockedPartyMemberTLAccountIds_Params
+{
+	TArray<struct FString>                             InBlockedPartyMemberTLAccountIds;                          // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PartyComponent.ServerSendInstanceResetRequest
+struct UPartyComponent_ServerSendInstanceResetRequest_Params
+{
+};
+
+// Function Frontiers.PartyComponent.ServerSendInstanceResetNotification
+struct UPartyComponent_ServerSendInstanceResetNotification_Params
+{
+	TArray<struct FPartyMember>                        KickedPartyMembers;                                        // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PartyComponent.ServerRespondToInvite
+struct UPartyComponent_ServerRespondToInvite_Params
+{
+	struct FString                                     InviterId;                                                 // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EPartyStatusUpdate                       Status;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PartyComponent.ServerKickPartyMember
+struct UPartyComponent_ServerKickPartyMember_Params
+{
+	struct FString                                     MemberId;                                                  // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PartyComponent.ServerJoinSession
+struct UPartyComponent_ServerJoinSession_Params
+{
+	struct FString                                     ToJoinPlatformAccountId;                                   // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     ToJoinPlatformAccountName;                                 // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PartyComponent.ServerInvitePartyMember
+struct UPartyComponent_ServerInvitePartyMember_Params
+{
+	struct FString                                     ToInvitePlatformAccountId;                                 // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     ToInvitePlatformAccountName;                               // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PartyComponent.ServerDoPartyInstanceReset
+struct UPartyComponent_ServerDoPartyInstanceReset_Params
+{
+};
+
+// Function Frontiers.PartyComponent.ServerCanAcceptJoiningPlayerResponse
+struct UPartyComponent_ServerCanAcceptJoiningPlayerResponse_Params
+{
+	bool                                               bCanAccept;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FJoinSessionEvent                           JoinSessionEvent;                                          // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+	int                                                RequestID;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PartyComponent.ServerAcceptInstanceResetRequest
+struct UPartyComponent_ServerAcceptInstanceResetRequest_Params
+{
+	struct FString                                     TravelToArea;                                              // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PartyComponent.OnRep_PendingInvites
+struct UPartyComponent_OnRep_PendingInvites_Params
+{
+	TArray<struct FPartyInvite>                        OldPendingInvites;                                         // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PartyComponent.OnRep_Party
+struct UPartyComponent_OnRep_Party_Params
+{
+	struct FParty                                      OldParty;                                                  // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PartyComponent.ClientShowInstanceResetNotification
+struct UPartyComponent_ClientShowInstanceResetNotification_Params
+{
+	TArray<struct FString>                             KickedMemberNames;                                         // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PartyComponent.ClientReceiveMemberStatusUpdate
+struct UPartyComponent_ClientReceiveMemberStatusUpdate_Params
+{
+	struct FString                                     MemberPlatformAccountName;                                 // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     MemberTLAccountId;                                         // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EPartyStatusUpdate                       Status;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PartyComponent.ClientReceiveInstanceResetRequest
+struct UPartyComponent_ClientReceiveInstanceResetRequest_Params
+{
+	struct FPartyInstanceResetRequest                  PartyInstanceResetRequest;                                 // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PartyComponent.ClientLeavingPartyInstance
+struct UPartyComponent_ClientLeavingPartyInstance_Params
+{
+};
+
+// Function Frontiers.PartyComponent.ClientJoinSessionProcessResult
+struct UPartyComponent_ClientJoinSessionProcessResult_Params
+{
+	struct FJoinSessionResultEvent                     JoinSessionResultEvent;                                    // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PartyComponent.ClientCanAcceptJoiningPlayer
+struct UPartyComponent_ClientCanAcceptJoiningPlayer_Params
+{
+	struct FJoinSessionEvent                           JoinSessionEvent;                                          // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+	int                                                RequestID;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PersistenceServerComm.DisableCharacterPersistence
+struct UPersistenceServerComm_DisableCharacterPersistence_Params
+{
+};
+
+// Function Frontiers.PersistentEffectsActor.OnSystemFinished
+struct APersistentEffectsActor_OnSystemFinished_Params
+{
+	class UParticleSystemComponent*                    PSComponent;                                               // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PersistentEffectsActor.OnAttachParentDestroyed
+struct APersistentEffectsActor_OnAttachParentDestroyed_Params
+{
+	class AActor*                                      Parent;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PersistentEffectsActor.CreatePersistentParticles
+struct APersistentEffectsActor_CreatePersistentParticles_Params
+{
+	class UParticleSystem*                             EmitterTemplate;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      AttachToActor;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       AttachPointName;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     Location;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                                    Rotation;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TEnumAsByte<Engine_EAttachLocation>                LocationType;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bAutoDestroy;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     Scale3D;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APersistentEffectsActor*                     ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Photobooth.GetMesh
+struct APhotobooth_GetMesh_Params
+{
+	class USkeletalMeshComponent*                      ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Photobooth.GetIconCaptureLocator
+struct APhotobooth_GetIconCaptureLocator_Params
+{
+	class UArrowComponent*                             ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerAffixComponent.OnPlayerRevived_Delegate
+struct UPlayerAffixComponent_OnPlayerRevived_Delegate_Params
+{
+	class APawn*                                       Revived;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerBotBehaviorComponent.GetServerBotBehavior
+struct UPlayerBotBehaviorComponent_GetServerBotBehavior_Params
+{
+	class APlayerController*                           PlayerController;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBehaviorTree*                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerBotBehaviorComponent.GetClientBotBehavior
+struct UPlayerBotBehaviorComponent_GetClientBotBehavior_Params
+{
+	class APlayerController*                           PlayerController;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBehaviorTree*                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.NameDataComponent.OnRep_DisplayName
+struct UNameDataComponent_OnRep_DisplayName_Params
+{
+};
+
+// Function Frontiers.PlayerCharacterDataComponent.OnRep_AccountName
+struct UPlayerCharacterDataComponent_OnRep_AccountName_Params
+{
+};
+
+// Function Frontiers.PlayerCraftingComponent.ServerSacrificeItem
+struct UPlayerCraftingComponent_ServerSacrificeItem_Params
+{
+	struct FCraftingRequest                            Request;                                                   // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerCraftingComponent.ServerMarkRecipeSeen
+struct UPlayerCraftingComponent_ServerMarkRecipeSeen_Params
+{
+	int                                                RecipeIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerCraftingComponent.ServerDisenchantItem
+struct UPlayerCraftingComponent_ServerDisenchantItem_Params
+{
+	struct FCraftingRequest                            Request;                                                   // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerCraftingComponent.ServerCraftingRequest
+struct UPlayerCraftingComponent_ServerCraftingRequest_Params
+{
+	struct FCraftingRequest                            Request;                                                   // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerCraftingComponent.ServerClaim
+struct UPlayerCraftingComponent_ServerClaim_Params
+{
+	struct FName                                       QueueName;                                                 // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     JobId;                                                     // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerCraftingComponent.ClientStartCraftingEntry
+struct UPlayerCraftingComponent_ClientStartCraftingEntry_Params
+{
+	struct FName                                       QueueName;                                                 // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FCraftingQueueEntry                         InEntry;                                                   // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerCraftingComponent.ClientCraftingCompleted
+struct UPlayerCraftingComponent_ClientCraftingCompleted_Params
+{
+	Frontiers_ECraftingResult                          Result;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FCraftingRequest                            Request;                                                   // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerCraftingComponent.ClientClaimCraftingEntry
+struct UPlayerCraftingComponent_ClientClaimCraftingEntry_Params
+{
+	struct FName                                       QueueName;                                                 // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     JobId;                                                     // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerDialogueComponent.ClientStartQuestDialogue
+struct UPlayerDialogueComponent_ClientStartQuestDialogue_Params
+{
+	struct FName                                       QuestId;                                                   // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       TaskId;                                                    // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      SpeakerActor;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerDialogueComponent.ClientStartModalDialogue
+struct UPlayerDialogueComponent_ClientStartModalDialogue_Params
+{
+	struct FName                                       DialogueRowName;                                           // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      SpeakerActor;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerDialogueComponent.ClientStartBubbleDialogue
+struct UPlayerDialogueComponent_ClientStartBubbleDialogue_Params
+{
+	class AActor*                                      SpeakerActor;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerLevelManagerComponent.ClientLearnLevels
+struct UPlayerLevelManagerComponent_ClientLearnLevels_Params
+{
+	struct FGuid                                       NewAreaGuid;                                               // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FDRLGLevelInstance>                  NewLevels;                                                 // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerLevelManagerComponent.ClientForgetLevels
+struct UPlayerLevelManagerComponent_ClientForgetLevels_Params
+{
+	struct FGuid                                       OldAreaGuid;                                               // (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FDRLGLevelInstance>                  OldLevels;                                                 // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerPortalComponent.SpawnPortal
+struct UPlayerPortalComponent_SpawnPortal_Params
+{
+	class APortalProxy*                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerPortalComponent.ServerSetPortalDestination
+struct UPlayerPortalComponent_ServerSetPortalDestination_Params
+{
+	Frontiers_EPlayerPortalDestinationType             Destination;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                BindIndex;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     OtherPlayerAccountId;                                      // (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerPortalComponent.ServerRequestReplaceMapworksPortalProxyFromItem
+struct UPlayerPortalComponent_ServerRequestReplaceMapworksPortalProxyFromItem_Params
+{
+	int                                                InventoryEntryId;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerPortalComponent.ServerRequestImmediateTravelTo
+struct UPlayerPortalComponent_ServerRequestImmediateTravelTo_Params
+{
+	Frontiers_EPlayerPortalDestinationType             Destination;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                BindIndex;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      GadgetInUse;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerPortalComponent.ServerCancelPortalSkill
+struct UPlayerPortalComponent_ServerCancelPortalSkill_Params
+{
+};
+
+// Function Frontiers.PlayerPortalComponent.IsWaypointUnlocked
+struct UPlayerPortalComponent_IsWaypointUnlocked_Params
+{
+	class AActor*                                      Waypoint;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Player;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerPortalComponent.IsWaypointBoundToCurrentArea
+struct UPlayerPortalComponent_IsWaypointBoundToCurrentArea_Params
+{
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerPortalComponent.IsWaypointBoundToArea
+struct UPlayerPortalComponent_IsWaypointBoundToArea_Params
+{
+	struct FName                                       AreaName;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerPortalComponent.IsWaypointBound
+struct UPlayerPortalComponent_IsWaypointBound_Params
+{
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerPortalComponent.HasMapWorksPortal
+struct UPlayerPortalComponent_HasMapWorksPortal_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerPortalComponent.HasAvailableDestinationFromList
+struct UPlayerPortalComponent_HasAvailableDestinationFromList_Params
+{
+	TArray<Frontiers_EPlayerPortalDestinationType>     InDestinations;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerPortalComponent.GetPlayerPortalComponent
+struct UPlayerPortalComponent_GetPlayerPortalComponent_Params
+{
+	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPlayerPortalComponent*                      ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerPortalComponent.GetDestinations
+struct UPlayerPortalComponent_GetDestinations_Params
+{
+	TArray<struct FPlayerPortalDestination>            ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerPortalComponent.BindWaypointToCurrentArea
+struct UPlayerPortalComponent_BindWaypointToCurrentArea_Params
+{
+};
+
+// Function Frontiers.PlayerPortalComponent.BindWaypointToArea
+struct UPlayerPortalComponent_BindWaypointToArea_Params
+{
+	struct FName                                       AreaName;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerPortalComponent.AttemptTravel
+struct UPlayerPortalComponent_AttemptTravel_Params
+{
+	class APawn*                                       Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      GadgetInUse;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerQuestComponent.SpawnQuestRewards
+struct UPlayerQuestComponent_SpawnQuestRewards_Params
+{
+	class AActor*                                      SourceActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       QuestId;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerQuestComponent.ServerSetPinned
+struct UPlayerQuestComponent_ServerSetPinned_Params
+{
+	struct FName                                       QuestId;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsPinned;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerQuestComponent.ServerSeeBoss
+struct UPlayerQuestComponent_ServerSeeBoss_Params
+{
+	class AActor*                                      Boss;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerQuestComponent.ServerConfirmQuestRewardChoice
+struct UPlayerQuestComponent_ServerConfirmQuestRewardChoice_Params
+{
+	struct FName                                       QuestId;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       TaskId;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                RewardIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerQuestComponent.ServerConfirmQuestDialogue
+struct UPlayerQuestComponent_ServerConfirmQuestDialogue_Params
+{
+	struct FName                                       QuestId;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       TaskId;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerQuestComponent.ServerAcceptQuestOffer
+struct UPlayerQuestComponent_ServerAcceptQuestOffer_Params
+{
+	struct FName                                       QuestId;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerQuestComponent.ClientUpdateQuestStatusToPlayer
+struct UPlayerQuestComponent_ClientUpdateQuestStatusToPlayer_Params
+{
+	struct FQuestInstanceDataMsg                       Msg;                                                       // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerQuestComponent.ClientUpdateQuestCompletedToPlayer
+struct UPlayerQuestComponent_ClientUpdateQuestCompletedToPlayer_Params
+{
+	struct FQuestInstanceDataCompletedMsg              Msg;                                                       // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerQuestComponent.ClientUpdateAchievementProgressToPlayer
+struct UPlayerQuestComponent_ClientUpdateAchievementProgressToPlayer_Params
+{
+	struct FAchievementQuestProgressMsg                Msg;                                                       // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerQuestComponent.ClientUpdateAchievementCompletedToPlayer
+struct UPlayerQuestComponent_ClientUpdateAchievementCompletedToPlayer_Params
+{
+	struct FAchievementQuestCompletedMsg               Msg;                                                       // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerQuestComponent.ClientPlayRandomLoreLine
+struct UPlayerQuestComponent_ClientPlayRandomLoreLine_Params
+{
+	struct FGameplayTagContainer                       GameplayTags;                                              // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerQuestComponent.ClientPlayLoreLine
+struct UPlayerQuestComponent_ClientPlayLoreLine_Params
+{
+	struct FDialogueTableRowHandle                     DialogueRowHandle;                                         // (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerQuestComponent.ClientOnQuestAdded
+struct UPlayerQuestComponent_ClientOnQuestAdded_Params
+{
+	struct FName                                       QuestId;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerQuestComponent.ClientAddWidgetToHUDFullscreen
+struct UPlayerQuestComponent_ClientAddWidgetToHUDFullscreen_Params
+{
+	class UClass*                                      Widget;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.PlayerSaveComponent.NextTickSaveTimer
+struct UPlayerSaveComponent_NextTickSaveTimer_Params
+{
+};
+
+// Function Frontiers.PlayerSaveComponent.NextConvenientSaveTimer
+struct UPlayerSaveComponent_NextConvenientSaveTimer_Params
+{
+};
+
+// Function Frontiers.QuestObjectComponent.OnInteract
+struct UQuestObjectComponent_OnInteract_Params
+{
+	class AActor*                                      Other;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.QuestObjectComponent.OffersQuestForPlayer
+struct UQuestObjectComponent_OffersQuestForPlayer_Params
+{
+	class AActor*                                      Player;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.QuestObjectComponent.HasRelevantTaskForActor
+struct UQuestObjectComponent_HasRelevantTaskForActor_Params
+{
+	class AActor*                                      Other;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TLRandomFunctionLibrary.RandPointsInBox
+struct UTLRandomFunctionLibrary_RandPointsInBox_Params
+{
+	struct FBox                                        Box;                                                       // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FRandomStream                               RandomStream;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	int                                                NumPoints;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              MinDistBetween;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FVector>                             ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TLRandomFunctionLibrary.RandPointInBox
+struct UTLRandomFunctionLibrary_RandPointInBox_Params
+{
+	struct FBox                                        Box;                                                       // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FRandomStream                               RandomStream;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector                                     ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TLRandomFunctionLibrary.RandFloatFromGlobalStream
+struct UTLRandomFunctionLibrary_RandFloatFromGlobalStream_Params
+{
+	float                                              Min;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Max;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TLRandomFunctionLibrary.GetGlobalRandomStream
+struct UTLRandomFunctionLibrary_GetGlobalRandomStream_Params
+{
+	struct FRandomStream                               ReturnValue;                                               // (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SplineEmitterFollowerComponent.GetParticleSystem
+struct USplineEmitterFollowerComponent_GetParticleSystem_Params
+{
+	class UParticleSystem*                             ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SplineActorFollowerComponent.GetActorClass
+struct USplineActorFollowerComponent_GetActorClass_Params
+{
+	class UClass*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SplineFollowerAudioComponent.SetSplineFollowerToTrack
+struct USplineFollowerAudioComponent_SetSplineFollowerToTrack_Params
+{
+	class USplineFollowerComponent*                    InSplineFollower;                                          // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ReplicatedSplineComponent.SetFollowActor
+struct UReplicatedSplineComponent_SetFollowActor_Params
+{
+	class AActor*                                      InFollowActor;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ELocationType                            InLocationType;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.ReplicatedSplineComponent.OnRep_SplinePoints
+struct UReplicatedSplineComponent_OnRep_SplinePoints_Params
+{
+};
+
+// Function Frontiers.ReplicatedSplineComponent.AddReplicatedPoint
+struct UReplicatedSplineComponent_AddReplicatedPoint_Params
+{
+	struct FVector                                     WorldLocation;                                             // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SelectableInterface.ShouldDisplayName
+struct USelectableInterface_ShouldDisplayName_Params
+{
+	class AActor*                                      Other;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SelectableInterface.Operate
+struct USelectableInterface_Operate_Params
+{
+	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SelectableInterface.MarkUnselected
+struct USelectableInterface_MarkUnselected_Params
+{
+};
+
+// Function Frontiers.SelectableInterface.MarkSelected
+struct USelectableInterface_MarkSelected_Params
+{
+};
+
+// Function Frontiers.SelectableInterface.IsSelected
+struct USelectableInterface_IsSelected_Params
+{
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SelectableInterface.IsOperable
+struct USelectableInterface_IsOperable_Params
+{
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SelectableInterface.IsHoverable
+struct USelectableInterface_IsHoverable_Params
+{
+	class AActor*                                      Other;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SelectableInterface.GetOperateSkillSlot
+struct USelectableInterface_GetOperateSkillSlot_Params
+{
+	Frontiers_ESkillSlot                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SelectableInterface.ClientOperate
+struct USelectableInterface_ClientOperate_Params
+{
+	class AActor*                                      Operator;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SelectableInterface.CanOperate
+struct USelectableInterface_CanOperate_Params
+{
+	class AActor*                                      Operator;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SelectableInterface.CanBeSelected
+struct USelectableInterface_CanBeSelected_Params
+{
+	class AActor*                                      Other;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.SpawnSkillShape
+struct USkill_SpawnSkillShape_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      ShapeClass;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     Location;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ShapeDuration;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bAttached;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              RandomRange;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bSpawnOnClient;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bSpawnAtTarget;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                                    CustomRotation;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                               bAllowSecondaryOverlaps;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SecondaryOverlapsMax;                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     SpawnOffset;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ASkillShape*                                 ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.SkillStart
+struct USkill_SkillStart_Params
+{
+	class UClass*                                      SkillClass;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      SkillTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Param;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.SetUIVisible
+struct USkill_SetUIVisible_Params
+{
+	class APawn*                                       Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      UIClass;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsVisible;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                     ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.Operate
+struct USkill_Operate_Params
+{
+	class AActor*                                      Attacker;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnSkillUnequipped
+struct USkill_OnSkillUnequipped_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnSkillTick
+struct USkill_OnSkillTick_Params
+{
+	float                                              DeltaSeconds;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     TargetLocation;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnSkillStop
+struct USkill_OnSkillStop_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnSkillStart
+struct USkill_OnSkillStart_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      SkillTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Param;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnSkillRemoved
+struct USkill_OnSkillRemoved_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnSkillLevelUpdated
+struct USkill_OnSkillLevelUpdated_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SkillLevel;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnSkillEventHit02
+struct USkill_OnSkillEventHit02_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     TargetLocation;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnSkillEventHit01
+struct USkill_OnSkillEventHit01_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     TargetLocation;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnSkillEventAnimStart
+struct USkill_OnSkillEventAnimStart_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnSkillEventAnimEnd
+struct USkill_OnSkillEventAnimEnd_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnSkillEquipped
+struct USkill_OnSkillEquipped_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnSkillDidDamage
+struct USkill_OnSkillDidDamage_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      DeliveryActor;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Amount;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bKilledTarget;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bCritical;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnSkillBeamPulse
+struct USkill_OnSkillBeamPulse_Params
+{
+	class AActor*                                      Instigator;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     BeamEnd;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bHitTerrain;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnSkillActorOverlap
+struct USkill_OnSkillActorOverlap_Params
+{
+	class AActor*                                      Instigator;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ASkillShape*                                 Shape;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsPrimaryTarget;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnSkillActorEndOverlap
+struct USkill_OnSkillActorEndOverlap_Params
+{
+	class AActor*                                      Instigator;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ASkillShape*                                 Shape;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnActorRevived
+struct USkill_OnActorRevived_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.OnActorDeath
+struct USkill_OnActorDeath_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Attacker;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.GetSkillPerLevelBonus
+struct USkill_GetSkillPerLevelBonus_Params
+{
+	class UObject*                                     WorldContextObject;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTLCurveTableRowHandle                      CurveRow;                                                  // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	float                                              Multiplier;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Level;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.GetSkillDescription
+struct USkill_GetSkillDescription_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SkillLevel;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FText                                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.GetSkillDamageFactor
+struct USkill_GetSkillDamageFactor_Params
+{
+	class AActor*                                      Source;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              DamageFactorOverride;                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.GetOverrideSkill
+struct USkill_GetOverrideSkill_Params
+{
+	Frontiers_ESkillSlot                               InSkillSlot;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                InSkillSet;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSlot                               OutSkillSlot;                                              // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                OutSkillSet;                                               // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APawn*                                       Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.GetOriginActor
+struct USkill_GetOriginActor_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.GetDurationPercent
+struct USkill_GetDurationPercent_Params
+{
+	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.GetCooldown
+struct USkill_GetCooldown_Params
+{
+	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.GetAllTags
+struct USkill_GetAllTags_Params
+{
+	struct FGameplayTagContainer                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.FindAITargetLocation
+struct USkill_FindAITargetLocation_Params
+{
+	class AActor*                                      Pawn;                                                      // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      InOptionalTarget;                                          // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     OutTargetLocation;                                         // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.DetachSkillActor
+struct USkill_DetachSkillActor_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      AttachedActorClass;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bLogErrorIfNotFound;                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.BlueprintCanSkillStart
+struct USkill_BlueprintCanSkillStart_Params
+{
+	class AActor*                                      SourceActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     TargetLocation;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.Attack
+struct USkill_Attack_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Attacker;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Victim;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     TargetLocation;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bFindTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bPlayMeleeHitSound;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Fraction;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Skill.AttachSkillActor
+struct USkill_AttachSkillActor_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      AttachedActorClass;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       SocketName;                                                // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillBeam.SpawnBeam
+struct ASkillBeam_SpawnBeam_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      SourceActor;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFireSkillBeamData                          BeamData;                                                  // (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	class ASkillBeam*                                  ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillDelegate.CanInteractWith
+struct USkillDelegate_CanInteractWith_Params
+{
+	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIgnoreMortality;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillDelegateInterface.CanInteractWith
+struct USkillDelegateInterface_CanInteractWith_Params
+{
+	class AActor*                                      Target;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIgnoreMortality;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillEffects.PlayEffectsOnActor
+struct USkillEffects_PlayEffectsOnActor_Params
+{
+	class AActor*                                      EffectOwner;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                                   DirectionOfAttack;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FEffectDefinition                           Effects;                                                   // (Parm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillEffects.PlayEffectsAtLocation
+struct USkillEffects_PlayEffectsAtLocation_Params
+{
+	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                                    Rotation;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	class AActor*                                      EffectOwner;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                                   DirectionOfAttack;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FEffectDefinition                           Effects;                                                   // (Parm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillEffects.PlayAudioEffectOnBone
+struct USkillEffects_PlayAudioEffectOnBone_Params
+{
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       AudioEffect;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillEffects.NetPlayTLEffectAttached
+struct USkillEffects_NetPlayTLEffectAttached_Params
+{
+	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     LocationOffset;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              LifeSpan;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       AttachPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TEnumAsByte<Engine_EAttachLocation>                AttachLocationType;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillEffects.NetPlayTLEffectAtLocation
+struct USkillEffects_NetPlayTLEffectAtLocation_Params
+{
+	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              LifeSpan;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillEffects.NetPlayEffectAttached
+struct USkillEffects_NetPlayEffectAttached_Params
+{
+	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UParticleSystem*                             EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFMODEventReference                         EventReference;                                            // (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector                                     LocationOffset;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       AttachPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TEnumAsByte<Engine_EAttachLocation>                AttachLocationType;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillEffects.NetPlayEffectAtLocation
+struct USkillEffects_NetPlayEffectAtLocation_Params
+{
+	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Instigator;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UParticleSystem*                             EffectTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFMODEventReference                         EventReference;                                            // (Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                                    Rotation;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                              ScaleMultiplier;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EVFXScaleMethod                          ScaleMethod;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bUseLegacyScale;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillEffects.DeactivateParticles
+struct USkillEffects_DeactivateParticles_Params
+{
+	class AActor*                                      ActorWithParticles;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bDetachParticles;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.WeaponEquipped
+struct USkillManager_WeaponEquipped_Params
+{
+	Frontiers_EWeaponSlot                              TraitMode;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.UnlockCooldownsByTags
+struct USkillManager_UnlockCooldownsByTags_Params
+{
+	struct FGameplayTagContainer                       Tags;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.SwitchBasicAttackHands
+struct USkillManager_SwitchBasicAttackHands_Params
+{
+};
+
+// Function Frontiers.SkillManager.StopActiveSkill
+struct USkillManager_StopActiveSkill_Params
+{
+};
+
+// Function Frontiers.SkillManager.SkillSlotHasSkill
+struct USkillManager_SkillSlotHasSkill_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.SetCooldownBySkill
+struct USkillManager_SetCooldownBySkill_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.SetCooldown
+struct USkillManager_SetCooldown_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.ServerUpdateInputState
+struct USkillManager_ServerUpdateInputState_Params
+{
+	struct FVector_NetQuantize10                       Location;                                                  // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSlot                               Pressed;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.ServerStopCurrentSkill
+struct USkillManager_ServerStopCurrentSkill_Params
+{
+};
+
+// Function Frontiers.SkillManager.ServerSkillTryToStart
+struct USkillManager_ServerSkillTryToStart_Params
+{
+	class AActor*                                      SkillTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector_NetQuantize10                       Location;                                                  // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Timestamp;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSkillStartParams                           SkillStartParams;                                          // (ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.ServerSetSkill
+struct USkillManager_ServerSetSkill_Params
+{
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       RowName;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.ServerRespecSkills
+struct USkillManager_ServerRespecSkills_Params
+{
+};
+
+// Function Frontiers.SkillManager.ServerRejectRespecSkills
+struct USkillManager_ServerRejectRespecSkills_Params
+{
+};
+
+// Function Frontiers.SkillManager.ServerRegretSkillLevel
+struct USkillManager_ServerRegretSkillLevel_Params
+{
+	struct FName                                       RowName;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.ServerBuySkillLevel
+struct USkillManager_ServerBuySkillLevel_Params
+{
+	struct FName                                       RowName;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.ResumeSkills
+struct USkillManager_ResumeSkills_Params
+{
+};
+
+// Function Frontiers.SkillManager.ResetCooldownBySkill
+struct USkillManager_ResetCooldownBySkill_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.ReduceCooldownBySkill
+struct USkillManager_ReduceCooldownBySkill_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              DurationReduced;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.PauseSkills
+struct USkillManager_PauseSkills_Params
+{
+};
+
+// Function Frontiers.SkillManager.OnSkillEvent
+struct USkillManager_OnSkillEvent_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillEvent                              SkillEvent;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SkillInstanceId;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.OnRevive
+struct USkillManager_OnRevive_Params
+{
+	class APawn*                                       Revived;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.OnRep_SkillCooldowns
+struct USkillManager_OnRep_SkillCooldowns_Params
+{
+};
+
+// Function Frontiers.SkillManager.OnRep_ServerSkillTargetLocation
+struct USkillManager_OnRep_ServerSkillTargetLocation_Params
+{
+};
+
+// Function Frontiers.SkillManager.OnRep_ServerSkillActiveData
+struct USkillManager_OnRep_ServerSkillActiveData_Params
+{
+};
+
+// Function Frontiers.SkillManager.OnRep_ServerInitialSkillActiveData
+struct USkillManager_OnRep_ServerInitialSkillActiveData_Params
+{
+};
+
+// Function Frontiers.SkillManager.OnRep_LastSkillRespecTime
+struct USkillManager_OnRep_LastSkillRespecTime_Params
+{
+};
+
+// Function Frontiers.SkillManager.OnEquippedItemsChanged
+struct USkillManager_OnEquippedItemsChanged_Params
+{
+	TArray<struct FItemReplicatedData>                 ItemSlotData;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.OnDeath
+struct USkillManager_OnDeath_Params
+{
+	class APawn*                                       Dying;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Attacker;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.MulticastSkillListUpdated
+struct USkillManager_MulticastSkillListUpdated_Params
+{
+	TArray<struct FSkillRepArrayEntry>                 SkillList;                                                 // (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.LockCooldownsByTags
+struct USkillManager_LockCooldownsByTags_Params
+{
+	struct FGameplayTagContainer                       Tags;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.K2_SkillTryToStart
+struct USkillManager_K2_SkillTryToStart_Params
+{
+	class AActor*                                      SkillTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bAsSecondarySkill;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bNoRootMotion;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Param;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bPriority;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillResult                             ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.K2_SkillStart
+struct USkillManager_K2_SkillStart_Params
+{
+	class AActor*                                      SkillTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                SkillInstance;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Param;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.IsValidTarget
+struct USkillManager_IsValidTarget_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Victim;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.IsThisSkillUnlocked
+struct USkillManager_IsThisSkillUnlocked_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.IsThisSkillActive
+struct USkillManager_IsThisSkillActive_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.IsTargetInRange
+struct USkillManager_IsTargetInRange_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      TargetActor;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     TargetLocation;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.IsSkillUnlocked
+struct USkillManager_IsSkillUnlocked_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.IsSkillSlotUnlocked
+struct USkillManager_IsSkillSlotUnlocked_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.IsSkillActive
+struct USkillManager_IsSkillActive_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.IsLockedInAction
+struct USkillManager_IsLockedInAction_Params
+{
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.IsEmberWeaponAffixUnlocked
+struct USkillManager_IsEmberWeaponAffixUnlocked_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       AffixRowName;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.HasSkillInAssignableSlot
+struct USkillManager_HasSkillInAssignableSlot_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.HasSkillAssigned
+struct USkillManager_HasSkillAssigned_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       SkillDataRowName;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetTargetTraceType
+struct USkillManager_GetTargetTraceType_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TEnumAsByte<Engine_ECollisionChannel>              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetSlotUnlockLevel
+struct USkillManager_GetSlotUnlockLevel_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetSkillPointsAvailable
+struct USkillManager_GetSkillPointsAvailable_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetSkillNameFromSlot
+struct USkillManager_GetSkillNameFromSlot_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FText                                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetSkillMoveToRangeFromSlot
+struct USkillManager_GetSkillMoveToRangeFromSlot_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Source;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetSkillLevel
+struct USkillManager_GetSkillLevel_Params
+{
+	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       SkillRowName;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetSkillIconFromSlot
+struct USkillManager_GetSkillIconFromSlot_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetSkillGamepadTargetRange
+struct USkillManager_GetSkillGamepadTargetRange_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetNextBasicWeaponSlot
+struct USkillManager_GetNextBasicWeaponSlot_Params
+{
+	Frontiers_EWeaponSlot                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetDebugSkillString
+struct USkillManager_GetDebugSkillString_Params
+{
+	class AActor*                                      DebugActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetCooldownRemainingFromSlot
+struct USkillManager_GetCooldownRemainingFromSlot_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetCooldownPercentFromSlot
+struct USkillManager_GetCooldownPercentFromSlot_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetCooldownPercentForSkill
+struct USkillManager_GetCooldownPercentForSkill_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetCooldownEndTimeFromSkill
+struct USkillManager_GetCooldownEndTimeFromSkill_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetCooldownDurationFromSlot
+struct USkillManager_GetCooldownDurationFromSlot_Params
+{
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetBaseSkillLevel
+struct USkillManager_GetBaseSkillLevel_Params
+{
+	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       SkillRowName;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.GetActiveSkillWeaponSlot
+struct USkillManager_GetActiveSkillWeaponSlot_Params
+{
+	Frontiers_EWeaponSlot                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.EnableSkillsByTags
+struct USkillManager_EnableSkillsByTags_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                       Tags;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.DisableSkillsByTags
+struct USkillManager_DisableSkillsByTags_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                       Tags;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.ClientStopActiveSkill
+struct USkillManager_ClientStopActiveSkill_Params
+{
+};
+
+// Function Frontiers.SkillManager.ClientSkillPurchaseCompleted
+struct USkillManager_ClientSkillPurchaseCompleted_Params
+{
+	bool                                               bSuccess;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       RowName;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                NewLevel;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.ClientSetSkill
+struct USkillManager_ClientSetSkill_Params
+{
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FName                                       RowName;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.ClientResetCooldownBySkill
+struct USkillManager_ClientResetCooldownBySkill_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.ClientRequestedSkillFailedToStart
+struct USkillManager_ClientRequestedSkillFailedToStart_Params
+{
+	int                                                ClientActiveSkillInstanceId;                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                ServerSet;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSlot                               ServerSlot;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                ServerInstanceId;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ServerTimestamp;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.ClientReduceCooldownBySkill
+struct USkillManager_ClientReduceCooldownBySkill_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              DurationReduced;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.CanSpendSkillPoints
+struct USkillManager_CanSpendSkillPoints_Params
+{
+	class AActor*                                      Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillManager.CanSkillStart
+struct USkillManager_CanSkillStart_Params
+{
+	class AActor*                                      SkillTarget;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     TargetLocation;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSlot                               Slot;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSet                                Set;                                                       // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bPriority;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bValidateTargetAndRange;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bValidateCooldown;                                         // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ESkillResult                             ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMinions.ReplaceMonster
+struct USkillMinions_ReplaceMonster_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Instigator;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      SpawnFacingActor;                                          // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMonstersTableRowHandle                     MonsterRow;                                                // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	Frontiers_ESkillSlot                               SpawnSkillSlot;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMinions.RemoveMinions
+struct USkillMinions_RemoveMinions_Params
+{
+	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      InventoryContainerClass;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMinions.FindNearestTrackBufferWithinRadius
+struct USkillMinions_FindNearestTrackBufferWithinRadius_Params
+{
+	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      InventoryContainerClass;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EFindMinionResult                        OutExecPin;                                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ATrackBuffer*                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMinions.FindNearestTrackBufferFromLocation
+struct USkillMinions_FindNearestTrackBufferFromLocation_Params
+{
+	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      InventoryContainerClass;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EFindMinionResult                        OutExecPin;                                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ATrackBuffer*                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMinions.FindMinionsWithinRadius
+struct USkillMinions_FindMinionsWithinRadius_Params
+{
+	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      InventoryContainerClass;                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                      PetClass;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EFindMinionResult                        OutExecPin;                                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class AActor*>                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMinions.FindInventoryContainerForMinion
+struct USkillMinions_FindInventoryContainerForMinion_Params
+{
+	class AActor*                                      Source;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMinionTableRowHandle                       MinionRow;                                                 // (Parm, NativeAccessSpecifierPublic)
+	struct FName                                       TraitTag;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTLInventoryContainer*                       ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMinions.BlueprintSpawnMinionOnNextFrames
+struct USkillMinions_BlueprintSpawnMinionOnNextFrames_Params
+{
+	class AActor*                                      Source;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMinionTableRowHandle                       MinionRow;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FVector                                     Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                                    TargetRotation;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSpawnMinionParams                          Params;                                                    // (Parm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMinions.BlueprintSpawnMinion
+struct USkillMinions_BlueprintSpawnMinion_Params
+{
+	class AActor*                                      Source;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMinionTableRowHandle                       MinionRow;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FVector                                     Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSpawnMinionParams                          Params;                                                    // (Parm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	class AActor*                                      ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMovement.StopMoving
+struct USkillMovement_StopMoving_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMovement.StartMoving
+struct USkillMovement_StartMoving_Params
+{
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APawn*                                       Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      MoveTargetActor;                                           // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     MoveTargetLocation;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMovement.MulticastEndRootMotionForce
+struct USkillMovement_MulticastEndRootMotionForce_Params
+{
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMovement.HasRootMotionForceFinished
+struct USkillMovement_HasRootMotionForceFinished_Params
+{
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMovement.FaceTarget
+struct USkillMovement_FaceTarget_Params
+{
+	class APawn*                                       Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Target;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     Location;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bForceInstant;                                             // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMovement.EndRootMotionForce
+struct USkillMovement_EndRootMotionForce_Params
+{
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMovement.EndAnimationIfRootMotionFinished
+struct USkillMovement_EndAnimationIfRootMotionFinished_Params
+{
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMovement.ApplyRadialRootMotionForce
+struct USkillMovement_ApplyRadialRootMotionForce_Params
+{
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     Origin;                                                    // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Radius;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Speed;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsPush;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMovement.ApplyMoveToRootMotionForceWithDuration
+struct USkillMovement_ApplyMoveToRootMotionForceWithDuration_Params
+{
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     TargetLocation;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMovement.ApplyMoveToRootMotionForce
+struct USkillMovement_ApplyMoveToRootMotionForce_Params
+{
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     TargetLocation;                                            // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Speed;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMovement.ApplyKnockbackRootMotionForce
+struct USkillMovement_ApplyKnockbackRootMotionForce_Params
+{
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Inflictor;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              BaseVelocity;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              VelocityMultiplier;                                        // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bIsPush;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.SkillMovement.ApplyConstantRootMotionForce
+struct USkillMovement_ApplyConstantRootMotionForce_Params
+{
+	class AActor*                                      Pawn;                                                      // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USkill*                                      Skill;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                     Direction;                                                 // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Speed;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Duration;                                                  // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // Function Frontiers.TLInventoryContainerFortStash.OnRep_ClientStashEntries
 struct UTLInventoryContainerFortStash_OnRep_ClientStashEntries_Params
 {
@@ -9187,6 +9187,154 @@ struct UTLInventoryContainerStatusEffects_OnAreaChanged_Params
 {
 	struct FGuid                                       NewAreaId;                                                 // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FName                                       NewAreaName;                                               // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Traits.SkillPointsAvailable
+struct UTraits_SkillPointsAvailable_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Traits.OnTraitUpdated
+struct UTraits_OnTraitUpdated_Params
+{
+};
+
+// Function Frontiers.Traits.GetDetailedTraitString
+struct UTraits_GetDetailedTraitString_Params
+{
+	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.Traits.ClientTraitPickup
+struct UTraits_ClientTraitPickup_Params
+{
+	struct FTraitKey                                   TraitKey;                                                  // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Amount;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TraitsInterface.SetTrait
+struct UTraitsInterface_SetTrait_Params
+{
+	struct FTraitKey                                   Key;                                                       // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Value;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TraitsInterface.GetTraitKeys
+struct UTraitsInterface_GetTraitKeys_Params
+{
+	TArray<struct FTraitKey>                           ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TraitsInterface.GetTraitFromKey
+struct UTraitsInterface_GetTraitFromKey_Params
+{
+	struct FTraitKey                                   Key;                                                       // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TraitsInterface.GetTrait
+struct UTraitsInterface_GetTrait_Params
+{
+	struct FName                                       RowName;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TraitsInterface.ExecuteTraitCallback
+struct UTraitsInterface_ExecuteTraitCallback_Params
+{
+	struct FTraitKey                                   Key;                                                       // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.TraitsInterface.AddToTrait
+struct UTraitsInterface_AddToTrait_Params
+{
+	struct FTraitKey                                   Key;                                                       // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              Value;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.UsableItemInterface.RequiresTargetItem
+struct UUsableItemInterface_RequiresTargetItem_Params
+{
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.UsableItemInterface.OnActivationConfirmedClient
+struct UUsableItemInterface_OnActivationConfirmedClient_Params
+{
+	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.UsableItemInterface.OnActivatedServer
+struct UUsableItemInterface_OnActivatedServer_Params
+{
+	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FInventoryItemEntry                         Item;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	int                                                TargetItemId;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_EUseItemResult                           ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.UsableItemInterface.OnActivatedClient
+struct UUsableItemInterface_OnActivatedClient_Params
+{
+	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FInventoryItemEntry                         Item;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	int                                                TargetItemId;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.UsableItemInterface.IsValidTarget
+struct UUsableItemInterface_IsValidTarget_Params
+{
+	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FInventoryItemEntry                         Target;                                                    // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.UsableItemInterface.GetDescription
+struct UUsableItemInterface_GetDescription_Params
+{
+	struct FText                                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.UsableItemInterface.CanUse
+struct UUsableItemInterface_CanUse_Params
+{
+	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	Frontiers_ECanUseItemResult                        ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.UserGeneratedContentBlocker.OnOverlapInnerBlocker
+struct AUserGeneratedContentBlocker_OnOverlapInnerBlocker_Params
+{
+	class UPrimitiveComponent*                         OverlappedComponent;                                       // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int                                                OtherBodyIndex;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               bFromSweep;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FHitResult                                  SweepResult;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.UserGeneratedContentBlocker.GetInnerBlocker
+struct AUserGeneratedContentBlocker_GetInnerBlocker_Params
+{
+	class UPrimitiveComponent*                         ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.UserSettings.IsBloodEnabled
+struct UUserSettings_IsBloodEnabled_Params
+{
+	class UObject*                                     Context;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Frontiers.VendorComponent.ShowShopWidget
+struct UVendorComponent_ShowShopWidget_Params
+{
+	class APawn*                                       Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                      Vendor;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function Frontiers.TLInventoryContainerWardrobe.OnRep_WeaponSuiteCurrent
@@ -9822,154 +9970,6 @@ struct UTrainCarDataComponent_GetFirstTrainCarRowHandle_Params
 {
 	class AActor*                                      Actor;                                                     // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMinionTableRowHandle                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Traits.SkillPointsAvailable
-struct UTraits_SkillPointsAvailable_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Traits.OnTraitUpdated
-struct UTraits_OnTraitUpdated_Params
-{
-};
-
-// Function Frontiers.Traits.GetDetailedTraitString
-struct UTraits_GetDetailedTraitString_Params
-{
-	class AActor*                                      Actor;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.Traits.ClientTraitPickup
-struct UTraits_ClientTraitPickup_Params
-{
-	struct FTraitKey                                   TraitKey;                                                  // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Amount;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TraitsInterface.SetTrait
-struct UTraitsInterface_SetTrait_Params
-{
-	struct FTraitKey                                   Key;                                                       // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Value;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TraitsInterface.GetTraitKeys
-struct UTraitsInterface_GetTraitKeys_Params
-{
-	TArray<struct FTraitKey>                           ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TraitsInterface.GetTraitFromKey
-struct UTraitsInterface_GetTraitFromKey_Params
-{
-	struct FTraitKey                                   Key;                                                       // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TraitsInterface.GetTrait
-struct UTraitsInterface_GetTrait_Params
-{
-	struct FName                                       RowName;                                                   // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TraitsInterface.ExecuteTraitCallback
-struct UTraitsInterface_ExecuteTraitCallback_Params
-{
-	struct FTraitKey                                   Key;                                                       // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.TraitsInterface.AddToTrait
-struct UTraitsInterface_AddToTrait_Params
-{
-	struct FTraitKey                                   Key;                                                       // (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              Value;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                              ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.UsableItemInterface.RequiresTargetItem
-struct UUsableItemInterface_RequiresTargetItem_Params
-{
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.UsableItemInterface.OnActivationConfirmedClient
-struct UUsableItemInterface_OnActivationConfirmedClient_Params
-{
-	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.UsableItemInterface.OnActivatedServer
-struct UUsableItemInterface_OnActivatedServer_Params
-{
-	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FInventoryItemEntry                         Item;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	int                                                TargetItemId;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_EUseItemResult                           ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.UsableItemInterface.OnActivatedClient
-struct UUsableItemInterface_OnActivatedClient_Params
-{
-	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FInventoryItemEntry                         Item;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	int                                                TargetItemId;                                              // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.UsableItemInterface.IsValidTarget
-struct UUsableItemInterface_IsValidTarget_Params
-{
-	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FInventoryItemEntry                         Target;                                                    // (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.UsableItemInterface.GetDescription
-struct UUsableItemInterface_GetDescription_Params
-{
-	struct FText                                       ReturnValue;                                               // (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.UsableItemInterface.CanUse
-struct UUsableItemInterface_CanUse_Params
-{
-	class AActor*                                      Owner;                                                     // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	Frontiers_ECanUseItemResult                        ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.UserGeneratedContentBlocker.OnOverlapInnerBlocker
-struct AUserGeneratedContentBlocker_OnOverlapInnerBlocker_Params
-{
-	class UPrimitiveComponent*                         OverlappedComponent;                                       // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      OtherActor;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPrimitiveComponent*                         OtherComp;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int                                                OtherBodyIndex;                                            // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               bFromSweep;                                                // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHitResult                                  SweepResult;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.UserGeneratedContentBlocker.GetInnerBlocker
-struct AUserGeneratedContentBlocker_GetInnerBlocker_Params
-{
-	class UPrimitiveComponent*                         ReturnValue;                                               // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.UserSettings.IsBloodEnabled
-struct UUserSettings_IsBloodEnabled_Params
-{
-	class UObject*                                     Context;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                               ReturnValue;                                               // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Frontiers.VendorComponent.ShowShopWidget
-struct UVendorComponent_ShowShopWidget_Params
-{
-	class APawn*                                       Player;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                      Vendor;                                                    // (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function Frontiers.WardrobeComponent.OnRep_WardrobePart

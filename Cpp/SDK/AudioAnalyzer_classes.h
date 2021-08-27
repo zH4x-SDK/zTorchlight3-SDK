@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -60,7 +60,7 @@ class UAudioAnalyzerNRT : public UAudioAnalyzerAsset
 public:
 	class USoundWave*                                  Sound;                                                     // 0x0028(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              DurationInSeconds;                                         // 0x0030(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_SVY9[0x44];                                    // 0x0034(0x0044) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_WWZ6[0x44];                                    // 0x0034(0x0044) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -26,7 +26,7 @@ class UMagicLeapLightingTrackingComponent : public UActorComponent
 public:
 	bool                                               UseGlobalAmbience;                                         // 0x00B0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               UseColorTemp;                                              // 0x00B1(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_K4NE[0xE];                                     // 0x00B2(0x000E) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_YDEQ[0xE];                                     // 0x00B2(0x000E) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

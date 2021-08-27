@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -37,7 +37,7 @@ enum class MRMesh_EMeshTrackerVertexColorMode : uint8_t
 // 0x0001
 struct FMRMeshConfiguration
 {
-	unsigned char                                      UnknownData_KHXB[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_AM9N[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 };
 

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -24,9 +24,9 @@ namespace CG
 class UWebsocketClient : public UObject
 {
 public:
-	unsigned char                                      UnknownData_O1CC[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_UYE8[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FScriptMulticastDelegate                    OnData;                                                    // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_T7EK[0x58];                                    // 0x0040(0x0058) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_4RD7[0x58];                                    // 0x0040(0x0058) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

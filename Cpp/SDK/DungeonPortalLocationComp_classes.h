@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class UDungeonPortalLocationComp_C : public USceneComponent
 {
 public:
-	unsigned char                                      UnknownData_J0JR[0x8];                                     // 0x01F8(0x0008) Fix Super Size
+	unsigned char                                      UnknownData_UEQU[0x8];                                     // 0x01F8(0x0008) Fix Super Size
 
 
 	static UClass* StaticClass()

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -193,6 +193,31 @@ enum class InteractiveToolsFramework_ESceneSnapQueryType : uint8_t
 // Script Structs
 //---------------------------------------------------------------------------
 
+// ScriptStruct InteractiveToolsFramework.BrushStampData
+// 0x00AC
+struct FBrushStampData
+{
+	unsigned char                                      UnknownData_4EV3[0xAC];                                    // 0x0000(0x00AC) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct InteractiveToolsFramework.BehaviorInfo
+// 0x0020
+struct FBehaviorInfo
+{
+	class UInputBehavior*                              Behavior;                                                  // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_FLVT[0x18];                                    // 0x0008(0x0018) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct InteractiveToolsFramework.ActiveGizmo
+// 0x0030
+struct FActiveGizmo
+{
+	unsigned char                                      UnknownData_NJED[0x30];                                    // 0x0000(0x0030) MISSED OFFSET (PADDING)
+
+};
+
 // ScriptStruct InteractiveToolsFramework.GizmoFloatParameterChange
 // 0x0008
 struct FGizmoFloatParameterChange
@@ -215,32 +240,7 @@ struct FGizmoVec2ParameterChange
 // 0x0028
 struct FInputRayHit
 {
-	unsigned char                                      UnknownData_F3UE[0x28];                                    // 0x0000(0x0028) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct InteractiveToolsFramework.BrushStampData
-// 0x00AC
-struct FBrushStampData
-{
-	unsigned char                                      UnknownData_YTLB[0xAC];                                    // 0x0000(0x00AC) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct InteractiveToolsFramework.BehaviorInfo
-// 0x0020
-struct FBehaviorInfo
-{
-	class UInputBehavior*                              Behavior;                                                  // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_K26F[0x18];                                    // 0x0008(0x0018) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct InteractiveToolsFramework.ActiveGizmo
-// 0x0030
-struct FActiveGizmo
-{
-	unsigned char                                      UnknownData_W33Q[0x30];                                    // 0x0000(0x0030) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ELC8[0x28];                                    // 0x0000(0x0028) MISSED OFFSET (PADDING)
 
 };
 

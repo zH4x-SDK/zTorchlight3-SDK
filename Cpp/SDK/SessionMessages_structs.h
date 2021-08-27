@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -19,11 +19,19 @@ namespace CG
 // Script Structs
 //---------------------------------------------------------------------------
 
+// ScriptStruct SessionMessages.SessionServiceLogUnsubscribe
+// 0x0001
+struct FSessionServiceLogUnsubscribe
+{
+	unsigned char                                      UnknownData_5N4E[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+
+};
+
 // ScriptStruct SessionMessages.SessionServiceLogSubscribe
 // 0x0001
 struct FSessionServiceLogSubscribe
 {
-	unsigned char                                      UnknownData_RFA3[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_VPK5[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
 
 };
 
@@ -36,23 +44,7 @@ struct FSessionServiceLog
 	struct FGuid                                       InstanceId;                                                // 0x0018(0x0010) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	double                                             TimeSeconds;                                               // 0x0028(0x0008) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	unsigned char                                      Verbosity;                                                 // 0x0030(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_3S8K[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
-
-};
-
-// ScriptStruct SessionMessages.SessionServicePing
-// 0x0010
-struct FSessionServicePing
-{
-	struct FString                                     UserName;                                                  // 0x0000(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct SessionMessages.SessionServiceLogUnsubscribe
-// 0x0001
-struct FSessionServiceLogUnsubscribe
-{
-	unsigned char                                      UnknownData_EH7N[0x1];                                     // 0x0000(0x0001) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_5QRR[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (PADDING)
 
 };
 
@@ -61,7 +53,7 @@ struct FSessionServiceLogUnsubscribe
 struct FSessionServicePong
 {
 	bool                                               Authorized;                                                // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_9YD6[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_JQJX[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     BuildDate;                                                 // 0x0008(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FString                                     DeviceName;                                                // 0x0018(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGuid                                       InstanceId;                                                // 0x0028(0x0010) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -71,7 +63,15 @@ struct FSessionServicePong
 	struct FString                                     SessionName;                                               // 0x0068(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FString                                     SessionOwner;                                              // 0x0078(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               Standalone;                                                // 0x0088(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_NT3S[0x7];                                     // 0x0089(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_1E22[0x7];                                     // 0x0089(0x0007) MISSED OFFSET (PADDING)
+
+};
+
+// ScriptStruct SessionMessages.SessionServicePing
+// 0x0010
+struct FSessionServicePing
+{
+	struct FString                                     UserName;                                                  // 0x0000(0x0010) (Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 };
 

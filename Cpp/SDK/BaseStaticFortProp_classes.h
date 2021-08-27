@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -24,7 +24,7 @@ namespace CG
 class ABaseStaticFortProp_C : public ATLActor
 {
 public:
-	unsigned char                                      UnknownData_87FP[0x8];                                     // 0x0388(0x0008) Fix Super Size
+	unsigned char                                      UnknownData_T5ML[0x8];                                     // 0x0388(0x0008) Fix Super Size
 	class UIconCaptureComponent*                       IconCapture;                                               // 0x0390(0x0008) (BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class UPreviewSizeComponent*                       PreviewSize;                                               // 0x0398(0x0008) (BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class UDefaultFortPropComponent_C*                 DefaultFortPropComponent;                                  // 0x03A0(0x0008) (BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, UObjectWrapper, HasGetValueTypeHash)

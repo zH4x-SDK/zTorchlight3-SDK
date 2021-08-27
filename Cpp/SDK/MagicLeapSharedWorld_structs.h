@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -19,19 +19,19 @@ namespace CG
 // Script Structs
 //---------------------------------------------------------------------------
 
-// ScriptStruct MagicLeapSharedWorld.MagicLeapSharedWorldAlignmentTransforms
-// 0x0010
-struct FMagicLeapSharedWorldAlignmentTransforms
-{
-	TArray<struct FTransform>                          AlignmentTransforms;                                       // 0x0000(0x0010) (BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-
-};
-
 // ScriptStruct MagicLeapSharedWorld.MagicLeapSharedWorldSharedData
 // 0x0010
 struct FMagicLeapSharedWorldSharedData
 {
 	TArray<struct FGuid>                               PinIDs;                                                    // 0x0000(0x0010) (BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+
+};
+
+// ScriptStruct MagicLeapSharedWorld.MagicLeapSharedWorldAlignmentTransforms
+// 0x0010
+struct FMagicLeapSharedWorldAlignmentTransforms
+{
+	TArray<struct FTransform>                          AlignmentTransforms;                                       // 0x0000(0x0010) (BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 
 };
 

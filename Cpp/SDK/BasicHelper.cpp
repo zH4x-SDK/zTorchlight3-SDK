@@ -1,4 +1,4 @@
-﻿// Name: Torchlight3, Version: 1.0.0
+﻿// Name: Torchlight3, Version: 4.26.1
 
 #include "../SDK.h"
 #include <iostream>

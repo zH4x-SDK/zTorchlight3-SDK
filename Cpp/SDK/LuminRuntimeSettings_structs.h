@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -18,42 +18,6 @@ namespace CG
 //---------------------------------------------------------------------------
 // Enums
 //---------------------------------------------------------------------------
-
-// Enum LuminRuntimeSettings.ELuminFrameTimingHint
-enum class LuminRuntimeSettings_ELuminFrameTimingHint : uint8_t
-{
-	ELuminFrameTimingHint__Unspecified = 0,
-	ELuminFrameTimingHint__Maximum = 1,
-	ELuminFrameTimingHint__FPS     = 2,
-	ELuminFrameTimingHint__FPS01   = 3,
-	ELuminFrameTimingHint__ELuminFrameTimingHint_MAX = 4,
-
-};
-
-// Enum LuminRuntimeSettings.ELuminComponentType
-enum class LuminRuntimeSettings_ELuminComponentType : uint8_t
-{
-	ELuminComponentType__Universe  = 0,
-	ELuminComponentType__Fullscreen = 1,
-	ELuminComponentType__SearchProvider = 2,
-	ELuminComponentType__MusicService = 3,
-	ELuminComponentType__Console   = 4,
-	ELuminComponentType__SystemUI  = 5,
-	ELuminComponentType__ELuminComponentType_MAX = 6,
-
-};
-
-// Enum LuminRuntimeSettings.ELuminComponentSubElementType
-enum class LuminRuntimeSettings_ELuminComponentSubElementType : uint8_t
-{
-	ELuminComponentSubElementType__FileExtension = 0,
-	ELuminComponentSubElementType__MimeType = 1,
-	ELuminComponentSubElementType__Mode = 2,
-	ELuminComponentSubElementType__MusicAttribute = 3,
-	ELuminComponentSubElementType__Schema = 4,
-	ELuminComponentSubElementType__ELuminComponentSubElementType_MAX = 5,
-
-};
 
 // Enum LuminRuntimeSettings.ELuminPrivilege
 enum class LuminRuntimeSettings_ELuminPrivilege : uint8_t
@@ -105,9 +69,64 @@ enum class LuminRuntimeSettings_ELuminPrivilege : uint8_t
 
 };
 
+// Enum LuminRuntimeSettings.ELuminFrameTimingHint
+enum class LuminRuntimeSettings_ELuminFrameTimingHint : uint8_t
+{
+	ELuminFrameTimingHint__Unspecified = 0,
+	ELuminFrameTimingHint__Maximum = 1,
+	ELuminFrameTimingHint__FPS     = 2,
+	ELuminFrameTimingHint__FPS01   = 3,
+	ELuminFrameTimingHint__ELuminFrameTimingHint_MAX = 4,
+
+};
+
+// Enum LuminRuntimeSettings.ELuminComponentType
+enum class LuminRuntimeSettings_ELuminComponentType : uint8_t
+{
+	ELuminComponentType__Universe  = 0,
+	ELuminComponentType__Fullscreen = 1,
+	ELuminComponentType__SearchProvider = 2,
+	ELuminComponentType__MusicService = 3,
+	ELuminComponentType__Console   = 4,
+	ELuminComponentType__SystemUI  = 5,
+	ELuminComponentType__ELuminComponentType_MAX = 6,
+
+};
+
+// Enum LuminRuntimeSettings.ELuminComponentSubElementType
+enum class LuminRuntimeSettings_ELuminComponentSubElementType : uint8_t
+{
+	ELuminComponentSubElementType__FileExtension = 0,
+	ELuminComponentSubElementType__MimeType = 1,
+	ELuminComponentSubElementType__Mode = 2,
+	ELuminComponentSubElementType__MusicAttribute = 3,
+	ELuminComponentSubElementType__Schema = 4,
+	ELuminComponentSubElementType__ELuminComponentSubElementType_MAX = 5,
+
+};
+
 //---------------------------------------------------------------------------
 // Script Structs
 //---------------------------------------------------------------------------
+
+// ScriptStruct LuminRuntimeSettings.LuminComponentSubElement
+// 0x0018
+struct FLuminComponentSubElement
+{
+	LuminRuntimeSettings_ELuminComponentSubElementType ElementType;                                               // 0x0000(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_UCNT[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	struct FString                                     Value;                                                     // 0x0008(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+};
+
+// ScriptStruct LuminRuntimeSettings.LocalizedAppName
+// 0x0020
+struct FLocalizedAppName
+{
+	struct FString                                     LanguageCode;                                              // 0x0000(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FString                                     AppName;                                                   // 0x0010(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+};
 
 // ScriptStruct LuminRuntimeSettings.LocalizedIconInfo
 // 0x0030
@@ -127,25 +146,6 @@ struct FLocalizedIconInfos
 
 };
 
-// ScriptStruct LuminRuntimeSettings.LocalizedAppName
-// 0x0020
-struct FLocalizedAppName
-{
-	struct FString                                     LanguageCode;                                              // 0x0000(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FString                                     AppName;                                                   // 0x0010(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-};
-
-// ScriptStruct LuminRuntimeSettings.LuminComponentSubElement
-// 0x0018
-struct FLuminComponentSubElement
-{
-	LuminRuntimeSettings_ELuminComponentSubElementType ElementType;                                               // 0x0000(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_Q1T6[0x7];                                     // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	struct FString                                     Value;                                                     // 0x0008(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-};
-
 // ScriptStruct LuminRuntimeSettings.LuminComponentElement
 // 0x0048
 struct FLuminComponentElement
@@ -154,7 +154,7 @@ struct FLuminComponentElement
 	struct FString                                     VisibleName;                                               // 0x0010(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FString                                     ExecutableName;                                            // 0x0020(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	LuminRuntimeSettings_ELuminComponentType           ComponentType;                                             // 0x0030(0x0001) (Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_72UD[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_XRND[0x7];                                     // 0x0031(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	TArray<struct FLuminComponentSubElement>           ExtraComponentSubElements;                                 // 0x0038(0x0010) (Edit, ZeroConstructor, Config, GlobalConfig, NativeAccessSpecifierPublic)
 
 };

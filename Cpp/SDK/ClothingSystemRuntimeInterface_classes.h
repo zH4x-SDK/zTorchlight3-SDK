@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -58,7 +58,7 @@ public:
 class UClothingSimulationInteractor : public UObject
 {
 public:
-	unsigned char                                      UnknownData_WQHZ[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9ERC[0x8];                                     // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -131,7 +131,7 @@ public:
 	int                                                NumFixedVerts;                                             // 0x0078(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int                                                MaxBoneWeights;                                            // 0x007C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<uint32_t>                                   SelfCollisionIndices;                                      // 0x0080(0x0010) (ZeroConstructor, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_REC1[0x50];                                    // 0x0090(0x0050) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_KPVO[0x50];                                    // 0x0090(0x0050) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

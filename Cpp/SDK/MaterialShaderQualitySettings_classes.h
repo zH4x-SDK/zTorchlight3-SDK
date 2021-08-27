@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -43,7 +43,7 @@ class UShaderPlatformQualitySettings : public UObject
 {
 public:
 	struct FMaterialQualityOverrides                   QualityOverrides[0x4];                                     // 0x0028(0x0024) (Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_S771[0x14];                                    // 0x004C(0x0014) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_4A9B[0x14];                                    // 0x004C(0x0014) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -18,37 +18,6 @@ namespace CG
 //---------------------------------------------------------------------------
 // Enums
 //---------------------------------------------------------------------------
-
-// Enum MagicLeapHandTracking.EMagicLeapHandTrackingKeypoint
-enum class MagicLeapHandTracking_EMagicLeapHandTrackingKeypoint : uint8_t
-{
-	EMagicLeapHandTrackingKeypoint__Thumb_Tip = 0,
-	EMagicLeapHandTrackingKeypoint__Thumb_IP = 1,
-	EMagicLeapHandTrackingKeypoint__Thumb_MCP = 2,
-	EMagicLeapHandTrackingKeypoint__Thumb_CMC = 3,
-	EMagicLeapHandTrackingKeypoint__Index_Tip = 4,
-	EMagicLeapHandTrackingKeypoint__Index_DIP = 5,
-	EMagicLeapHandTrackingKeypoint__Index_PIP = 6,
-	EMagicLeapHandTrackingKeypoint__Index_MCP = 7,
-	EMagicLeapHandTrackingKeypoint__Middle_Tip = 8,
-	EMagicLeapHandTrackingKeypoint__Middle_DIP = 9,
-	EMagicLeapHandTrackingKeypoint__Middle_PIP = 10,
-	EMagicLeapHandTrackingKeypoint__Middle_MCP = 11,
-	EMagicLeapHandTrackingKeypoint__Ring_Tip = 12,
-	EMagicLeapHandTrackingKeypoint__Ring_DIP = 13,
-	EMagicLeapHandTrackingKeypoint__Ring_PIP = 14,
-	EMagicLeapHandTrackingKeypoint__Ring_MCP = 15,
-	EMagicLeapHandTrackingKeypoint__Pinky_Tip = 16,
-	EMagicLeapHandTrackingKeypoint__Pinky_DIP = 17,
-	EMagicLeapHandTrackingKeypoint__Pinky_PIP = 18,
-	EMagicLeapHandTrackingKeypoint__Pinky_MCP = 19,
-	EMagicLeapHandTrackingKeypoint__Wrist_Center = 20,
-	EMagicLeapHandTrackingKeypoint__Wrist_Ulnar = 21,
-	EMagicLeapHandTrackingKeypoint__Wrist_Radial = 22,
-	EMagicLeapHandTrackingKeypoint__Hand_Center = 23,
-	EMagicLeapHandTrackingKeypoint__EMagicLeapHandTrackingKeypoint_MAX = 24,
-
-};
 
 // Enum MagicLeapHandTracking.EMagicLeapGestureTransformSpace
 enum class MagicLeapHandTracking_EMagicLeapGestureTransformSpace : uint8_t
@@ -95,6 +64,37 @@ enum class MagicLeapHandTracking_EMagicLeapHandTrackingGesture : uint8_t
 	EMagicLeapHandTrackingGesture__NoPose = 9,
 	EMagicLeapHandTrackingGesture__NoHand = 10,
 	EMagicLeapHandTrackingGesture__EMagicLeapHandTrackingGesture_MAX = 11,
+
+};
+
+// Enum MagicLeapHandTracking.EMagicLeapHandTrackingKeypoint
+enum class MagicLeapHandTracking_EMagicLeapHandTrackingKeypoint : uint8_t
+{
+	EMagicLeapHandTrackingKeypoint__Thumb_Tip = 0,
+	EMagicLeapHandTrackingKeypoint__Thumb_IP = 1,
+	EMagicLeapHandTrackingKeypoint__Thumb_MCP = 2,
+	EMagicLeapHandTrackingKeypoint__Thumb_CMC = 3,
+	EMagicLeapHandTrackingKeypoint__Index_Tip = 4,
+	EMagicLeapHandTrackingKeypoint__Index_DIP = 5,
+	EMagicLeapHandTrackingKeypoint__Index_PIP = 6,
+	EMagicLeapHandTrackingKeypoint__Index_MCP = 7,
+	EMagicLeapHandTrackingKeypoint__Middle_Tip = 8,
+	EMagicLeapHandTrackingKeypoint__Middle_DIP = 9,
+	EMagicLeapHandTrackingKeypoint__Middle_PIP = 10,
+	EMagicLeapHandTrackingKeypoint__Middle_MCP = 11,
+	EMagicLeapHandTrackingKeypoint__Ring_Tip = 12,
+	EMagicLeapHandTrackingKeypoint__Ring_DIP = 13,
+	EMagicLeapHandTrackingKeypoint__Ring_PIP = 14,
+	EMagicLeapHandTrackingKeypoint__Ring_MCP = 15,
+	EMagicLeapHandTrackingKeypoint__Pinky_Tip = 16,
+	EMagicLeapHandTrackingKeypoint__Pinky_DIP = 17,
+	EMagicLeapHandTrackingKeypoint__Pinky_PIP = 18,
+	EMagicLeapHandTrackingKeypoint__Pinky_MCP = 19,
+	EMagicLeapHandTrackingKeypoint__Wrist_Center = 20,
+	EMagicLeapHandTrackingKeypoint__Wrist_Ulnar = 21,
+	EMagicLeapHandTrackingKeypoint__Wrist_Radial = 22,
+	EMagicLeapHandTrackingKeypoint__Hand_Center = 23,
+	EMagicLeapHandTrackingKeypoint__EMagicLeapHandTrackingKeypoint_MAX = 24,
 
 };
 

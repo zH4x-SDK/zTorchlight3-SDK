@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -68,7 +68,7 @@ struct FTimedDataInputEvaluationData
 // 0x0018
 struct FTimedDataChannelSampleTime
 {
-	unsigned char                                      UnknownData_OLO9[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_5QGP[0x18];                                    // 0x0000(0x0018) MISSED OFFSET (PADDING)
 
 };
 

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -19,6 +19,15 @@ namespace CG
 // Script Structs
 //---------------------------------------------------------------------------
 
+// ScriptStruct ReplicationGraph.ConnectionAlwaysRelevantNodePair
+// 0x0010
+struct FConnectionAlwaysRelevantNodePair
+{
+	class UNetConnection*                              NetConnection;                                             // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UReplicationGraphNode_AlwaysRelevant_ForConnection* Node;                                                      // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+};
+
 // ScriptStruct ReplicationGraph.AlwaysRelevantActorInfo
 // 0x0018
 struct FAlwaysRelevantActorInfo
@@ -33,9 +42,9 @@ struct FAlwaysRelevantActorInfo
 // 0x0018
 struct FTearOffActorInfo
 {
-	unsigned char                                      UnknownData_MGVB[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_QY88[0x8];                                     // 0x0000(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class AActor*                                      Actor;                                                     // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_EV1C[0x8];                                     // 0x0010(0x0008) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ZEAD[0x8];                                     // 0x0010(0x0008) MISSED OFFSET (PADDING)
 
 };
 
@@ -59,18 +68,9 @@ struct FClassReplicationInfo
 	uint16_t                                           ReplicationPeriodFrame;                                    // 0x000C(0x0002) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint16_t                                           FastPath_ReplicationPeriodFrame;                           // 0x000E(0x0002) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint16_t                                           ActorChannelFrameTimeout;                                  // 0x0010(0x0002) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_3FGE[0x56];                                    // 0x0012(0x0056) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_VU6G[0x56];                                    // 0x0012(0x0056) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	float                                              CullDistance;                                              // 0x0068(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                              CullDistanceSquared;                                       // 0x006C(0x0004) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-};
-
-// ScriptStruct ReplicationGraph.ConnectionAlwaysRelevantNodePair
-// 0x0010
-struct FConnectionAlwaysRelevantNodePair
-{
-	class UNetConnection*                              NetConnection;                                             // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UReplicationGraphNode_AlwaysRelevant_ForConnection* Node;                                                      // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 };
 

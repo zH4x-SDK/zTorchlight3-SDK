@@ -1,4 +1,4 @@
-﻿// Name: Torchlight3, Version: 1.0.0
+﻿// Name: Torchlight3, Version: 4.26.1
 
 #include "../pch.h"
 
@@ -17,69 +17,6 @@ namespace CG
 //---------------------------------------------------------------------------
 // Functions
 //---------------------------------------------------------------------------
-
-// Function MagicLeapAR.LuminARCandidateImage.GetUseUnreliablePose
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-bool ULuminARCandidateImage::GetUseUnreliablePose()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapAR.LuminARCandidateImage.GetUseUnreliablePose");
-
-	ULuminARCandidateImage_GetUseUnreliablePose_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function MagicLeapAR.LuminARCandidateImage.GetImageIsStationary
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-bool ULuminARCandidateImage::GetImageIsStationary()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapAR.LuminARCandidateImage.GetImageIsStationary");
-
-	ULuminARCandidateImage_GetImageIsStationary_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
-
-// Function MagicLeapAR.LuminARCandidateImage.GetAxisOrientation
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// MagicLeapImageTracker_EMagicLeapImageTargetOrientation ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-MagicLeapImageTracker_EMagicLeapImageTargetOrientation ULuminARCandidateImage::GetAxisOrientation()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapAR.LuminARCandidateImage.GetAxisOrientation");
-
-	ULuminARCandidateImage_GetAxisOrientation_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x00000400;
-
-	UObject::ProcessEvent(fn, &params);
-	fn->FunctionFlags = flags;
-
-
-	return params.ReturnValue;
-}
-
 
 // Function MagicLeapAR.LuminARSessionFunctionLibrary.StartLuminARSession
 // (Final, Native, Static, Public, BlueprintCallable)
@@ -232,6 +169,69 @@ TArray<float> ULuminARLightEstimate::GetAmbientIntensityNits()
 	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapAR.LuminARLightEstimate.GetAmbientIntensityNits");
 
 	ULuminARLightEstimate_GetAmbientIntensityNits_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function MagicLeapAR.LuminARCandidateImage.GetUseUnreliablePose
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+bool ULuminARCandidateImage::GetUseUnreliablePose()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapAR.LuminARCandidateImage.GetUseUnreliablePose");
+
+	ULuminARCandidateImage_GetUseUnreliablePose_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function MagicLeapAR.LuminARCandidateImage.GetImageIsStationary
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+bool ULuminARCandidateImage::GetImageIsStationary()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapAR.LuminARCandidateImage.GetImageIsStationary");
+
+	ULuminARCandidateImage_GetImageIsStationary_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x00000400;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+
+	return params.ReturnValue;
+}
+
+
+// Function MagicLeapAR.LuminARCandidateImage.GetAxisOrientation
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// MagicLeapImageTracker_EMagicLeapImageTargetOrientation ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+MagicLeapImageTracker_EMagicLeapImageTargetOrientation ULuminARCandidateImage::GetAxisOrientation()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function MagicLeapAR.LuminARCandidateImage.GetAxisOrientation");
+
+	ULuminARCandidateImage_GetAxisOrientation_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x00000400;

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -24,9 +24,9 @@ namespace CG
 class UMovieSceneCaptureProtocolBase : public UObject
 {
 public:
-	unsigned char                                      UnknownData_ZCUA[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_24Q0[0x28];                                    // 0x0028(0x0028) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	MovieSceneCapture_EMovieSceneCaptureProtocolState  State;                                                     // 0x0050(0x0001) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	unsigned char                                      UnknownData_6U33[0x7];                                     // 0x0051(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_NW0I[0x7];                                     // 0x0051(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -39,62 +39,6 @@ public:
 
 	bool IsCapturing();
 	MovieSceneCapture_EMovieSceneCaptureProtocolState GetState();
-};
-
-// Class MovieSceneCapture.MovieSceneImageCaptureProtocolBase
-// 0x0000 (FullSize[0x0058] - InheritedSize[0x0058])
-class UMovieSceneImageCaptureProtocolBase : public UMovieSceneCaptureProtocolBase
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class MovieSceneCapture.MovieSceneImageCaptureProtocolBase");
-		return ptr;
-	}
-
-
-
-};
-
-// Class MovieSceneCapture.FrameGrabberProtocol
-// 0x0010 (FullSize[0x0068] - InheritedSize[0x0058])
-class UFrameGrabberProtocol : public UMovieSceneImageCaptureProtocolBase
-{
-public:
-	unsigned char                                      UnknownData_TAMD[0x10];                                    // 0x0058(0x0010) MISSED OFFSET (PADDING)
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class MovieSceneCapture.FrameGrabberProtocol");
-		return ptr;
-	}
-
-
-
-};
-
-// Class MovieSceneCapture.VideoCaptureProtocol
-// 0x0018 (FullSize[0x0080] - InheritedSize[0x0068])
-class UVideoCaptureProtocol : public UFrameGrabberProtocol
-{
-public:
-	bool                                               bUseCompression;                                           // 0x0068(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_NWHT[0x3];                                     // 0x0069(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
-	float                                              CompressionQuality;                                        // 0x006C(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_J5N2[0x10];                                    // 0x0070(0x0010) MISSED OFFSET (PADDING)
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class MovieSceneCapture.VideoCaptureProtocol");
-		return ptr;
-	}
-
-
-
 };
 
 // Class MovieSceneCapture.MovieSceneAudioCaptureProtocolBase
@@ -137,12 +81,29 @@ class UMasterAudioSubmixCaptureProtocol : public UMovieSceneAudioCaptureProtocol
 {
 public:
 	struct FString                                     Filename;                                                  // 0x0058(0x0010) (Edit, BlueprintVisible, ZeroConstructor, Config, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	unsigned char                                      UnknownData_M9P7[0x28];                                    // 0x0068(0x0028) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_FR3Q[0x28];                                    // 0x0068(0x0028) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
 	{
 		static auto ptr = UObject::FindClass("Class MovieSceneCapture.MasterAudioSubmixCaptureProtocol");
+		return ptr;
+	}
+
+
+
+};
+
+// Class MovieSceneCapture.MovieSceneImageCaptureProtocolBase
+// 0x0000 (FullSize[0x0058] - InheritedSize[0x0058])
+class UMovieSceneImageCaptureProtocolBase : public UMovieSceneCaptureProtocolBase
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class MovieSceneCapture.MovieSceneImageCaptureProtocolBase");
 		return ptr;
 	}
 
@@ -157,15 +118,15 @@ class UCompositionGraphCaptureProtocol : public UMovieSceneImageCaptureProtocolB
 public:
 	struct FCompositionGraphCapturePasses              IncludeRenderPasses;                                       // 0x0058(0x0010) (Edit, BlueprintVisible, Config, NativeAccessSpecifierPublic)
 	bool                                               bCaptureFramesInHDR;                                       // 0x0068(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_EXZ6[0x3];                                     // 0x0069(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_8B3R[0x3];                                     // 0x0069(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	int                                                HDRCompressionQuality;                                     // 0x006C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TEnumAsByte<MovieSceneCapture_EHDRCaptureGamut>    CaptureGamut;                                              // 0x0070(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_EHR9[0x7];                                     // 0x0071(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_08YS[0x7];                                     // 0x0071(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FSoftObjectPath                             PostProcessingMaterial;                                    // 0x0078(0x0018) (Edit, BlueprintVisible, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               bDisableScreenPercentage;                                  // 0x0090(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_44TZ[0x7];                                     // 0x0091(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_IWWQ[0x7];                                     // 0x0091(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UMaterialInterface*                          PostProcessingMaterialPtr;                                 // 0x0098(0x0008) (ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	unsigned char                                      UnknownData_XX2Q[0x20];                                    // 0x00A0(0x0020) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_IXP0[0x20];                                    // 0x00A0(0x0020) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -178,12 +139,30 @@ public:
 
 };
 
+// Class MovieSceneCapture.FrameGrabberProtocol
+// 0x0010 (FullSize[0x0068] - InheritedSize[0x0058])
+class UFrameGrabberProtocol : public UMovieSceneImageCaptureProtocolBase
+{
+public:
+	unsigned char                                      UnknownData_EHS4[0x10];                                    // 0x0058(0x0010) MISSED OFFSET (PADDING)
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class MovieSceneCapture.FrameGrabberProtocol");
+		return ptr;
+	}
+
+
+
+};
+
 // Class MovieSceneCapture.ImageSequenceProtocol
 // 0x0070 (FullSize[0x00D8] - InheritedSize[0x0068])
 class UImageSequenceProtocol : public UFrameGrabberProtocol
 {
 public:
-	unsigned char                                      UnknownData_NXYT[0x70];                                    // 0x0068(0x0070) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_ZT9O[0x70];                                    // 0x0068(0x0070) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -202,7 +181,7 @@ class UCompressedImageSequenceProtocol : public UImageSequenceProtocol
 {
 public:
 	int                                                CompressionQuality;                                        // 0x00D8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_F15U[0x4];                                     // 0x00DC(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_50Z5[0x4];                                     // 0x00DC(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -273,7 +252,7 @@ class UImageSequenceProtocol_EXR : public UImageSequenceProtocol
 public:
 	bool                                               bCompressed;                                               // 0x00D8(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TEnumAsByte<MovieSceneCapture_EHDRCaptureGamut>    CaptureGamut;                                              // 0x00D9(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_1LIX[0xE];                                     // 0x00DA(0x000E) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_JKTP[0xE];                                     // 0x00DA(0x000E) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -308,7 +287,7 @@ public:
 class UMovieSceneCapture : public UObject
 {
 public:
-	unsigned char                                      UnknownData_EGN3[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_L871[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FSoftClassPath                              ImageCaptureProtocolType;                                  // 0x0038(0x0018) (Edit, ZeroConstructor, Config, NoClear, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSoftClassPath                              AudioCaptureProtocolType;                                  // 0x0050(0x0018) (Edit, ZeroConstructor, Config, NoClear, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMovieSceneImageCaptureProtocolBase*         ImageCaptureProtocol;                                      // 0x0068(0x0008) (Edit, ExportObject, ZeroConstructor, Transient, EditConst, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -316,10 +295,10 @@ public:
 	struct FMovieSceneCaptureSettings                  Settings;                                                  // 0x0078(0x0070) (Edit, BlueprintVisible, Config, NativeAccessSpecifierPublic)
 	bool                                               bUseSeparateProcess;                                       // 0x00E8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               bCloseEditorWhenCaptureStarts;                             // 0x00E9(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_6C3T[0x6];                                     // 0x00EA(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_MBZH[0x6];                                     // 0x00EA(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FString                                     AdditionalCommandLineArguments;                            // 0x00F0(0x0010) (Edit, BlueprintVisible, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FString                                     InheritedCommandLineArguments;                             // 0x0100(0x0010) (Edit, BlueprintVisible, ZeroConstructor, Transient, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_1LB7[0x110];                                   // 0x0110(0x0110) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_SF7Z[0x110];                                   // 0x0110(0x0110) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -342,9 +321,9 @@ class ULevelCapture : public UMovieSceneCapture
 {
 public:
 	bool                                               bAutoStartCapture;                                         // 0x0220(0x0001) (Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_9554[0xB];                                     // 0x0221(0x000B) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_O7AT[0xB];                                     // 0x0221(0x000B) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FGuid                                       PrerequisiteActorId;                                       // 0x022C(0x0010) (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	unsigned char                                      UnknownData_052K[0x4];                                     // 0x023C(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_6FVX[0x4];                                     // 0x023C(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -385,7 +364,7 @@ class UUserDefinedCaptureProtocol : public UMovieSceneImageCaptureProtocolBase
 {
 public:
 	class UWorld*                                      World;                                                     // 0x0058(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	unsigned char                                      UnknownData_QZ2U[0x78];                                    // 0x0060(0x0078) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_1L3W[0x78];                                    // 0x0060(0x0078) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -421,7 +400,7 @@ class UUserDefinedImageCaptureProtocol : public UUserDefinedCaptureProtocol
 public:
 	ImageWriteQueue_EDesiredImageFormat                Format;                                                    // 0x00D8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                               bEnableCompression;                                        // 0x00D9(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_A7R1[0x2];                                     // 0x00DA(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_YJ1M[0x2];                                     // 0x00DA(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	int                                                CompressionQuality;                                        // 0x00DC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 
@@ -436,6 +415,27 @@ public:
 	void WriteImageToDisk(const struct FCapturedPixels& PixelData, const struct FCapturedPixelsID& StreamID, const struct FFrameMetrics& FrameMetrics, bool bCopyImageData);
 	struct FString GenerateFilenameForCurrentFrame();
 	struct FString GenerateFilenameForBuffer(class UTexture* Buffer, const struct FCapturedPixelsID& StreamID);
+};
+
+// Class MovieSceneCapture.VideoCaptureProtocol
+// 0x0018 (FullSize[0x0080] - InheritedSize[0x0068])
+class UVideoCaptureProtocol : public UFrameGrabberProtocol
+{
+public:
+	bool                                               bUseCompression;                                           // 0x0068(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_1ARI[0x3];                                     // 0x0069(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	float                                              CompressionQuality;                                        // 0x006C(0x0004) (Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	unsigned char                                      UnknownData_6EGU[0x10];                                    // 0x0070(0x0010) MISSED OFFSET (PADDING)
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class MovieSceneCapture.VideoCaptureProtocol");
+		return ptr;
+	}
+
+
+
 };
 
 }

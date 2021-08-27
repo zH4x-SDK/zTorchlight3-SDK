@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-// Name: Torchlight3, Version: 1.0.0
+// Name: Torchlight3, Version: 4.26.1
 
 
 /*!!DEFINE!!*/
@@ -42,7 +42,7 @@ public:
 class UFieldSystem : public UObject
 {
 public:
-	unsigned char                                      UnknownData_DYVO[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_UF56[0x10];                                    // 0x0028(0x0010) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -61,9 +61,9 @@ class UFieldSystemComponent : public UPrimitiveComponent
 {
 public:
 	class UFieldSystem*                                FieldSystem;                                               // 0x0440(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_BWX0[0x10];                                    // 0x0448(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_3X2Z[0x10];                                    // 0x0448(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	unsigned char                                      SupportedSolvers[0x10];                                    // 0x0448(0x0010) UNKNOWN PROPERTY: ArrayProperty
-	unsigned char                                      UnknownData_LJFN[0x18];                                    // 0x0468(0x0018) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_4ACR[0x18];                                    // 0x0468(0x0018) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -108,7 +108,7 @@ class UFieldSystemMetaDataIteration : public UFieldSystemMetaData
 {
 public:
 	int                                                Iterations;                                                // 0x00B0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_IDYE[0x4];                                     // 0x00B4(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_7XUT[0x4];                                     // 0x00B4(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -128,7 +128,7 @@ class UFieldSystemMetaDataProcessingResolution : public UFieldSystemMetaData
 {
 public:
 	TEnumAsByte<Chaos_EFieldResolutionType>            ResolutionType;                                            // 0x00B0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_PJ4C[0x7];                                     // 0x00B1(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_5N4F[0x7];                                     // 0x00B1(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -176,13 +176,47 @@ public:
 
 };
 
+// Class FieldSystemEngine.FieldNodeFloat
+// 0x0000 (FullSize[0x00B0] - InheritedSize[0x00B0])
+class UFieldNodeFloat : public UFieldNodeBase
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class FieldSystemEngine.FieldNodeFloat");
+		return ptr;
+	}
+
+
+
+};
+
+// Class FieldSystemEngine.FieldNodeVector
+// 0x0000 (FullSize[0x00B0] - InheritedSize[0x00B0])
+class UFieldNodeVector : public UFieldNodeBase
+{
+public:
+
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class FieldSystemEngine.FieldNodeVector");
+		return ptr;
+	}
+
+
+
+};
+
 // Class FieldSystemEngine.UniformInteger
 // 0x0008 (FullSize[0x00B8] - InheritedSize[0x00B0])
 class UUniformInteger : public UFieldNodeInt
 {
 public:
 	int                                                Magnitude;                                                 // 0x00B0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_101T[0x4];                                     // 0x00B4(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_FJFY[0x4];                                     // 0x00B4(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -206,7 +240,7 @@ public:
 	int                                                InteriorValue;                                             // 0x00C0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int                                                ExteriorValue;                                             // 0x00C4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TEnumAsByte<Chaos_ESetMaskConditionType>           SetMaskCondition;                                          // 0x00C8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_CEBD[0x7];                                     // 0x00C9(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_RQMR[0x7];                                     // 0x00C9(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -220,30 +254,13 @@ public:
 	class URadialIntMask* SetRadialIntMask(float Radius, const struct FVector& Position, int InteriorValue, int ExteriorValue, TEnumAsByte<Chaos_ESetMaskConditionType> SetMaskConditionIn);
 };
 
-// Class FieldSystemEngine.FieldNodeFloat
-// 0x0000 (FullSize[0x00B0] - InheritedSize[0x00B0])
-class UFieldNodeFloat : public UFieldNodeBase
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FieldSystemEngine.FieldNodeFloat");
-		return ptr;
-	}
-
-
-
-};
-
 // Class FieldSystemEngine.UniformScalar
 // 0x0008 (FullSize[0x00B8] - InheritedSize[0x00B0])
 class UUniformScalar : public UFieldNodeFloat
 {
 public:
 	float                                              Magnitude;                                                 // 0x00B0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_RHYS[0x4];                                     // 0x00B4(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_LGS2[0x4];                                     // 0x00B4(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -269,7 +286,7 @@ public:
 	float                                              Radius;                                                    // 0x00C0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                     Position;                                                  // 0x00C4(0x000C) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TEnumAsByte<Chaos_EFieldFalloffType>               Falloff;                                                   // 0x00D0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_BWJB[0x7];                                     // 0x00D1(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_KR26[0x7];                                     // 0x00D1(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -296,7 +313,7 @@ public:
 	struct FVector                                     Position;                                                  // 0x00C4(0x000C) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                     Normal;                                                    // 0x00D0(0x000C) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TEnumAsByte<Chaos_EFieldFalloffType>               Falloff;                                                   // 0x00DC(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_8FOG[0x3];                                     // 0x00DD(0x0003) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_UQ5J[0x3];                                     // 0x00DD(0x0003) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -321,7 +338,7 @@ public:
 	float                                              Default;                                                   // 0x00BC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTransform                                  Transform;                                                 // 0x00C0(0x0030) (Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	TEnumAsByte<Chaos_EFieldFalloffType>               Falloff;                                                   // 0x00F0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_1IWZ[0xF];                                     // 0x00F1(0x000F) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_9WMY[0xF];                                     // 0x00F1(0x000F) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -342,7 +359,7 @@ class UNoiseField : public UFieldNodeFloat
 public:
 	float                                              MinRange;                                                  // 0x00B0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                              MaxRange;                                                  // 0x00B4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_QPUQ[0x8];                                     // 0x00B8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_KRWO[0x8];                                     // 0x00B8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	struct FTransform                                  Transform;                                                 // 0x00C0(0x0030) (Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 
@@ -355,23 +372,6 @@ public:
 
 
 	class UNoiseField* SetNoiseField(float MinRange, float MaxRange, const struct FTransform& Transform);
-};
-
-// Class FieldSystemEngine.FieldNodeVector
-// 0x0000 (FullSize[0x00B0] - InheritedSize[0x00B0])
-class UFieldNodeVector : public UFieldNodeBase
-{
-public:
-
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FieldSystemEngine.FieldNodeVector");
-		return ptr;
-	}
-
-
-
 };
 
 // Class FieldSystemEngine.UniformVector
@@ -420,7 +420,7 @@ class URandomVector : public UFieldNodeVector
 {
 public:
 	float                                              Magnitude;                                                 // 0x00B0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_BG35[0x4];                                     // 0x00B4(0x0004) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_3DKK[0x4];                                     // 0x00B4(0x0004) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -440,11 +440,11 @@ class UOperatorField : public UFieldNodeBase
 {
 public:
 	float                                              Magnitude;                                                 // 0x00B0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_TKEH[0x4];                                     // 0x00B4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+	unsigned char                                      UnknownData_M9FP[0x4];                                     // 0x00B4(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 	class UFieldNodeBase*                              RightField;                                                // 0x00B8(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFieldNodeBase*                              LeftField;                                                 // 0x00C0(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TEnumAsByte<Chaos_EFieldOperationType>             Operation;                                                 // 0x00C8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_E8F2[0x7];                                     // 0x00C9(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_4W0T[0x7];                                     // 0x00C9(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
@@ -504,7 +504,7 @@ public:
 	class UFieldNodeBase*                              Culling;                                                   // 0x00B0(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFieldNodeBase*                              Field;                                                     // 0x00B8(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TEnumAsByte<Chaos_EFieldCullingOperationType>      Operation;                                                 // 0x00C0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	unsigned char                                      UnknownData_8CC5[0x7];                                     // 0x00C1(0x0007) MISSED OFFSET (PADDING)
+	unsigned char                                      UnknownData_AHFA[0x7];                                     // 0x00C1(0x0007) MISSED OFFSET (PADDING)
 
 
 	static UClass* StaticClass()
